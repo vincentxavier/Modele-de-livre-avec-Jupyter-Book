@@ -8,6 +8,7 @@ virtualenv  # not needed
 # For Jupyter book
 jupyter-book  # See https://jupyterbook.org/
 # this installs all the dependencies, sphinx, jupyter and many other
+cookiecutter
 
 jupytext>=1.6.0  # https://jupytext.readthedocs.io/en/latest
 
