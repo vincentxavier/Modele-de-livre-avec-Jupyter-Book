@@ -10,3 +10,10 @@ send_zamok:	clean
 
 clean:
 	-mv -vf ./*~ /tmp/
+
+virtualenv:
+	virtualenv ./venv3/
+
+install_requirements:
+	. ./venv3/bin/activate
+	./venv3/bin/pip3 install --upgrade --requirement=./requirements.txt

@@ -1,0 +1,30 @@
+# List of pip (see https://pypi.org/) modules for this project
+# https://github.com/Info-Prepas-MP2I/Modele-de-livre-avec-Jupyter-Book/
+
+# For local development, use virtualenv (see Makefile, or this command)
+# virtualenv ./venv3/
+virtualenv  # not needed
+
+# For Jupyter book
+jupyter-book  # See https://jupyterbook.org/
+# this installs all the dependencies, sphinx, jupyter and many other
+
+jupytext>=1.6.0  # https://jupytext.readthedocs.io/en/latest
+
+# Sphinx extensions
+sphinxcontrib.youtube  # https://github.com/sphinx-contrib/youtube
+
+#sphinxcontrib.tikz     # https://sphinxcontrib-tikz.readthedocs.io/en/latest/
+#sphinxcontrib.proof    # https://sphinxcontrib-proof.readthedocs.io/en/latest/
+
+# See https://github.com/Naereen/web-sphinx/ for more examples
+
+
+# Main Python modules, to be able to use them in local notebooks
+#numpy
+#matplotlib
+#networkx
+#scipy
+#scikit-learn
+
+# For Jupyter notebooks extensions ?
