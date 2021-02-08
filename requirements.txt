@@ -28,10 +28,13 @@ sphinxemoji            # https://github.com/sphinx-contrib/emojicodes
 
 # Main Python modules, to be able to use them in local notebooks
 # TODO write demo notebooks/pages using each module
-# numpy
-# matplotlib
-# networkx
-# scipy
-# scikit-learn
+numpy
+matplotlib
+networkx
+scipy
+scikit-learn
+
+# GitHub pages import, FIXME: could I remove this dependency?
+ghp-import
 
 # For Jupyter notebooks extensions ?
