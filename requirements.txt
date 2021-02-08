@@ -19,10 +19,12 @@ sphinxcontrib.youtube  # https://github.com/sphinx-contrib/youtube
 
 # See https://github.com/Naereen/web-sphinx/ for more examples
 
+# For other kernels
+#bash_kernel  # https://github.com/takluyver/bash_kernel
 
 # Main Python modules, to be able to use them in local notebooks
 #numpy
-#matplotlib
+# matplotlib
 #networkx
 #scipy
 #scikit-learn
