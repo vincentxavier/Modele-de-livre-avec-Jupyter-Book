@@ -6,10 +6,6 @@ Cette page est un glossaire, qui liste des termes et les définitions que j'en d
 Ces définitions contiennent parfois mon propre point de vue, qui n'est en rien celui de mes employeurs, passés, actuels ou futurs.
 ```
 
-```{warning}
-TODO: use real glossary markup, like https://jupyterbook.org/reference/glossary.html.
-```
-
 ## Vocabulaire d'informatique
 
 ```{glossary}
