@@ -1,15 +1,7 @@
-# Page d'accueil de ce livre
+Modèle de livre avec Jupyter Book
 
-TODO: how to use README.md ?
+Un modèle de livre créé avec Jupyter Book, en français et avec des exemples complets d'utilisations des extensions Sphinx, Jupyter et Jupyter Book les plus utiles.
 
-.. include:: README.md
-
-Cela ne marche pas ?
-
-```markdown
-.. include:: README.md
+```{warning}
+Work in progress...
 ```
-
-## Blabla
-
-## Blabla

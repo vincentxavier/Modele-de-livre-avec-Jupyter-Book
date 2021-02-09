@@ -16,6 +16,7 @@ p, ul, ol {
     .bd-toc {
         visibility: hidden;
     }
+    /* TODO: also give full size to content, don't just hide the toc... */
 }
 
 /* Colors and text decoration.

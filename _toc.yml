@@ -1,0 +1,39 @@
+- file: index
+  numbered: false
+
+- part: Introduction
+  sections:
+  - file: content
+  - file: intro
+  - file: markdown
+
+- part: Des notebooks
+  chapters:
+  - file: notebooks
+  - file: notebooks/Exemple de notebook avec Python
+  - file: notebooks/Exemple de notebook avec OCaml
+  - file: notebooks/Exemple de notebook avec C
+  - file: notebooks/Exemple de notebook avec Bash
+  - file: notebooks/Exemple de notebook avec Rust
+  - file: notebooks/Exemple de notebook avec Java
+
+- part: Démonstrations des fonctionnalités de Jupyter book
+  chapters:
+  - file: demo-rST
+  - file: demo-myST
+  - file: Extensions_sphinx
+
+# - part: Des pages de maths
+#   chapters:
+#   - file: maths/index
+# TODO: taper un développement d'agrég avec des environnements Sphinx/Jupyter book?
+
+# - part: Des pages d'informatique
+#   chapters:
+#   - file: info/index
+# TODO: taper un développement d'agrég avec des environnements Sphinx/Jupyter book?
+
+- part: Contribuer ?
+  chapters:
+  - file: README
+  - file: TODO
