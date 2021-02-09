@@ -31,9 +31,18 @@ help:
 	@echo "  pdflatex   to build using pdflatex builder"
 	@echo "  linkcheck  to build using linkcheck builder"
 
-preview:
+preview:	preview_html
+preview_html:
 	firefox "http://0.0.0.0:9876" &
 	cd _build/html/ ; python3 -m http.server 9876
+preview_dirhtml:
+	firefox "http://0.0.0.0:9876" &
+	cd _build/dirhtml/ ; python3 -m http.server 9876
+preview_pdf:	preview_pdflatex
+preview_pdflatex:
+	evince _build/pdf/book.pdf
+preview_pdfhtml:
+	evince _build/pdf/book.pdf
 
 # ============== Rules to send this online ==============
 
@@ -71,6 +80,10 @@ html:
 	jupyter-book build -W -n --keep-going --builder html .
 	@echo
 	@echo "Build finished. The HTML pages are in $(BUILDDIR)/html."
+dirhtml:
+	jupyter-book build --builder dirhtml .
+	@echo
+	@echo "Build finished. The HTML pages are in $(BUILDDIR)/dirhtml."
 pdfhtml:
 	jupyter-book build --builder pdfhtml .
 	@echo

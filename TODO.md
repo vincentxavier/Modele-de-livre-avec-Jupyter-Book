@@ -35,14 +35,18 @@ Using a MyST directive?
 ```{todo}
 The {todo} MyST directive does not exist
 ```
+.. todolist::
+
+See <https://www.sphinx-doc.org/en/master/usage/extensions/todo.html>
 
 ## Demo pages
 
 These pages should render perfectly, otherwise something is broken in the jupyter-book setup.
 
-- See <demo-myST.html> ;
-- See <demo-rST.html> ;
+- [ ] See <demo-myST.html> ;
+- [ ] See <demo-rST.html> ;
 - [x] DONE write demo for other kernels: Python 3, C, OCaml, Java, Shell/Bash, SQL:
   - [x] <notebooks/> ;
+  - [ ] are they all correctly included?
   - [ ] See SQL ;
   - [ ] Fix example of C ;

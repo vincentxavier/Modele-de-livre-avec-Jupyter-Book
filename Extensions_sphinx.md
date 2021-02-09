@@ -17,7 +17,41 @@ Est-ce que cette directive MyST fonctionne ?
 ### Ajouter .special.rst et hack.css from web-sphinx
 Pour des rôles comme :gray:`gray` etc.
 
-Voir [cette page sur mon site](https://perso.crans.org/besson/avoir.html#quelques-idees-ou-demos)
+Voir [cette page sur mon site](https://perso.crans.org/besson/avoir.html#quelques-idees-ou-demos).
+
+Liste des couleurs rajoutées :
+
+ * la couleur :black:`black`;
+ * la couleur :gray:`gray`;
+ * la couleur :silver:`silver`;
+ * la couleur :white:`white` (white);
+ * la couleur :maroon:`maroon`;
+ * la couleur :red:`red`;
+ * la couleur :magenta:`magenta`;
+ * la couleur :fuchsia:`fuchsia`;
+ * la couleur :pink:`pink`;
+ * la couleur :orange:`orange`;
+ * la couleur :yellow:`yellow`;
+ * la couleur :lime:`lime`;
+ * la couleur :green:`green`;
+ * la couleur :olive:`olive`;
+ * la couleur :teal:`teal`;
+ * la couleur :cyan:`cyan`;
+ * la couleur :aqua:`aqua`;
+ * la couleur :blue:`blue`;
+ * la couleur :navy:`navy`;
+ * la couleur :purple:`purple`.
+
+.. versionadded:: 1.4
+
+   Autres styles rajoutés :
+
+    * :under:`souligné`, avec ``:under:`texte```;
+    * :over:`surligné`, avec ``:over:`texte```;
+    * :line:`barré`, avec ``:line:`texte```;
+    * :it:`italique`, avec ``:it:`texte```;
+    * :ob:`oblique`, avec ``:ob:`texte``` (comme italique semble-t-il);
+    * :blink:`clignotant`, avec ``:blink:`texte``` (:red:`pas toujours supporté !`).
 
 ### Des vidéos YouTube embarquées
 > sphinxcontrib.youtube  : https://github.com/sphinx-contrib/youtube
