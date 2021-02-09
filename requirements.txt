@@ -36,6 +36,8 @@ matplotlib
 networkx
 scipy
 scikit-learn
+pandas
+sympy
 
 # GitHub pages import, FIXME: could I remove this dependency?
 ghp-import

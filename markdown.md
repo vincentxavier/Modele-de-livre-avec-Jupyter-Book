@@ -139,5 +139,9 @@ When your book is built, the contents of any `{code-cell}` blocks will be
 executed with your default Jupyter kernel, and their outputs will be displayed
 in-line with the rest of your content.
 
+```{code-cell}
+print("Here is some code to execute")
+```
+
 For more information about executing computational content with Jupyter Book,
 see [The MyST-NB documentation](https://myst-nb.readthedocs.io/).

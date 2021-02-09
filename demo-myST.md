@@ -1194,4 +1194,8 @@ To include a list of citations mentioned in the document, introduce the `bibliog
 ```
 ``````
 
+```{bibliography}
+:filter: docname in docnames
+```
+
 See {doc}`../content/citations` for more information.

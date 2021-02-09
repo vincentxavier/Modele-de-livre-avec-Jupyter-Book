@@ -11,7 +11,7 @@ copyright                   : "2021-∞"  # Copyright year to be placed in the f
 logo                        : logo.png  # A path to the book logo
 email                       : lilian.besson@crans.org  # Email of the contact
 description                 : "|:fr:| |:notebook:| |:snake:| Un modèle de livre avec Jupyter Book, et un livre exemple en français montrant les fonctionnalités géniales de Jupyter Book"
-exclude_patterns            : [venv3, .github, _build, README.md, LICENSE.txt, Thumbs.db, .DS_Store, "**.ipynb_checkpoints"]  # files/folders to be excluded
+exclude_patterns            : [venv3, .github, _build, LICENSE.txt, Thumbs.db, .DS_Store, "**.ipynb_checkpoints"]  # files/folders to be excluded
 
 #######################################################################################
 # Information about where the book exists on the web
@@ -57,6 +57,7 @@ html:
     hypothesis              : false
     utterances              : false
     # TODO: activate utterances, when book is ready
+    # https://jupyterbook.org/interactive/comments/utterances.html
     # utterances              : true
 
 #######################################################################################
@@ -71,8 +72,9 @@ launch_buttons:
   notebook_interface        : classic  # The interface interactive links will activate ["classic", "jupyterlab"]
   binderhub_url             : https://mybinder.org  # The URL of the BinderHub (e.g., https://mybinder.org)
   # jupyterhub_url            : ""  # The URL of the JupyterHub (e.g., https://datahub.berkeley.edu)
-  thebe                     : false  # Add a thebe button to pages (requires the repository to run on Binder)
+  thebe                     : true  # Add a thebe button to pages (requires the repository to run on Binder)
   # TODO: allow thebe, when Binder will work!
+  # https://jupyterbook.org/interactive/launchbuttons.html#live-interactive-pages-with-thebelab
   # thebe                     : true  # Add a thebe button to pages (requires the repository to run on Binder)
   # colab_url                 : "" # The URL of Google Colab (https://colab.research.google.com)
 
@@ -86,12 +88,16 @@ theme                       : jekyll-theme-slate
 # Execution settings
 execute:
   execute_notebooks         : auto  # Whether to execute notebooks at build time. Must be one of ("auto", "force", "cache", "off")
-  cache                     : ""    # A path to the jupyter cache that will be used to store execution artifacs. Defaults to `_build/.jupyter_cache/`
-  exclude_patterns          : []    # A list of patterns to *skip* in execution (e.g. a notebook that takes a really long time)
+  cache                     : ""    # A path to the jupyter cache that will be used to store execution artifacts. Defaults to `_build/.jupyter_cache/`
+  # A list of patterns to *skip* in execution (e.g. a notebook that takes a really long time)
+  exclude_patterns          :
+    - "notebooks/*Rust*ipynb"
+    - "notebooks/*C*ipynb"
+    - "notebooks/*Java*ipynb"
   timeout                   : 30    # The maximum time (in seconds) each notebook cell is allowed to run.
   run_in_temp               : false # If `True`, then a temporary directory will be created and used as the command working directory (cwd),
                                     # otherwise the notebook's parent directory will be the cwd.
-  allow_errors              : false # If `False`, when a code cell raises an error the execution is stopped, otherwise all cells are always run.
+  allow_errors              : true # If `False`, when a code cell raises an error the execution is stopped, otherwise all cells are always run.
   stderr_output             : show  # One of 'show', 'remove', 'remove-warn', 'warn', 'error', 'severe'
 
 

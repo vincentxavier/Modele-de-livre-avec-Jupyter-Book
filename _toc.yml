@@ -21,7 +21,8 @@
   chapters:
   - file: demo-rST
   - file: demo-myST
-  - file: Extensions_sphinx
+  # - file: Extensions_sphinx
+  # TODO: add this file back?
 
 # - part: Des pages de maths
 #   chapters:

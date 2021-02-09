@@ -10,8 +10,8 @@
   ```
 - [x] build the site, in HTML singlepage (not dirhtml)
 - [ ] try each builder:
-  - [x] make dirhtml: not supported by Jupyter Book
-  - [ ] make pdfhtml DONE: it works, but it's not so pretty. It can be useful but not great, without cheating with [this config](https://jupyterbook.org/advanced/pdf.html#control-the-look-of-pdf-via-html)
+  - [x] make dirhtml: okay, but I don't see the point so won't use
+  - [x] make pdfhtml DONE: it works, but it's not so pretty. It can be useful but not great, without cheating with [this config](https://jupyterbook.org/advanced/pdf.html#control-the-look-of-pdf-via-html)
   - [ ] make latex
   - [ ] make pdflatex
   - [ ] make linkcheck
@@ -23,19 +23,32 @@
 - [ ] Take inspirations from [this book in French](https://mi-gt-donnees.pages.math.unistra.fr/guide)
   - https://github.com/miti-gt-donnees/guide/blob/master/_config.yml
 - [ ] create my own logo.png ?
+- [ ] for notebooks, never include Table of Contents cell from jupyter extension: it displays wrongly in the built book
+- [ ] for notebooks, how come links are not linked by default? (https://perso.crans.org/besson/Info-Prepas-MP2I/Modele-de-livre-avec-Jupyter-Book/notebooks/Exemple%20de%20notebook%20avec%20Python.html#pour-en-apprendre-plus)
 
 ## How to cleanly add TODO?
 
-Using a reST directive?
+Using a reST directive? No it doesn't work:
 
-.. todo:: This does not exist, right?
+.. todo:: This does not exist.
 
-Using a MyST directive?
+Using a reST directive and [a `eval-rst` directive](https://myst-parser.readthedocs.io/en/latest/using/syntax.html#how-directives-parse-content) from Markdown (MyST):
+
+```{eval-rst}
+.. todo:: This does work, right?
+```
+
+Using a MyST directive directly?
 
 ```{todo}
 The {todo} MyST directive does not exist
 ```
+
+And printing the list of TODO:
+
+```{eval-rst}
 .. todolist::
+```
 
 See <https://www.sphinx-doc.org/en/master/usage/extensions/todo.html>
 
@@ -43,6 +56,7 @@ See <https://www.sphinx-doc.org/en/master/usage/extensions/todo.html>
 
 These pages should render perfectly, otherwise something is broken in the jupyter-book setup.
 
+- TODO: how to write clean intern links
 - [ ] See <demo-myST.html> ;
 - [ ] See <demo-rST.html> ;
 - [x] DONE write demo for other kernels: Python 3, C, OCaml, Java, Shell/Bash, SQL:
