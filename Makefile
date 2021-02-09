@@ -43,7 +43,7 @@ preview_dirhtml:
 	cd _build/dirhtml/ ; python3 -m http.server 9876
 preview_pdf:	preview_pdflatex
 preview_pdflatex:
-	evince _build/pdf/book.pdf
+	evince _build/latex/book.pdf
 preview_pdfhtml:
 	evince _build/pdf/book.pdf
 
@@ -53,9 +53,13 @@ send:	send_zamok
 send_zamok:	clean-temp
 	CP --exclude=./.git/ ./{README,HEADER}.md ./{LICENSE.txt,Makefile} ${Szam}Info-Prepas-MP2I/Modele-de-livre-avec-Jupyter-Book/
 	CP --exclude=./.git/ ./$(BUILDDIR)/html/ ${Szam}Info-Prepas-MP2I/Modele-de-livre-avec-Jupyter-Book/
+	CP --exclude=./.git/ ./$(BUILDDIR)/pdf/*.pdf ${Szam}Info-Prepas-MP2I/Modele-de-livre-avec-Jupyter-Book/
+	CP --exclude=./.git/ ./$(BUILDDIR)/latex/*.pdf ${Szam}Info-Prepas-MP2I/Modele-de-livre-avec-Jupyter-Book/
 send_local:	clean-temp
 	CP --exclude=./.git/ ./{README,HEADER}.md ./{LICENSE.txt,Makefile} ~/Public/Info-Prepas-MP2I/Modele-de-livre-avec-Jupyter-Book/
 	CP --exclude=./.git/ ./$(BUILDDIR)/html/ ~/Public/Info-Prepas-MP2I/Modele-de-livre-avec-Jupyter-Book/
+	CP --exclude=./.git/ ./$(BUILDDIR)/pdf/*.pdf ~/Public/Info-Prepas-MP2I/Modele-de-livre-avec-Jupyter-Book/
+	CP --exclude=./.git/ ./$(BUILDDIR)/latex/*.pdf ~/Public/Info-Prepas-MP2I/Modele-de-livre-avec-Jupyter-Book/
 
 # ===================== Virtualenv =====================
 

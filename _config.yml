@@ -68,9 +68,12 @@ latex:
      targetname: book.tex
      title: "Modèle de livre avec Jupyter Book"
      author: "Lilian Besson"
-     theme: "manual"
+    #  theme: "manual"
+     theme: "article"
      toctree_only: True
-     papersize: 'a4paper'
+     papersize: "a4paper"
+     pointsize: "10pt"
+     fontpkg: "\\usepackage{tgpagella}"
 
 #######################################################################################
 # Launch button settings
@@ -126,6 +129,10 @@ sphinx:
   local_extensions          :   # A list of local extensions to load by sphinx specified by "name: path" items
   # key-value pairs to directly over-ride the Sphinx configuration
   config:
+    # https://www.sphinx-doc.org/en/master/usage/extensions/todo.html
+    todo_include_todos: True
+    todo_emit_warnings: True
+    todo_link_only: True
     html_last_updated_fmt: "%d %b %Y"
     latex_logo: 'logo.png'
     latex_toplevel_sectioning: 'chapter'
@@ -143,5 +150,3 @@ sphinx:
         Macros:
           "N": "\\mathbb{N}"
           "floor": ["\\lfloor#1\\rfloor", 1]
-          "bmat" : ["\\left[\\begin{array}"]
-          "emat" : ["\\end{array}\\right]"]

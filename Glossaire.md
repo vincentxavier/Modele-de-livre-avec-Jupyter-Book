@@ -271,7 +271,7 @@ HTML
     Pour des pages web, utilisés avec JavaScript et CSS. Cf <https://fr.wikipedia.org/wiki/HTML>
 
 CSS
-    Pour la mise en page de pages web, utilisés avec HTML et JavaScript. Cf <https://fr.wikipedia.org/wiki/Cascading Style Sheets>
+    Pour la mise en page de pages web, utilisés avec HTML et JavaScript. Cf <https://fr.wikipedia.org/wiki/Cascading%20Style%20Sheets>
 
 Markdown
     Un petit langage à balise, plus léger que HTML et LaTeX, qui permet d'écrire des documents modestes, ou des livres entiers (comme celui ci). Cf <https://fr.wikipedia.org/wiki/Markdown>

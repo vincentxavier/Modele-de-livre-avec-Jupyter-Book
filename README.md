@@ -6,7 +6,7 @@ Un modèle de livre créé avec Jupyter Book, en français et avec des exemples 
 Work in progress...
 ```
 
-==> Voir https://perso.crans.org/besson/Info-Prepas-MP2I/Modele-de-livre-avec-Jupyter-Book/ pour la version actuelle de ce livre.
+==> Voir <https://perso.crans.org/besson/Info-Prepas-MP2I/Modele-de-livre-avec-Jupyter-Book/> pour la version actuelle de ce livre.
 
 ----
 
