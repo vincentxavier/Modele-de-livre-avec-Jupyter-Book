@@ -1,4 +1,10 @@
-## Nouveau ticket (bug) :boom: !
+---
+name: Nouveau ticket (bug) en français
+about: Utilisez ce modèle pour ouvrir un nouveau ticket en français
+assignees: Naereen
+---
+
+## Nouveau ticket (bug) en français :boom: !
 
 Merci de l'intérêt que vous portez à [mon projet](https://github.com/Info-Prepas-MP2I/Modele-de-livre-avec-Jupyter-Book/)! [Je](https://github.com/Naereen/) vais faire de mon mieux pour vous répondre et vous aider !
 

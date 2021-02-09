@@ -1,5 +1,6 @@
-
 # Code of Conduct
+
+TODO: traduire en Français pour mes futurs élèves ?
 
 ## Our Pledge
 
