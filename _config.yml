@@ -64,6 +64,13 @@ html:
 # LaTeX-specific settings
 latex:
   latex_engine              : pdflatex  # one of 'pdflatex', 'xelatex' (recommended for unicode), 'luatex', 'platex', 'uplatex'
+  latex_documents:
+     targetname: book.tex
+     title: "Modèle de livre avec Jupyter Book"
+     author: "Lilian Besson"
+     theme: "manual"
+     toctree_only: True
+     papersize: 'a4paper'
 
 #######################################################################################
 # Launch button settings
@@ -119,6 +126,15 @@ sphinx:
   local_extensions          :   # A list of local extensions to load by sphinx specified by "name: path" items
   # key-value pairs to directly over-ride the Sphinx configuration
   config:
+    html_last_updated_fmt: "%d %b %Y"
+    latex_logo: 'logo.png'
+    latex_toplevel_sectioning: 'chapter'
+    # See https://github.com/miti-gt-donnees/guide/blob/master/_config.yml
+    # latex_elements:
+    #     # preamble: |
+    #     #     \usepackage{}
+    #     # maketitle: |
+    #     #     \newcommand\sphinxbackoftitlepage{\input{../../credits.tex}}\sphinxmaketitle
     # https://jupyterbook.org/advanced/advanced.html#configuring-to-improve-accessibility
     language: fr
     mathjax_config:

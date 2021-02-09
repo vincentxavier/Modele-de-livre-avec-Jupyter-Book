@@ -1,14 +1,14 @@
 - file: index
   numbered: false
 
-- title: Document pdf
-  url:   https://perso.crans.org/besson/Info-Prepas-MP2I/Modele-de-livre-avec-Jupyter-Book/book.pdf
   # TODO: how to use a relative URL and not absolute?
 - part: Introduction
   sections:
   - file: content
   - file: intro
   - file: markdown
+  - title: Document PDF
+    url:   https://perso.crans.org/besson/Info-Prepas-MP2I/Modele-de-livre-avec-Jupyter-Book/book.pdf
 
 - part: Des notebooks
   chapters:
@@ -26,6 +26,7 @@
   - file: demo-myST
   # - file: Extensions_sphinx
   # TODO: add this file back?
+  - file: Glossaire
 
 # - part: Des pages de maths
 #   chapters:

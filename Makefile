@@ -7,6 +7,7 @@
 # Web: https://github.com/Info-Prepas-MP2I/Modele-de-livre-avec-Jupyter-Book
 SHELL         = /usr/bin/env /bin/bash
 BUILDDIR      = _build
+JP		      = ./venv3/bin/jupyter-book
 
 # ============== Rules for help ==============
 
@@ -79,41 +80,41 @@ pdf:	pdflatex
 
 #   --builder [html|dirhtml|pdfhtml|latex|pdflatex|linkcheck|custom]
 html:
-	jupyter-book build -W -n --keep-going --builder html .
+	$(JP) build -W -n --keep-going --builder html .
 	@echo
 	@echo "Build finished. The HTML pages are in $(BUILDDIR)/html."
 dirhtml:
-	jupyter-book build --builder dirhtml .
+	$(JP) build --builder dirhtml .
 	@echo
 	@echo "Build finished. The HTML pages are in $(BUILDDIR)/dirhtml."
 pdfhtml:
-	jupyter-book build --builder pdfhtml .
+	$(JP) build --builder pdfhtml .
 	@echo
 	@echo "Build finished. The HTML pages are in $(BUILDDIR)/pdfhtml."
 latex:
-	jupyter-book build --builder latex .
+	$(JP) build --builder latex .
 	@echo
 	@echo "Build finished. The HTML pages are in $(BUILDDIR)/latex."
 pdflatex:
-	jupyter-book build --builder pdflatex .
+	$(JP) build --builder pdflatex .
 	@echo
 	@echo "Build finished. The HTML pages are in $(BUILDDIR)/pdflatex/."
 linkcheck:
-	jupyter-book build --builder linkcheck . | tee linkcheck.log
+	$(JP) build --builder linkcheck . | tee linkcheck.log
 	@echo
 	@echo "Link check complete; look for any errors in the above output " \
 	      "or in $(BUILDDIR)/linkcheck/output.txt."
 
 clean:	clean-temp clean-html clean-latex
 clean-all:	clean-temp
-	jupyter-book clean --all .
+	$(JP) clean --all .
 clean-temp:
 	-mv -vf ./*~ /tmp/
 clean-html:
-	jupyter-book clean --html .
+	$(JP) clean --html .
 clean-latex:
-	jupyter-book clean --latex .
+	$(JP) clean --latex .
 
 toc:
 	-cp -vf ./_toc.yml /tmp/
-	jupyter-book toc .
+	$(JP) toc .
