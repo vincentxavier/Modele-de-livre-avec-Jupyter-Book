@@ -133,4 +133,4 @@ Est-ce que ça marche dans le titre de cette partie aussi ?
 - https://github.com/sphinx-contrib/gravizo
 - https://github.com/sphinx-contrib/spelling
 - https://sphinxcontrib-autoprogram.readthedocs.io/en/stable/
-
+- https://jupyterbook.org/advanced/sphinx.html#an-example-sphinx-inline-tabs

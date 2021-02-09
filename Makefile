@@ -30,6 +30,8 @@ help:
 	@echo "  latex      to build using latex builder"
 	@echo "  pdflatex   to build using pdflatex builder"
 	@echo "  linkcheck  to build using linkcheck builder"
+	@echo "  preview    to preview the HTML pages"
+	@echo "  preview_pdf  to preview the PDF document"
 
 preview:	preview_html
 preview_html:

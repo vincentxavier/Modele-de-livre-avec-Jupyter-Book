@@ -44,8 +44,12 @@ html:
   use_edit_page_button      : true  # Whether to add an "edit this page" button to pages. If `true`, repository information in repository: must be filled in
   use_repository_button     : true  # Whether to add a link to your repository button
   use_issues_button         : true  # Whether to add an "open an issue" button
-  extra_navbar              : Généré par <a href="https://jupyterbook.org">Jupyter Book</a>  # Will be displayed underneath the left navbar.
-  extra_footer              : ""  # Will be displayed underneath the footer.
+  extra_navbar              : Généré manuellement par <a href="https://jupyterbook.org">Jupyter Book</a>  # Will be displayed underneath the left navbar.
+  # Will be displayed underneath the footer.
+  extra_footer              : |
+    <p>
+    Publié sous <a href="https://lbesson.mit-license.org/">licence libre MIT</a>.
+    </p>
   # google_analytics_id       : ""  # A GA id that can be used to track book views.
   home_page_in_navbar       : true  # Whether to include your home page in the left Navigation Bar
   baseurl                   : ""  # The base URL where your book will be hosted. Used for creating image previews and social links. e.g.: https://mypage.com/mybook/
@@ -100,16 +104,17 @@ sphinx:
   # https://sphinxcontrib-proof.readthedocs.io/en/latest/
   # https://github.com/sphinx-contrib/emojicodes
   # A list of extra extensions to load by Sphinx (added to those already used by JB).
-  extra_extensions: [
-    sphinx.ext.todo,
-    # sphinxcontrib.youtube,  # FIXME: doesn't work so far!
-    sphinxcontrib.tikz,
-    sphinxcontrib.proof,
-    sphinxemoji,
-  ]
+  extra_extensions:
+    - sphinx.ext.todo
+    # - sphinxcontrib.youtube,  # FIXME: doesn't work so far!
+    - sphinxcontrib.tikz
+    - sphinxcontrib.proof
+    - sphinxemoji
   local_extensions          :   # A list of local extensions to load by sphinx specified by "name: path" items
   # key-value pairs to directly over-ride the Sphinx configuration
   config:
+    # https://jupyterbook.org/advanced/advanced.html#configuring-to-improve-accessibility
+    language: fr
     mathjax_config:
       TeX:
         # https://jupyterbook.org/advanced/sphinx.html#defining-tex-macros
