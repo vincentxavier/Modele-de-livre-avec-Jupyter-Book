@@ -2,12 +2,19 @@
 
 ## First week
 - [x] write first version of requirements.txt, and Makefile
-- [ ] write complete versions of requirements.txt, and Makefile
 - [x] install Jupyter-book and extensions in virtualenv
-- [ ] start fresh jupyter-book with command
+- [ ] write complete versions of requirements.txt, and Makefile
+- [x] start fresh jupyter-book with command
   ```bash
   jupyter-book create --cookiecutter
   ```
+- [ ] build the site, in HTML singlepage (not dirhtml)
+- [ ] try each builder:
+  - [ ] make dirhtml
+  - [ ] make pdfhtml
+  - [ ] make latex
+  - [ ] make pdflatex
+  - [ ] make linkcheck
 - [ ] write demo pages
 - [ ] for each extensions
   - [ ] install it, try it, add it to requirements.txt

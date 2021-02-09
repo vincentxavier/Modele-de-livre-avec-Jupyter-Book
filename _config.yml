@@ -1,1 +1,43 @@
-theme: jekyll-theme-slate
+#######################################################################################
+# A default configuration that will be loaded for all jupyter books
+# See the documentation for help and more options:
+# https://jupyterbook.org/customize/config.html
+
+#######################################################################################
+# Book settings
+title                       : "Modèle de livre avec Jupyter Book"  # The title of the book. Will be placed in the left navbar.
+author                      : "Lilian Besson"  # The author of the book
+copyright                   : "2021-∞"  # Copyright year to be placed in the footer
+logo                        : logo.png  # A path to the book logo
+email                       : lilian.besson@crans.org  # Email of the contact
+description                 : "|:fr:| |:notebook:| |:snake:| Un modèle de livre avec Jupyter Book, et un livre exemple en français montrant les fonctionnalités géniales de Jupyter Book"
+exclude_patterns            : [venv3, README.md, LICENSE.txt]  # files/folders to be excluded
+
+# Information about where the book exists on the web
+repository:
+  url                       : https://github.com/Info-Prepas-MP2I/Modele-de-livre-avec-Jupyter-Book
+
+  # path_to_book: path/to/your/book  # An optional path to your book, defaults to repo root
+  branch: main  # An optional branch, defaults to `master`
+
+html:
+  # https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
+  use_repository_button: true
+  # https://jupyterbook.org/customize/config.html#add-a-button-to-open-issues
+  use_issues_button: true
+  # https://jupyterbook.org/customize/config.html#add-a-button-to-suggest-edits
+  use_edit_page_button: true
+
+# Configure your Binder links, such as the URL of the BinderHub.
+launch_buttons:
+  binderhub_url             : https://mybinder.org
+
+only_build_toc_files        : true  # https://jupyterbook.org/customize/config.html#config-exclude-non-toc-files
+
+# For GitHub pages, https://info-prepas-mp2i.github.io/Modele-de-livre-avec-Jupyter-Book/
+# TODO: remove?
+theme                       : jekyll-theme-slate
+
+# https://jupyterbook.org/customize/config.html#adding-extra-extensions
+sphinx:
+  extra_extensions: []
