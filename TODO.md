@@ -1,4 +1,4 @@
-# TODO
+# Choses à faire (TODO list)
 
 ## First week
 - [x] write first version of requirements.txt, and Makefile
@@ -38,11 +38,11 @@ Using a reST directive and [a `eval-rst` directive](https://myst-parser.readthed
 .. todo:: This does work, right?
 ```
 
-Using a MyST directive directly?
+Using a MyST directive directly? No it broke the `pdfhtml` builder.
 
-```{todo}
-The {todo} MyST directive does not exist
-```
+% ```{todo}
+% The {todo} MyST directive does not exist
+% ```
 
 And printing the list of TODO:
 
@@ -57,8 +57,8 @@ See <https://www.sphinx-doc.org/en/master/usage/extensions/todo.html>
 These pages should render perfectly, otherwise something is broken in the jupyter-book setup.
 
 - TODO: how to write clean intern links
-- [ ] See <demo-myST.html> ;
-- [ ] See <demo-rST.html> ;
+- [ ] See {doc}`demo-myST` ;
+- [ ] See {doc}`demo-rST` ;
 - [x] DONE write demo for other kernels: Python 3, C, OCaml, Java, Shell/Bash, SQL:
   - [x] <notebooks/> ;
   - [ ] are they all correctly included?

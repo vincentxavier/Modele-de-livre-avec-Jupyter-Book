@@ -1,4 +1,8 @@
 {
     "restructuredtext.confPath": "",
-    "python.pythonPath": "venv3/bin/python"
+    "python.pythonPath": "venv3/bin/python",
+    "files.exclude": {
+        "_build/": true,
+        "venv3/": true
+    }
 }

@@ -1165,7 +1165,7 @@ See [Footnotes](https://myst-parser.readthedocs.io/en/latest/using/syntax.html#s
 
 ```{note}
 Make sure you have a reference bibtex file. You can create one by running `touch references.bib`
-or view a {download}`references.bib <../references.bib>` example.
+or view a {download}`references.bib <references.bib>` example.
 ```
 
 ``````{list-table}
@@ -1189,12 +1189,12 @@ or view a {download}`references.bib <../references.bib>` example.
 To include a list of citations mentioned in the document, introduce the `bibliography` directive
 
 ``````md
-```{bibliography}
+```{bibliography} references.bib
 :filter: docname in docnames
 ```
 ``````
 
-```{bibliography}
+```{bibliography} references.bib
 :filter: docname in docnames
 ```
 

@@ -1,6 +1,9 @@
 - file: index
   numbered: false
 
+- title: Document pdf
+  url:   https://perso.crans.org/besson/Info-Prepas-MP2I/Modele-de-livre-avec-Jupyter-Book/book.pdf
+  # TODO: how to use a relative URL and not absolute?
 - part: Introduction
   sections:
   - file: content
@@ -17,7 +20,7 @@
   - file: notebooks/Exemple de notebook avec Rust
   - file: notebooks/Exemple de notebook avec Java
 
-- part: Démonstrations des fonctionnalités de Jupyter book
+- part: Fonctionnalités de Jupyter book
   chapters:
   - file: demo-rST
   - file: demo-myST
