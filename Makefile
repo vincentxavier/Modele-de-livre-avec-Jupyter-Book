@@ -100,4 +100,5 @@ clean-latex:
 	jupyter-book clean --latex .
 
 toc:
+	-cp -vf ./_toc.yml /tmp/
 	jupyter-book toc .

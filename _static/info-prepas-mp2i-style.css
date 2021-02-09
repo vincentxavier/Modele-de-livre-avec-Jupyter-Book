@@ -3,8 +3,20 @@
  * :see: https://github.com/Naereen/web-sphinx/
  * :copyright: Copyright 2021 Lilian Besson
  * :license: MIT, see LICENSE for details.
- */
+*/
 
+/* https://jupyterbook.org/advanced/sphinx.html#an-example-justify-the-text */
+p, ul, ol {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+/* https://jupyterbook.org/advanced/pdf.html#control-the-look-of-pdf-via-html */
+@media print {
+    .bd-toc {
+        visibility: hidden;
+    }
+}
 
 /* Colors and text decoration.
  For example, :black:`text in black` or :blink:`text blinking` in rST. */

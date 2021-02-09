@@ -22,6 +22,7 @@
 - [ ] License Creative Commons instead of MIT ?
 - [ ] Take inspirations from [this book in French](https://mi-gt-donnees.pages.math.unistra.fr/guide)
   - https://github.com/miti-gt-donnees/guide/blob/master/_config.yml
+- [ ] create my own logo.png ?
 
 ## How to cleanly add TODO?
 

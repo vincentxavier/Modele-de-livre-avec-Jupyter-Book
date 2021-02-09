@@ -11,7 +11,7 @@ copyright                   : "2021-∞"  # Copyright year to be placed in the f
 logo                        : logo.png  # A path to the book logo
 email                       : lilian.besson@crans.org  # Email of the contact
 description                 : "|:fr:| |:notebook:| |:snake:| Un modèle de livre avec Jupyter Book, et un livre exemple en français montrant les fonctionnalités géniales de Jupyter Book"
-exclude_patterns            : [venv3, README.md, LICENSE.txt]  # files/folders to be excluded
+exclude_patterns            : [venv3, .github, _build, README.md, LICENSE.txt]  # files/folders to be excluded
 
 # Information about where the book exists on the web
 repository:
@@ -41,3 +41,12 @@ theme                       : jekyll-theme-slate
 # https://jupyterbook.org/customize/config.html#adding-extra-extensions
 sphinx:
   extra_extensions: []
+  config:
+    mathjax_config:
+      TeX:
+        # https://jupyterbook.org/advanced/sphinx.html#defining-tex-macros
+        Macros:
+          "N": "\\mathbb{N}"
+          "floor": ["\\lfloor#1\\rfloor", 1]
+          "bmat" : ["\\left[\\begin{array}"]
+          "emat" : ["\\end{array}\\right]"]
