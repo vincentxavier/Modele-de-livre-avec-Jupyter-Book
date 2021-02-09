@@ -26,11 +26,14 @@ help:
 	@echo "  send       to send pages to website"
 	@echo "  setupvenv  to set-up virtualenv and install the requirements (run only once)"
 	@echo "  html       to build using html builder"
-	@echo "  dirhtml    to build using dirhtml builder"
 	@echo "  pdfhtml    to build using pdfhtml builder"
 	@echo "  latex      to build using latex builder"
 	@echo "  pdflatex   to build using pdflatex builder"
 	@echo "  linkcheck  to build using linkcheck builder"
+
+preview:
+	firefox "http://0.0.0.0:9876" &
+	cd _build/html/ ; python3 -m http.server 9876
 
 # ============== Rules to send this online ==============
 
@@ -68,35 +71,33 @@ html:
 	jupyter-book build -W -n --keep-going --builder html .
 	@echo
 	@echo "Build finished. The HTML pages are in $(BUILDDIR)/html."
-dirhtml:
-	jupyter-book build -W -n --keep-going --builder dirhtml .
-	@echo
-	@echo "Build finished. The HTML pages are in $(BUILDDIR)/dirhtml."
 pdfhtml:
-	jupyter-book build -W -n --keep-going --builder pdfhtml .
+	jupyter-book build --builder pdfhtml .
 	@echo
 	@echo "Build finished. The HTML pages are in $(BUILDDIR)/pdfhtml."
 latex:
-	jupyter-book build -W -n --keep-going --builder latex .
+	jupyter-book build --builder latex .
 	@echo
 	@echo "Build finished. The HTML pages are in $(BUILDDIR)/latex."
 pdflatex:
-	jupyter-book build -W -n --keep-going --builder pdflatex .
+	jupyter-book build --builder pdflatex .
 	@echo
 	@echo "Build finished. The HTML pages are in $(BUILDDIR)/pdflatex/."
 linkcheck:
-	jupyter-book build -W -n --keep-going --builder linkcheck . | tee linkcheck.log
+	jupyter-book build --builder linkcheck . | tee linkcheck.log
 	@echo
 	@echo "Link check complete; look for any errors in the above output " \
 	      "or in $(BUILDDIR)/linkcheck/output.txt."
 
 clean:	clean-temp clean-html clean-latex
+clean-all:	clean-temp
+	jupyter-book clean --all .
 clean-temp:
 	-mv -vf ./*~ /tmp/
 clean-html:
-	jupyter-book clean --html
+	jupyter-book clean --html .
 clean-latex:
-	jupyter-book clean --latex
+	jupyter-book clean --latex .
 
 toc:
 	jupyter-book toc .

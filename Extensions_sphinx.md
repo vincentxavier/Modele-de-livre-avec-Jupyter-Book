@@ -93,3 +93,10 @@ This text includes a smily face |:smiley:| and a snake too! |:snake:|
 Don't you love it? |:heart_eyes:|
 
 Est-ce que ça marche dans le titre de cette partie aussi ?
+
+### D'autres idées
+
+- https://github.com/sphinx-contrib/gravizo
+- https://github.com/sphinx-contrib/spelling
+- https://sphinxcontrib-autoprogram.readthedocs.io/en/stable/
+

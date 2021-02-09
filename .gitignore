@@ -2,3 +2,4 @@
 .*.swp
 *.git/
 venv3/
+_build/

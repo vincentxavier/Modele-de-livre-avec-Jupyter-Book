@@ -10,6 +10,9 @@ jupyter-book  # See https://jupyterbook.org/
 # this installs all the dependencies, sphinx, jupyter and many other
 cookiecutter
 
+# To build with pdfhtml
+pyppeteer
+
 jupytext<=1.8.0>=1.6.0  # https://jupytext.readthedocs.io/en/latest
 # FIXME: RecursionError: maximum recursion depth exceeded while calling a Python object
 # => jupyter-book wants <= 1.8.0 but now jupytext is 1.10.0

@@ -8,10 +8,10 @@
   ```bash
   jupyter-book create --cookiecutter
   ```
-- [ ] build the site, in HTML singlepage (not dirhtml)
+- [x] build the site, in HTML singlepage (not dirhtml)
 - [ ] try each builder:
-  - [ ] make dirhtml
-  - [ ] make pdfhtml
+  - [x] make dirhtml: not supported by Jupyter Book
+  - [ ] make pdfhtml DONE: it works, but it's not so pretty. It can be useful but not great, without cheating with [this config](https://jupyterbook.org/advanced/pdf.html#control-the-look-of-pdf-via-html)
   - [ ] make latex
   - [ ] make pdflatex
   - [ ] make linkcheck
