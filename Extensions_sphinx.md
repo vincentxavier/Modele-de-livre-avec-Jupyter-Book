@@ -14,44 +14,42 @@ Est-ce que cette directive MyST fonctionne ?
 
 ## Déjà utilisées (sur mon site)
 
-### Ajouter .special.rst et hack.css from web-sphinx
+### Ajouter .color-roles.rst depuis web-sphinx
 Pour des rôles comme :gray:`gray` etc.
 
 Voir [cette page sur mon site](https://perso.crans.org/besson/avoir.html#quelques-idees-ou-demos).
 
 Liste des couleurs rajoutées :
 
- * la couleur :black:`black`;
- * la couleur :gray:`gray`;
- * la couleur :silver:`silver`;
- * la couleur :white:`white` (white);
- * la couleur :maroon:`maroon`;
- * la couleur :red:`red`;
- * la couleur :magenta:`magenta`;
- * la couleur :fuchsia:`fuchsia`;
- * la couleur :pink:`pink`;
- * la couleur :orange:`orange`;
- * la couleur :yellow:`yellow`;
- * la couleur :lime:`lime`;
- * la couleur :green:`green`;
- * la couleur :olive:`olive`;
- * la couleur :teal:`teal`;
- * la couleur :cyan:`cyan`;
- * la couleur :aqua:`aqua`;
- * la couleur :blue:`blue`;
- * la couleur :navy:`navy`;
- * la couleur :purple:`purple`.
+* la couleur :black:`black`, avec ``:black:`black```;
+* la couleur :gray:`gray`, avec ``:gray:`gray```;
+* la couleur :silver:`silver`, avec ``:silver:`silver```;
+* la couleur :white:`white` (white), avec ``:white:`white```;
+* la couleur :maroon:`maroon`, avec ``:maroon:`maroon```;
+* la couleur :red:`red`, avec ``:red:`red```;
+* la couleur :magenta:`magenta`, avec ``:magenta:`magenta```;
+* la couleur :fuchsia:`fuchsia`, avec ``:fuchsia:`fuchsia```;
+* la couleur :pink:`pink`, avec ``:pink:`pink```;
+* la couleur :orange:`orange`, avec ``:orange:`orange```;
+* la couleur :yellow:`yellow`, avec ``:yellow:`yellow```;
+* la couleur :lime:`lime`, avec ``:lime:`lime```;
+* la couleur :green:`green`, avec ``:green:`green```;
+* la couleur :olive:`olive`, avec ``:olive:`olive```;
+* la couleur :teal:`teal`, avec ``:teal:`teal```;
+* la couleur :cyan:`cyan`, avec ``:cyan:`cyan```;
+* la couleur :aqua:`aqua`, avec ``:aqua:`aqua```;
+* la couleur :blue:`blue`, avec ``:blue:`blue```;
+* la couleur :navy:`navy`, avec ``:navy:`navy```;
+* la couleur :purple:`purple`, avec ``:purple:`purple```.
 
-.. versionadded:: 1.4
+Autres styles rajoutés :
 
-   Autres styles rajoutés :
-
-    * :under:`souligné`, avec ``:under:`texte```;
-    * :over:`surligné`, avec ``:over:`texte```;
-    * :line:`barré`, avec ``:line:`texte```;
-    * :it:`italique`, avec ``:it:`texte```;
-    * :ob:`oblique`, avec ``:ob:`texte``` (comme italique semble-t-il);
-    * :blink:`clignotant`, avec ``:blink:`texte``` (:red:`pas toujours supporté !`).
+- :under:`souligné`, avec ``:under:`texte```;
+- :over:`surligné`, avec ``:over:`texte```;
+- :line:`barré`, avec ``:line:`texte```;
+- :it:`italique`, avec ``:it:`texte```;
+- :ob:`oblique`, avec ``:ob:`texte``` (comme italique semble-t-il);
+- :blink:`clignotant`, avec ``:blink:`texte``` (:red:`pas toujours supporté !`).
 
 ### Des vidéos YouTube embarquées
 > sphinxcontrib.youtube  : https://github.com/sphinx-contrib/youtube
@@ -60,6 +58,12 @@ Liste des couleurs rajoutées :
 
 - sphinx.ext.runblock : peut-être inutile, vu les capacités de Jupyter book a exécuter le contenu ?
 
+```{youtube}
+94NzqAY2Yhk
+```
+
+<iframe width="944" height="531" src="https://www.youtube.com/embed/94NzqAY2Yhk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ----
 
 ## Jamais utilisées : à essayer
@@ -67,25 +71,46 @@ Liste des couleurs rajoutées :
 ### Des figures TikZ
 > sphinxcontrib.tikz     : https://sphinxcontrib-tikz.readthedocs.io/en/latest/
 
-Exemples :
+**Exemples :**
 
 An example role :tikz:`[thick] \node[blue,draw] (a) {A};
-\node[draw,dotted,right of=a] {B} edge[<-] (a);`
+\node[draw,dotted,right of=a] {B} edge[<-] (a);` (with rST syntax).
 
-Une figure avec une légende :
+An example role {tikz}`[thick] \node[blue,draw] (a) {A};
+\node[draw,dotted,right of=a] {B} edge[<-] (a);` (with markdown syntax).
+
+**Une figure avec une légende :**
+
+- Avec la syntaxe rST :
 
 .. tikz:: An Example Directive with Caption
 
    \draw[thick,rounded corners=8pt]
    (0,0)--(0,2)--(1,3.25)--(2,2)--(2,0)--(0,2)--(2,2)--(0,0)--(2,0);
 
+- Avec la syntaxe markdown :
 
-Une figure sans légende :
+```{tikz} An Example Directive with Caption
+\draw[thick,rounded corners=8pt]
+(0,0)--(0,2)--(1,3.25)--(2,2)--(2,0)--(0,2)--(2,2)--(0,0)--(2,0);
+```
+
+
+**Une figure sans légende :**
+
+- Avec la syntaxe rST :
 
 .. tikz:: [>=latex',dotted,thick] \draw[->] (0,0) -- (1,1) -- (1,0)
    -- (2,0);
    :libs: arrows
 
+- Avec la syntaxe markdown :
+
+```{tikz}
+:libs: arrows
+
+[>=latex',dotted,thick] \draw[->] (0,0) -- (1,1) -- (1,0) -- (2,0);
+```
 
 ### Des preuves en LaTeX ?
 > sphinxcontrib.proof    : https://github.com/sphinx-contrib/proof ?
@@ -110,7 +135,10 @@ Une figure sans légende :
 
 You can label and reference definition and theorems (e.g. :numref:`theorem {number} <pythagorean>`). You can also reference proofs (see the :ref:`proof of the Pythagorean theorem <proof>`).
 
-## Des émojis dans Sphinx :heart_eyes:
+- TODO: and with Markdown syntax?
+
+
+## Des émojis dans Sphinx |:heart_eyes:|
 
 > sphinxemoji       : https://github.com/sphinx-contrib/emojicodes
 
@@ -136,3 +164,4 @@ Est-ce que ça marche dans le titre de cette partie aussi ?
 - https://jupyterbook.org/advanced/sphinx.html#an-example-sphinx-inline-tabs
 - https://github-activity.readthedocs.io/en/latest/
 - https://ebp-sphinx-exercise.readthedocs.io/en/latest/
+

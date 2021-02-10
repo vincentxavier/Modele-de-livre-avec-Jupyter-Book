@@ -68,12 +68,11 @@ latex:
      targetname: book.tex
      title: "Modèle de livre avec Jupyter Book"
      author: "Lilian Besson"
-    #  theme: "manual"
-     theme: "article"
+     theme: "manual"
      toctree_only: True
      papersize: "a4paper"
      pointsize: "10pt"
-     fontpkg: "\\usepackage{tgpagella}"
+    #  fontpkg: "\\usepackage{tgpagella}"
 
 #######################################################################################
 # Launch button settings

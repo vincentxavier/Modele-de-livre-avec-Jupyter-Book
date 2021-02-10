@@ -26,17 +26,17 @@
 - [ ] for notebooks, never include Table of Contents cell from jupyter extension: it displays wrongly in the built book
 - [ ] for notebooks, how come links are not linked by default? (https://perso.crans.org/besson/Info-Prepas-MP2I/Modele-de-livre-avec-Jupyter-Book/notebooks/Exemple%20de%20notebook%20avec%20Python.html#pour-en-apprendre-plus)
 
-## How to cleanly add TODO?
+## How to cleanly add TODO? - FAILED
 
 Using a reST directive? No it doesn't work:
 
-.. todo:: This does not exist.
+% .. todo:: This does not exist.
 
 Using a reST directive and [a `eval-rst` directive](https://myst-parser.readthedocs.io/en/latest/using/syntax.html#how-directives-parse-content) from Markdown (MyST):
 
-```{eval-rst}
-.. todo:: This does work, right?
-```
+% ```{eval-rst}
+% .. todo:: This does work, right?
+% ```
 
 Using a MyST directive directly? No it broke the `pdfhtml` builder.
 
@@ -46,9 +46,9 @@ Using a MyST directive directly? No it broke the `pdfhtml` builder.
 
 And printing the list of TODO:
 
-```{eval-rst}
-.. todolist::
-```
+% ```{eval-rst}
+% .. todolist::
+% ```
 
 See <https://www.sphinx-doc.org/en/master/usage/extensions/todo.html>
 
@@ -57,10 +57,10 @@ See <https://www.sphinx-doc.org/en/master/usage/extensions/todo.html>
 These pages should render perfectly, otherwise something is broken in the jupyter-book setup.
 
 - TODO: how to write clean intern links
-- [ ] See {doc}`demo-myST` ;
-- [ ] See {doc}`demo-rST` ;
+- [x] See {doc}`demo-myST` ;
+- [x] See {doc}`demo-rST` ;
 - [x] DONE write demo for other kernels: Python 3, C, OCaml, Java, Shell/Bash, SQL:
-  - [x] <notebooks/> ;
-  - [ ] are they all correctly included?
+  - [x] {doc}`notebooks/index` ;
+  - [x] are they all correctly included?
   - [ ] See SQL ;
   - [ ] Fix example of C ;
