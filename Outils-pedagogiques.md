@@ -1,13 +1,13 @@
 # Outils pédagogiques
 
-Ce petite document est un **brouillon**, qui essaient de fixer par écrit mes réflexions.
+Ce document (déjà trop long) est un **brouillon**, qui essaie de fixer par écrit mes réflexions.
 
 TODO: terminer cette page
 TODO: bien organiser mes idées
 
 - En premier, j'essaie de lister les besoins de documents et ressources pédagogiques ;
-- Puis quels outils je connais pour chaque besoin ;
-- L'objectif est de trouver UN outil ultime (exemple : tout en LaTeX, tout en Markdown, tout en Jupyter notebook), qui permette de tout faire.
+- Puis quels outils je connais, pour chaque besoin, avec les avantages et inconvénients ;
+- L'objectif est de trouver UN outil ultime (exemple : tout en LaTeX, tout en Markdown, tout en Jupyter notebooks), qui permette de tout faire.
 
 ## Pourquoi cette page ?
 
@@ -121,6 +121,10 @@ Pour toutes ces idées, deux remarques :
     - Cf [EduPython](https://edupython.tuxfamily.org/), [pour OCaml](https://info.prepa-carnot.fr/index.php/2020/01/26/installer-ocaml-sur-sa-machine/) et liens
     - notamment les applis mobiles pour OCaml, Python et C ? Cf [apk.fr.html](https://perso.crans.org/besson/apk.fr.html)
 
+- **Logiciel anti plagiat** ?
+    - *Compilatio* semble être très puissant, mais non libre, non gratuit, c'est mort. Il était disponible à l'Université Rennes 1 et pour mon cours [INF1](https://perso.crans.org/besson/teach/INF1_L1_Rennes1_2020-21/) à l'automne 2020 nous n'avons pas pu nous en servir car les soumissions de projet étaient des fichiers Java `.java` et pas des PDF ou docs Word : en prépas j'aurai le même problème ;
+    - Une solution facile et "personnelle" ? Je vois pas trop comment...
+    - TODO: regarder [des outils libres déjà existants](https://duckduckgo.com/?t=canonical&q=open+source+anti+plagiarism+software&ia=web)
 
 ----
 
@@ -132,18 +136,49 @@ TODO: cette liste est encore en chantier.
 
 ### Ce que je maîtrise bien
 
-- **Markdown** : je connais très bien [le langage de base](), et les extensions [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-    - Convertir un seul petit fichier (HTML, PDF) : pandoc est parfait ;
-    - Convertir plein de fichiers : autant directement aller
+Production de documents :
+
+- **Markdown** : je connais très bien [le langage de base](https://daringfireball.net/projects/markdown/), et les extensions [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+    - Convertir un seul petit fichier (HTML, PDF) : `pandoc` est parfait ;
+    - Convertir plein de fichiers : autant directement aller dans un Jupyter Book (ou autre) ;
     - Imprimable : [cheat-sheet](https://www.markdownguide.org/cheat-sheet), [cheat-sheet2](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf).
 
-- **Slides Markdown** : [Marp](https://marp.app/) avec Markdown + maths KaTeX : un peu primitif, mais ça force à avoir des slides épurés et simples.
+- **Documents LaTeX** : je maîtrise bien, mais ça prend du temps de retrouver des bons automatismes.
+    - **avantages** :
+        - documents super propres ;
+        - et langage programmable, on peut rajouter des macros, et faire plein de choses puissantes qui sont impossibles avec les autres solutions ;
+    - **inconvénients** :
+        - chaque document génère un PDF indépendant, c'est plus difficile de tout lier ;
+        - difficile de générer des pages web équivalentes aux documents PDF ;
+    - Conclusion ? A préférer pour des documents destinés à être imprimés.
 
-- **Documents LaTeX** : je maîtrise bien, mais ça prend du temps de retrouver des bons automatismes
+Production de slides :
 
-- **Slides LaTeX** :
-    - **avantages** : documents super propres, et possibilités de montrer du code et des figures TikZ apparaître interactivement à chaque slide
-    - **inconvénients** : syntaxe trop lourde !
+- **Slides Markdown** : [Marp](https://marp.app/) avec Markdown + maths $\KaTeX$ (un sous ensemble de $\LaTeX$) : un peu primitif, mais ça force à avoir des slides épurés et simples.
+    - **avantages** :
+        - un peu primitif, mais ça force à avoir des slides épurés et simples ;
+        - ça fonctionne depuis VSCode !
+        - on peut ajouter des émojis comme sur GitHub avec :+1: etc ;
+        - export facile en PDF ;
+    - **inconvénients** :
+        - très peu de contrôle sur l'apparence finale, on ne peut pas faire aussi bien qu'avec LaTeX Beamer ;
+
+- **Slides LaTeX Beamer** :
+    - **avantages** : documents super propres, et possibilités de montrer du code et des figures TikZ apparaître interactivement à chaque slide ;
+    - **inconvénients** : syntaxe trop lourde ! J'ai déjà écrit plein de slides Beamer, mais je trouve ça trop lourd ;
+    - **idée** : un premier prototype, sans figure, peut être rapidement écrit en Markdown + Marp, ou
+
+- Slides depuis Jupyter notebook avec **RISE** :
+    - **avantages** : tous les avantages d'un notebook ; c'est très innovant, et modifiable en live ; ça permet de montrer du code exécutable et de l'exécuter devant les élèves ! Ca permet aussi d'avoir un document qui sera directement exportable en HTML/PDF comme un notebook classique, ou en slide statique aussi !
+    - **inconvénients** : il faut que les cellules ne soient jamais trop longues, et une fois le notebook fini il faut une petite passe manuelle pour ajouter les tags "nouveau slide" ou "sous slide", mais ça marche bien !
+    - **améliorations possibles** :
+        - le template d'export en slide PDF ou en HTML slide n'est pas génial, il y a trop de marges à gauche et en haut, mais je peux sûrement bidouiller ça ;
+        - je peux facilement écrire un script qui rajoute le tag "nouveau slide" à chaque cellule, et ensuite il faudra juste refaire une passe pour fusionner certaines cellules ou enlever/modifier des tags ;
+        - comment convertir en LaTeX Beamer ? Pas possible je pense, ou alors avec IPYNB -> Markdown (Marp) -> LaTeX Beamer ?
+    - Démo : [@Naereen/Tutoriel-notebooks-Jupyter-a-Didapro-8-Lille-fevrier-2020](https://github.com/Naereen/Tutoriel-notebooks-Jupyter-a-Didapro-8-Lille-fevrier-2020) tutoriel d'une heure sur les notebooks Jupyter, présenté à ~25 profs de lycée en février 2020 à Didapro 8 à Lille.
+
+
+Autres :
 
 - [StrapDown.js](https://naereen.github.io/StrapDown.js/) : pour une petite page indépendante, ça peut permettre d'aller vite !
     - scripts `strapdown2pdf` (avec `lunamark` + my `autotex` + `pdflatex`) pour convertir en PDF : primitif mais peut dépanner ? Cf [CS101](https://perso.crans.org/besson/cs1010).
@@ -163,6 +198,7 @@ TODO: cette liste est encore en chantier.
 
 - **Streamer un cours en direct en ligne**, sans besoin de logiciels ou connexion particulière :
     - **BigBlueButton** (expert) : gratuit et libre, mais quelle instance aurai-je le droit d'utiliser ? Le plus simple "au cas où" occasionnellement ;
+    - **Jitsi** (expert) : gratuit et libre, mais pas approprié pour des enseignements ou des appels avec beaucoup de gens, non ?
     - [Twitch](twitch.fr.html) : peut dépanner aussi, en streamant avec [] ;
     - Live YouTube (jamais essayé), Live Facebook (lol) ;
 

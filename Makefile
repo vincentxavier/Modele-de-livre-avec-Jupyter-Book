@@ -84,27 +84,27 @@ pdf:	pdflatex
 
 #   --builder [html|dirhtml|pdfhtml|latex|pdflatex|linkcheck|custom]
 html:
-	$(JP) build -W -n --keep-going --builder html .
+	-$(JP) build -W -n --keep-going --builder html .
 	@echo
 	@echo "Build finished. The HTML pages are in $(BUILDDIR)/html."
 dirhtml:
-	$(JP) build --builder dirhtml .
+	-$(JP) build --builder dirhtml .
 	@echo
 	@echo "Build finished. The HTML pages are in $(BUILDDIR)/dirhtml."
 pdfhtml:
-	$(JP) build --builder pdfhtml .
+	-$(JP) build --builder pdfhtml .
 	@echo
 	@echo "Build finished. The HTML pages are in $(BUILDDIR)/pdfhtml."
 latex:
-	$(JP) build --builder latex .
+	-$(JP) build --builder latex .
 	@echo
 	@echo "Build finished. The HTML pages are in $(BUILDDIR)/latex."
 pdflatex:
-	$(JP) build --builder pdflatex .
+	-$(JP) build --builder pdflatex .
 	@echo
 	@echo "Build finished. The HTML pages are in $(BUILDDIR)/pdflatex/."
 linkcheck:
-	$(JP) build --builder linkcheck . | tee linkcheck.log
+	-$(JP) build --builder linkcheck . | tee linkcheck.log
 	@echo
 	@echo "Link check complete; look for any errors in the above output " \
 	      "or in $(BUILDDIR)/linkcheck/output.txt."
