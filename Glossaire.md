@@ -424,3 +424,100 @@ Creative Commons
 GPL
     Une autre licence libre très courante, celle qui régit les projets [GNU](https://www.gnu.org/), mais qui n'est pas très permissive.
 ```
+
+## Formations académique en France
+
+Une liste très partielle, sans jugement aucun et juste avec des pointeurs. Si un concours n'est pas présent, [contactez moi](https://perso.crans.org/besson/callme.fr.html).
+
+### Formations post-bac
+
+```{glossary}
+Licence
+    Trois premières années de formations à l'Université. Avant, les deux premières années donnait un DEUG.
+
+Master
+    Quatrième et cinquième années de formations à l'Université. Avant, les quatre premières années donnait un DEA. Un diplôme d'ingénieur est équivalent à un master. Un master est requis pour passer les concours de recrutements des enseignants (CAPES, agrégations).
+
+Doctorat
+    Sixième, septième et huitième années de formations à l'Université. Donne le grade de docteur.
+
+CPGE
+    [Classe préparatoire aux grandes écoles](https://fr.wikipedia.org/wiki/Classe_pr%C3%A9paratoire_aux_grandes_%C3%A9coles). Voir aussi ces définitions : [linternaute.fr](https://www.linternaute.fr/dictionnaire/fr/definition/classe-preparatoire/), [cersa.org](https://www.cersa.org/classe-preparatoire/), [ups-cpge.fr](https://ups-cpge.fr/index.php?article=69).
+
+Prépa intégrée
+    [Classe préparatoire intégrée](https://fr.wikipedia.org/wiki/Classe_pr%C3%A9paratoire_int%C3%A9gr%C3%A9e).
+
+Prépa
+    Prépa intégrée ou non, voir {term}`CPGE` ou {term}`Prépa intégrée`.
+```
+
+### Écoles d'ingénieurs
+
+```{glossary}
+Ecole d'ingénieurs
+    École d'ingénierie serait un terme plus épicène. Il y en avait [205 en 2019](https://fr.wikipedia.org/wiki/Liste_des_%C3%A9coles_d%27ing%C3%A9nieurs_en_France#Liste_des_205_%C3%A9coles_fran%C3%A7aises_accr%C3%A9dit%C3%A9es_au_1er_septembre_2019).
+
+ENS
+    Écoles Normales Supérieures : en France, ENS Ulm à Paris, ENS Paris-Saclay sur le plateau de Saclay (sud Paris) (anciennement ENS Cachan), ENS Lyon à Lyon, ENS Rennes à Rennes. Forment surtout à la recherche (thèse de doctorat) et l'enseignement (agrégation), et ne délivre pas de diplôme d'ingénieurs mais des diplômes universitaires.
+
+École Polytechnique
+    École d'ingénierie dépendant du ministère des Armées, sur le plateau de Saclay (sud Paris). A ne pas confondre avec les écoles polytechniques universitaires ou à l'étranger (à Montréal, Madrid etc).
+
+Centrale
+    Un groupe d'écoles d'ingénierie : CentraleSupélec (avant Centrale Paris) avec trois campus à Gif-sur-Yvette, Rennes et Metz, Centrale Lyon, Centrale Marseille, Centrale Nantes, Centrale Lille et une au Maroc (Casablanca).
+
+Mines
+    Un groupe de d'écoles d'ingénierie, dites [école des Mines](https://fr.wikipedia.org/wiki/%C3%89cole_des_mines) : Paris ([Mines ParisTech](http://www.mines-paristech.eu/)), [Nancy](https://mines-nancy.univ-lorraine.fr/), [Alès](http://www.mines-ales.fr/), [Albi](https://www.imt-mines-albi.fr/), [Lille et Douai](https://imt-lille-douai.fr/), et [Saint-Étienne](https://www.mines-stetienne.fr/). Parmi [les plus vieilles écoles du monde](https://fr.wikipedia.org/wiki/Liste_des_plus_anciennes_%C3%A9coles_d%27ing%C3%A9nieurs_en_France).
+
+Télécom
+    Groupe d'écoles dépendant des Instituts Mines Télécom (IMT) : IMT Paris, IMT Atlantique Bretagne Pays-de-la-Loire, IMT Lille-Douai.
+
+INSA
+    [Un groupe d'écoles d'ingénierie](https://www.groupe-insa.fr/decouvrir/nos-ecoles) à prépas intégrées. À Lyon, Rouen, Rennes, Strasbourg, Toulouse et une au Maroc.
+
+Arts et Métiers
+    Des écoles d'ingénierie, dont l'ENSAM Paris qui a plusieurs campus en France. Parmi [les plus vieilles écoles de France](https://fr.wikipedia.org/wiki/Liste_des_plus_anciennes_%C3%A9coles_d%27ing%C3%A9nieurs_en_France) (1780).
+
+Polytech
+    [Des écoles d'ingénieurs universitaires](https://fr.wikipedia.org/wiki/R%C3%A9seau_Polytech), très nombreuses, et aux formations variées.
+
+EPITA
+    [Un groupe d'écoles d'ingénieurs informatique privées](https://www.epita.fr/), à Paris, Lyon, Rennes, Strasbourg et Toulouse.
+
+Écoles Militaires
+    Plusieurs [écoles d'ingénierie dépendent du ministère des Armées](https://fr.wikipedia.org/wiki/Grandes_%C3%A9coles_militaires_en_France).
+```
+
+### Concours en CPGE
+
+```{glossary}
+SCEI
+    [Organisme qui centrale l'organisation des concours](http://www.scei-concours.fr/). [Voir le calendrier](http://www.scei-concours.fr/calendrier.php)
+
+Concours Centrale-Supélec
+    [Un concours de recrutement commun aux écoles du groupe {term}`Centrale`](https://www.concours-centrale-supelec.fr/).
+
+Concours commun Mines-Ponts
+    [Un concours de recrutement commun aux écoles du groupe des {term}`Mines`](https://www.concoursminesponts.fr/).
+
+Concours Mines-Télécom
+    [Un concours de recrutement commun à plusieurs écoles](https://www.concours-mines-telecom.fr/ecoles/).
+
+Banque X/ENS
+    [Un concours de recrutement commun à l'X et aux 4 ENS](https://banques-ecoles.fr/).
+
+Concours commun INP
+    [Un concours de recrutement commun à un grand groupe d'écoles](http://www.concours-commun-inp.fr/>)  (nouveau nom de CCP).
+
+E3A
+    [Un autre concours de  recrutement commun à un grand groupe d'écoles (plus de 60)](https://www.e3a-polytech.fr/).
+
+Petites Mines
+    Un *ancien* concours de recrutement à quatre écoles des Mines qui étaient ouvert aux élèves en première année de prépa.
+
+IEP
+    [Instituts d'Études Politiques](https://fr.wikipedia.org/wiki/Institut_d%27%C3%A9tudes_politiques) aussi ouverts aux élèves de CPGE scientifiques.
+
+Autres concours
+    TODO: actuaires ? pilotes ? écoles militaires.
+```
