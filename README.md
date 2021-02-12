@@ -8,6 +8,9 @@ Work in progress...
 
 ==> Voir <https://perso.crans.org/besson/Info-Prepas-MP2I/Modele-de-livre-avec-Jupyter-Book/> pour la version actuelle de ce livre.
 
+> L'**informatique** n'est pas plus la science des ordinateurs que l'astronomie n'est celle des télescopes. -- M. Fellows et I. Parberry (et [pas Edger Dijkstra](https://fr.wikipedia.org/wiki/Edsger_Dijkstra#Citations)).
+
+
 ----
 
 ## Usage

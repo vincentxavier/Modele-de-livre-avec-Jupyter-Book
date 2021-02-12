@@ -1,16 +1,24 @@
 - file: index
-  numbered: false
+  numbered: true
 
-  # TODO: how to use a relative URL and not absolute?
 - part: Introduction
   sections:
   - file: content
   - file: intro
   - file: markdown
-  - title: Document PDF
+  - title: Version PDF
     url:   https://perso.crans.org/besson/Info-Prepas-MP2I/Modele-de-livre-avec-Jupyter-Book/book.pdf
+  # TODO: how to use a relative URL and not absolute?
+  - title: Version PDF (local)
+    url:   book.pdf
 
-- part: Des notebooks
+- part: Des liens
+  chapters:
+  - file: Outils-pedagogiques
+  - file: Liens-autres-ressources-pedagogiques
+  - file: livre-dor
+
+- part: Des notebooks (exemples)
   chapters:
   - file: notebooks
   - file: notebooks/Exemple de notebook avec Python
@@ -42,5 +50,4 @@
   chapters:
   - file: README
   - file: TODO
-  - file: Outils-pedagogiques
   - file: utterances

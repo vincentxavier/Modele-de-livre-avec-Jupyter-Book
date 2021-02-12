@@ -3,12 +3,15 @@
 Je garde ici une trace des pages web d'autres profs, qui donnent des ressources pédagogiques (plus ou moins) en accès libre.
 Pour s'en inspirer, ou même pour dépanner en cas de problème.
 
-- Date : février 2021.
-- [Envoyez moi](https://perso.crans.org/besson/callme.fr.html) vos suggestions !
+- Date : février 2021 ;
 - Source : contacts, DuckDuckGo, et <https://cahier-de-prepa.fr/liste> (recherche manuelle exhaustive) ;
-% j'en suis à Lycée du Parc (2021-02-11 22:12:53)
+- [Envoyez moi](https://perso.crans.org/besson/callme.fr.html) vos suggestions ?
 
-## Programmes officiels
+% TODO: download every .pdf, .ml, .tex, .py file, in a folder copying this list, to have everything locally
+% so I can grep / pdfgrep for keywords
+% and if a prof decides to remove/update a file, I have a soft copy on my side
+
+## Programmes officiels (2021)
 
 - Le programme officiel d'informatique en MP2I et MPI : sur [le site du Ministère](https://cache.media.education.gouv.fr/file/SPE1-MEN-MESRI-4-2-2021/64/6/spe777_annexe_1373646.pdf) (février 2021).
 - Autres programmes :
@@ -34,6 +37,11 @@ TODO: rédiger pages programmes
   - Plein de TD et TP (PDF) et corrigés (PDF et .ml) ;
   - Un sujet de DS (PDF) ;
 
+- [MPSI](http://info-llg.fr/option-mpsi/?a=cours) et [MP](http://info-llg.fr/option-mp/?a=cours) au Lycée Louis-le-Grand à Paris
+  - des très bons [cours MPSI](http://info-llg.fr/option-mpsi/?a=cours) et [cours MP](http://info-llg.fr/option-mp/?a=cours) (notes PDF, slides, et corrigés) ;
+  - beaucoup de [TP MPSI](http://info-llg.fr/option-mpsi/?a=tp) et [TP MP](http://info-llg.fr/option-mp/?a=tp) énoncés et corrigés (PDF et .ml) ;
+  - et beaucoup de [DS MPSI](http://info-llg.fr/option-mpsi/prive/?a=controles) et [DS MP](http://info-llg.fr/option-mp/prive/?a=controles) énoncés et corrigés (PDF) ;
+
 - [MPSI1](https://cahier-de-prepa.fr/mpsi1-kerichen/docs?info) et [MPSI1](https://cahier-de-prepa.fr/mpsi2-kerichen/docs?info) au Lycée Kerichen @ Brest
   - quelques cours (PDF) ;
   - des TP (PDF), révisions MPSI ;
@@ -47,8 +55,6 @@ TODO: rédiger pages programmes
   - Des fiches de cours (PDF) de la [MPSI du Lycée Marceau @ Chartres](https://cahier-de-prepa.fr/mpsi-marceau/docs?rep=112) ;
   - Quelques sujets de concours et corrigés (PDF) de la [MP1](https://cahier-de-prepa.fr/mp1-pothier/docs?Info) et [MP*](https://cahier-de-prepa.fr/mp*-pothier/docs?info) du Lycée Pothiers @ Orléans ;
 
-- TODO:
-
 ## Option Informatique MP
 
 - [MP* au Lycée Kerichen @ Brest](https://cahier-de-prepa.fr/mp*-kerichen/docs?rep=6)
@@ -60,17 +66,19 @@ TODO: rédiger pages programmes
 - [MP au Lycée Buffon @ Paris](https://cahier-de-prepa.fr/mp-buffon/docs?rep=27)
   - Quelques cours, DM, DS et TD (PDF) en option et en IPT ;
 
-- En vrac :
-  - TODO:
-
-- TODO:
-
 ## Informatique pour tous
 
 - [MPSI et MP au Lycée Masséna à Nice](http://perso.numericable.fr/jules.svartz/prepa/index.html)
   - [Note très complète de cours (PDF) avec Python](https://svartzjules.pagesperso-orange.fr/prepa/pdf/poly_python.pdf) ;
   - Quelques TD (PDF) et corrigés (PDF et .py) ;
   - Plein de TP (PDF) et corrigés (PDF) ;
+
+- [MPSI](http://info-llg.fr/commun-mpsi/?a=cours) et [MP](http://info-llg.fr/commun-mp/?a=cours) au Lycée Louis-le-Grand à Paris
+  - des très bons [cours MPSI](http://info-llg.fr/commun-mpsi/?a=cours) et [cours MP](http://info-llg.fr/commun-mp/?a=cours) (notes PDF, slides, et corrigés) ;
+  - beaucoup de [TP MPSI](http://info-llg.fr/commun-mpsi/?a=tp) et [TP MP](http://info-llg.fr/commun-mp/?a=tp) énoncés et corrigés (PDF et .ml) ;
+  - et beaucoup de [DS MPSI](http://info-llg.fr/commun-mpsi/prive/?a=controles) et [DS MP](http://info-llg.fr/commun-mp/prive/?a=controles) énoncés et corrigés (PDF) ;
+
+- [PSCI et PC* du lycée Marcelin Berthelot @ Saint-Maur](http://pc-etoile.schola.fr/cours/) : des bons [cours](http://pc-etoile.schola.fr/cours/) et [TP (PDF et corrigés)](http://pc-etoile.schola.fr/travaux-pratiques-dinformatique/) ;
 
 - [MP* au Lycée Kerichen @ Brest](https://cahier-de-prepa.fr/mp*-kerichen/docs?IPT_python)
   - Quelques cours (PDF) ;
@@ -90,17 +98,50 @@ TODO: rédiger pages programmes
   - Plein de ressources ;
   - Quelques DS et DM (PDF, corrigés) ;
 
+- [MPSI et PSI du Lycée Pasteur @ Neuilly-sur-Seine](https://sites.google.com/view/siiptpasteur/informatique---mpsi/cours)
+  - Des [cours](https://sites.google.com/view/siiptpasteur/informatique---mpsi/cours) (PDF) ;
+  - Des [TP](https://sites.google.com/view/siiptpasteur/informatique---mpsi/tp) (PDF) ;
+
 - En vrac :
   - Des cours (PDF), un devoirs et quelques corrigés de la [MP du Lycée Thiers @ Marseille](https://cahier-de-prepa.fr/mp-thiers/docs?ipt)
   - Des TD et quelques cours (PDF) de la [MPSI1](https://cahier-de-prepa.fr/mpsi1-malherbe/docs?info) et [MPSI2](https://cahier-de-prepa.fr/mpsi2-malherbe/docs?rep=94) au Lycée Malherbe @ Caen ;
+  - Des cours (PDF), DS et QCM (PDF, corrigés), TP (PDF, corrigés PDF et .py) de la [MP de l'Institution Sainte Marie](https://cahier-de-prepa.fr/mp-ism/docs?info) ;
+  - Des cours (PDF), DM, DS et TP (PDF) de la [MP du Lycée Rabelais @ Saint-Brieuc](https://cahier-de-prepa.fr/mp-rabelais/docs?info) ;
+  - Des cours (PDF), DM, DS et TP (PDF) de la [MPSI du Lycée Parc-des-Loges @ Évry](https://cahier-de-prepa.fr/mpsi-loges/docs?informatique) ;
+  - Quelques cours (PDF), et TP (PDF et .py) de la [MPSI du Lycée Camille Vernet @ Valence](https://cahier-de-prepa.fr/mpsi-vernet/docs?Info) ;
+  - Quelques DM (PDF) de la [MP du Lycée Henri-Wallon @ Valenciennes](https://cahier-de-prepa.fr/mp-wallon/docs?Informatique) ;
+  - Quelques cours (PDF) et TP (PDF) de la [MP](https://cahier-de-prepa.fr/mp*-corneille/docs?caml) et [MP](https://cahier-de-prepa.fr/mp-corneille/docs?IPT) du Lycée Corneille @ Rouen ;
 
-- TODO:
-
-### Annales de sujets de concours
+## Annales de sujets de concours
 
 - <https://concours-maths-cpge.fr/> pour tous les sujets (IPT, option info), et plein de corrigés (partiels, mais avec LaTeX et PDF disponibles) ;
 - <https://www.upsti.fr/espace-etudiants/annales-de-concours> pour quelques sujets ;
-- TODO:
+
+## En vrac
+
+- Un livre d'algorithmique en C : « Algorithmique & programmation en langage C » [supports de cours (vol #1)](https://cel.archives-ouvertes.fr/cel-01176119), [sujets TP (vol #2)](https://cel.archives-ouvertes.fr/cel-01176120v1) et [corrections TP (vol #3)](https://cel.archives-ouvertes.fr/cel-01176120v1) ;
+- Plein d'algorithmes et d'exemples niveau ISN (seconde) écrits en C/C++/Java/JS/Py/ML : <https://github.com/OCamlPro/ISN-OCaml> (2012) ;
+- Des algorithmes écrits en Python :
+  - <https://tryalgo.org/> dont leur blogue, leur code (sur GitHub et PyPI) et leur livre ;
+  - <https://github.com/Any0ne22/Informatique-MPSI-MP/>
+
+### Exercices d'algorithmique et de programmation
+
+- Indépendant du langage :
+  - [Prologin](https://prologin.org/), avec [plein de problèmes en ligne](https://prologin.org/train/) ;
+  - [France IOI](http://www.france-ioi.org/index.php/) propose aussi plein de problèmes ;
+  - [Project Euler](http://projecteuler.net/) avec plus de 400 problèmes "maths info" à difficulté croissante (ça devient vite difficile) - voir ces solutions [en Python (et Java/Haskell/Mathematica)](https://github.com/nayuki/Project-Euler-solutions/) ou [en OCaml](https://github.com/jordydickinson/euler-ocaml/tree/master/src), et [d'autres](https://github.com/topics/euler-solutions?l=c) [en C](https://github.com/topics/project-euler?l=c) ou [d'autres](https://github.com/topics/euler-solutions?l=ocaml) [en OCaml](https://github.com/topics/project-euler?l=ocaml) ;
+
+- OCaml :
+  - [160 exercices](https://www.mathprepa.fr/option-informatique-mpsi-mp/) (solutions payantes) ;
+  - 99 problèmes en OCaml : [énoncés (anglais)](https://ocaml.org/learn/tutorials/99problems.html) et [corrections](https://github.com/MassD/99) ;
+
+- Python :
+  - [Pydéfis](https://callicode.fr/pydefis/index)
+
+- C : TODO:
+
+- SQL : TODO:
 
 ----
 
