@@ -3,7 +3,7 @@
 ## First week
 - [x] write first version of requirements.txt, and Makefile
 - [x] install Jupyter-book and extensions in virtualenv
-- [ ] write complete versions of requirements.txt, and Makefile
+- [x] write complete versions of requirements.txt, and Makefile
 - [x] start fresh jupyter-book with command
   ```bash
   jupyter-book create --cookiecutter
@@ -12,17 +12,16 @@
 - [ ] try each builder:
   - [x] make dirhtml: okay, but I don't see the point so won't use
   - [x] make pdfhtml DONE: it works, but it's not so pretty. It can be useful but not great, without cheating with [this config](https://jupyterbook.org/advanced/pdf.html#control-the-look-of-pdf-via-html)
-  - [ ] make latex
-  - [ ] make pdflatex
-  - [ ] make linkcheck
+  - [x] make latex
+  - [x] make pdflatex
+  - [ ] make linkcheck ?
 - [ ] write demo pages
 - [ ] for each extensions
   - [ ] install it, try it, add it to requirements.txt
   - [ ] write an example on the [demo page](Extensions_sphinx.html)
-- [ ] License Creative Commons instead of MIT ?
-- [ ] Take inspirations from [this book in French](https://mi-gt-donnees.pages.math.unistra.fr/guide)
-  - https://github.com/miti-gt-donnees/guide/blob/master/_config.yml
-- [ ] create my own logo.png ?
+- [x] NOPE License Creative Commons instead of MIT ? ==> nope, flemme
+- [x] Take inspirations from [this book in French](https://mi-gt-donnees.pages.math.unistra.fr/guide)
+- [ ] create my own logo.png ? TODO later, for specific books
 - [ ] for notebooks, never include Table of Contents cell from jupyter extension: it displays wrongly in the built book
 - [ ] for notebooks, how come links are not linked by default? (https://perso.crans.org/besson/Info-Prepas-MP2I/Modele-de-livre-avec-Jupyter-Book/notebooks/Exemple%20de%20notebook%20avec%20Python.html#pour-en-apprendre-plus)
 
@@ -56,7 +55,6 @@ See <https://www.sphinx-doc.org/en/master/usage/extensions/todo.html>
 
 These pages should render perfectly, otherwise something is broken in the jupyter-book setup.
 
-- TODO: how to write clean intern links
 - [x] See {doc}`demo-myST` ;
 - [x] See {doc}`demo-rST` ;
 - [x] DONE write demo for other kernels: Python 3, C, OCaml, Java, Shell/Bash, SQL:
