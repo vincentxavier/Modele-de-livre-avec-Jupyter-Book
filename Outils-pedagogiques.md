@@ -57,7 +57,9 @@ Lorsque l'on enseigne, en particulier l'informatique dans le supérieur, on a be
   - correction des longs devoirs : à l'ancienne avec des copies papiers, mais un fichier "Excel" (LibreOffice Calc) avec le barème détaillé -> calculs faciles des moyennes par questions/exercices. On perd du temps, mais ça aide.
   - solutions distribuées aux élèves : TODO: ;
 
-- **Cheat-sheet** : documents en LaTeX, optimisés aux petits oignons. A faire bien et donner après quelques cours sur le langage, utilisés tout le temps par les élèes. Pas besoin de réinventer la roue, juste copier celles ci : [C](https://mquinson.frama.io/ensr-arcsys1/refcard-c.pdf), [shell](https://raw.githubusercontent.com/mquinson/C-2nd-language/master/refcard/refcard-shell.pdf), [python](https://www.pythoncheatsheet.org/) TODO:, [OCaml](https://github.com/OCamlPro/ocaml-cheat-sheets)) ;
+- **Cheat-sheet** : documents en LaTeX, optimisés aux petits oignons. A faire bien et donner après quelques cours sur le langage, utilisés tout le temps par les élèves.
+  - TODO: En faire une avec le cours de maths et physique : symboles maths, alphabet grec, et commandes LaTeX ?
+  - Pas besoin de réinventer la roue, juste copier celles ci : [C](https://mquinson.frama.io/ensr-arcsys1/refcard-c.pdf), [shell](https://raw.githubusercontent.com/mquinson/C-2nd-language/master/refcard/refcard-shell.pdf), [python](https://www.pythoncheatsheet.org/) TODO: trouver en français et mieux, [OCaml](https://github.com/OCamlPro/ocaml-cheat-sheets)), SQL : [MySQL](https://sql.sh/ressources/document/mysql-aide-memoire-sql.pdf) (trop technique) [SQLite](TODO:) ;
 
 
 ### Pour l'organisation
@@ -122,13 +124,6 @@ Pour toutes ces idées, deux remarques :
   - Je souhaite donner des projets qui soient indépendants du langage choisis, et exiger un travail en C *et* en OCaml pour chaque groupe (exemple jeux vidéo client/serveur l'un en C l'autre en OCaml) ;
   - Faire faire du Python même si c'est hors programme MP2I ?
 
-- **Installeurs faciles pour les logiciels** ?
-  - chiant de se taper la maintenance de ces trucs là ;
-  - mais on peut en trouver et les héberger au même endroit, au cas où ils deviennent indisponibles ;
-  - notamment les applis bureaux pour OCaml (Windows notamment), Python et C ?
-  - Cf [EduPython](https://edupython.tuxfamily.org/), [pour OCaml](https://info.prepa-carnot.fr/index.php/2020/01/26/installer-ocaml-sur-sa-machine/) et liens
-  - notamment les applis mobiles pour OCaml, Python et C ? Cf [apk.fr.html](https://perso.crans.org/besson/apk.fr.html)
-
 - **Logiciel anti plagiat** ?
   - *Compilatio* semble être très puissant, mais non libre, non gratuit, c'est mort. Il était disponible à l'Université Rennes 1 et pour mon cours [INF1](https://perso.crans.org/besson/teach/INF1_L1_Rennes1_2020-21/) à l'automne 2020 nous n'avons pas pu nous en servir car les soumissions de projet étaient des fichiers Java `.java` et pas des PDF ou docs Word : en prépas j'aurai le même problème ;
   - [MOSS](https://theory.stanford.edu/~aiken/moss/) semble un bon outil ! « spa un logiciel libre, spa utilisable localement, mais ce n'est pas non plus opéré par une entreprise commerciale. Sinon, ca colle vraiment bien à ta définition de besoin »
@@ -138,6 +133,29 @@ Pour toutes ces idées, deux remarques :
 - **Synchronisation** des fichiers de travail :
   - ownCloud dans le bon dossier ;
   - git ;
+
+### Bonus pour les élèves
+
+- **Installeurs faciles pour les logiciels** ?
+  - chiant de se taper la maintenance de ces trucs là ;
+  - mais on peut en trouver (faits par d'autres gens), et les héberger au même endroit, au cas où ils deviennent indisponibles ;
+  - notamment les applis bureaux pour OCaml (Windows notamment), Python et C ?
+  - Python : [EduPython](https://edupython.tuxfamily.org/),
+  - OCaml : [pour OCaml](https://info.prepa-carnot.fr/index.php/2020/01/26/installer-ocaml-sur-sa-machine/) et liens dans ces pages là ;
+  - C : TODO: ?
+  - SQL(ite) : TODO: ?
+  - notamment les applis mobiles pour OCaml, Python et C ? Cf [apk.fr.html](https://perso.crans.org/besson/apk.fr.html) sur mon site ;
+
+- **Éditeur et interprète/compilateur en ligne** ?
+  - **OCaml** : [TryOcaml](https://try.ocamlpro.com/), et [OCaml](https://perso.crans.org/besson/ocaml.fr.html) sur mon site perso, et plus expérimentalement [Dominical](https://alpha.iodide.io/notebooks/1627/) () ;
+  - **Python** : [PythonTutor.com](http://pythontutor.com/), et [Python 2](https://perso.crans.org/besson/python.html) sur mon site perso ;
+  - **Tout langage** : [REPL.it](https://repl.it/) (dont [le C](https://repl.it/languages/c)), [myCompiler.io](https://www.mycompiler.io/) (dont [le C](https://www.mycompiler.io/new/c)) ;
+  - **Jupyter notebook** : [Google Colab](https://colab.research.google.com/) (cf [mes notebooks](https://colab.research.google.com/github/Naereen/notebooks/blob/master/)) et [Binder](https://mybinder.org/) (cf [mes notebooks](https://mybinder.org/v2/gh/Naereen/notebooks/)), et [Basthon](https://notebook.basthon.fr/) ;
+
+- **Prise de note collaborative en ligne** ?
+  - [HackMD.io](https://hackmd.io/#) et [StackEdit.io](https://stackedit.io/) pour des notes en Markdown ;
+  - [Etherpad](http://etherpad.org/) et [pad.crans.org](https://pad.crans.org/) si besoin ;
+  - [OverLeaf](https://www.overleaf.com/) pour des notes en LaTeX (cf [ShareLaTeX.irisa.fr](https://sharelatex.irisa.fr/)) ;
 
 ----
 

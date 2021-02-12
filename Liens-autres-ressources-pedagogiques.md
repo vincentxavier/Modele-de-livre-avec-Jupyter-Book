@@ -16,6 +16,8 @@ Pour s'en inspirer, ou même pour dépanner en cas de problème.
   - [programme officiel d'informatique "tronc commun" en MPSI et MP](TODO:) (nouvelle version, février 2021) ;
   - (bonus) [programmes de mathématiques, physique/chimie et SI](https://cache.media.education.gouv.fr/file/SPE1-MEN-MESRI-4-2-2021/64/8/spe779_annexe_1373648.pdf).
 
+TODO: rédiger pages programmes
+
 ----
 
 ## D'autres MP2I ?
@@ -36,9 +38,15 @@ Pour s'en inspirer, ou même pour dépanner en cas de problème.
   - quelques cours (PDF) ;
   - des TP (PDF), révisions MPSI ;
 
+- [MPSI4 au Lycée Pothiers @ Orléans](https://cahier-de-prepa.fr/mpsi4-pothier/docs?info)
+  - des TP et TD (PDF et corrigés PDF) ;
+  - quelques cours, DM et DS (PDF) ;
+
 - En vrac :
   - Quelques DS (PDF) de la [MPSI du Lycée François 1er @ Fontainebleau](https://cahier-de-prepa.fr/mpsi-f1/docs?rep=51) ;
   - Des fiches de cours (PDF) de la [MPSI du Lycée Marceau @ Chartres](https://cahier-de-prepa.fr/mpsi-marceau/docs?rep=112) ;
+  - Quelques sujets de concours et corrigés (PDF) de la [MP1](https://cahier-de-prepa.fr/mp1-pothier/docs?Info) et [MP*](https://cahier-de-prepa.fr/mp*-pothier/docs?info) du Lycée Pothiers @ Orléans ;
+
 - TODO:
 
 ## Option Informatique MP
@@ -46,8 +54,15 @@ Pour s'en inspirer, ou même pour dépanner en cas de problème.
 - [MP* au Lycée Kerichen @ Brest](https://cahier-de-prepa.fr/mp*-kerichen/docs?rep=6)
   - des TP (PDF) et corrigés (.ml) ;
 
+- [MP au Lycée Charlemagne @ Paris](https://cahier-de-prepa.fr/mp-charlemagne/docs?Info)
+  - Quelques cours, DS et TD (PDF) ;
+
+- [MP au Lycée Buffon @ Paris](https://cahier-de-prepa.fr/mp-buffon/docs?rep=27)
+  - Quelques cours, DM, DS et TD (PDF) en option et en IPT ;
+
 - En vrac :
   - TODO:
+
 - TODO:
 
 ## Informatique pour tous
@@ -66,9 +81,25 @@ Pour s'en inspirer, ou même pour dépanner en cas de problème.
   - Des fiches de cours (PDF) ;
   - Des TD/TP (PDF) ;
 
+- [MPSI et MP](https://www.cpge-paillet.com/mppsi-ipt) au [Lycée Paul Valéry @ Paris](https://www.cpge-paillet.com/accueil)
+  - Plein de TD/TP (PDF, template/corrigé .py, corrigé PDF) ;
+  - Cours complets et à trous (PDF) ;
+  - Des DS (PDF, corrigés .py et PDF) ;
+
+- [MP du Lycée Janson-de-Sailly @ Paris](https://cahier-de-prepa.fr/mp1-janson/docs?IPT)
+  - Plein de ressources ;
+  - Quelques DS et DM (PDF, corrigés) ;
+
 - En vrac :
+  - Des cours (PDF), un devoirs et quelques corrigés de la [MP du Lycée Thiers @ Marseille](https://cahier-de-prepa.fr/mp-thiers/docs?ipt)
   - Des TD et quelques cours (PDF) de la [MPSI1](https://cahier-de-prepa.fr/mpsi1-malherbe/docs?info) et [MPSI2](https://cahier-de-prepa.fr/mpsi2-malherbe/docs?rep=94) au Lycée Malherbe @ Caen ;
 
+- TODO:
+
+### Annales de sujets de concours
+
+- <https://concours-maths-cpge.fr/> pour tous les sujets (IPT, option info), et plein de corrigés (partiels, mais avec LaTeX et PDF disponibles) ;
+- <https://www.upsti.fr/espace-etudiants/annales-de-concours> pour quelques sujets ;
 - TODO:
 
 ----
