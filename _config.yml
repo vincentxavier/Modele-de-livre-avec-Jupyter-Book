@@ -82,10 +82,10 @@ launch_buttons:
   binderhub_url             : https://mybinder.org  # The URL of the BinderHub (e.g., https://mybinder.org)
   # jupyterhub_url            : ""  # The URL of the JupyterHub (e.g., https://datahub.berkeley.edu)
   thebe                     : true  # Add a thebe button to pages (requires the repository to run on Binder)
-  # TODO: allow thebe, when Binder will work!
+  # DONE: allow thebe, when Binder will work!
+  # TODO: how to make it work for non-Python kernel?
   # https://jupyterbook.org/interactive/launchbuttons.html#live-interactive-pages-with-thebelab
-  # thebe                     : true  # Add a thebe button to pages (requires the repository to run on Binder)
-  # colab_url                 : "" # The URL of Google Colab (https://colab.research.google.com)
+  colab_url                 : https://colab.research.google.com # The URL of Google Colab (https://colab.research.google.com)
 
 only_build_toc_files        : true  # https://jupyterbook.org/customize/config.html#config-exclude-non-toc-files
 
@@ -132,7 +132,7 @@ sphinx:
     todo_include_todos: True
     todo_emit_warnings: True
     todo_link_only: True
-    html_last_updated_fmt: "%d %b %Y"
+    html_last_updated_fmt: "%A %d %B %Y (à %Hh%M)"
     latex_logo: 'logo.png'
     latex_toplevel_sectioning: 'chapter'
     # See https://github.com/miti-gt-donnees/guide/blob/master/_config.yml

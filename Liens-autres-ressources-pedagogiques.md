@@ -121,6 +121,7 @@ TODO: rédiger pages programmes
 
 ## En vrac
 
+- Le [livre « Apprendre à programmer avec OCaml »](http://programmer-avec-ocaml.lri.fr/), dont le site web propose notamment [une centaine de programmes .ml](http://programmer-avec-ocaml.lri.fr/code.html) et solutions à leurs exercices ;
 - Un livre d'algorithmique en C : « Algorithmique & programmation en langage C » [supports de cours (vol #1)](https://cel.archives-ouvertes.fr/cel-01176119), [sujets TP (vol #2)](https://cel.archives-ouvertes.fr/cel-01176120v1) et [corrections TP (vol #3)](https://cel.archives-ouvertes.fr/cel-01176120v1) ;
 - Plein de ressources en [MPSI](https://www.alloschool.com/course/informatique-mpsi) et [MP](https://www.alloschool.com/course/informatique-mp-1) ;
 - Plein d'algorithmes et d'exemples niveau ISN (seconde) écrits en C/C++/Java/JS/Py/ML : <https://github.com/OCamlPro/ISN-OCaml> (2012) ;
@@ -191,3 +192,6 @@ TODO: rédiger pages programmes
 
 - [Mèmes en prépa](https://youtu.be/7g2wVCaWA3U) :
   <iframe width="1600" height="900" src="https://www.youtube.com/embed/7g2wVCaWA3U" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+- [Francois l'embrouille : Vendeur Informatique](https://vimeo.com/47188353)
+  <iframe src="https://player.vimeo.com/video/47188353" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
