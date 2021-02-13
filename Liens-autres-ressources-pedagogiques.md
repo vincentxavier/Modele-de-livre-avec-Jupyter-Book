@@ -111,19 +111,28 @@ TODO: rédiger pages programmes
   - Quelques cours (PDF), et TP (PDF et .py) de la [MPSI du Lycée Camille Vernet @ Valence](https://cahier-de-prepa.fr/mpsi-vernet/docs?Info) ;
   - Quelques DM (PDF) de la [MP du Lycée Henri-Wallon @ Valenciennes](https://cahier-de-prepa.fr/mp-wallon/docs?Informatique) ;
   - Quelques cours (PDF) et TP (PDF) de la [MP](https://cahier-de-prepa.fr/mp*-corneille/docs?caml) et [MP](https://cahier-de-prepa.fr/mp-corneille/docs?IPT) du Lycée Corneille @ Rouen ;
+  - Cours en page web (Sphinx-doc) de la [MP du Lycée Thiers @ Marseille](https://mp-thiers-ipt.pagesperso-orange.fr/Ipt/index.html) (avec sources !) ;
 
 ## Annales de sujets de concours
 
 - <https://concours-maths-cpge.fr/> pour tous les sujets (IPT, option info), et plein de corrigés (partiels, mais avec LaTeX et PDF disponibles) ;
+- <https://www.alloschool.com/course/concours-informatique-mp> plein de sujets et corrigés ;
 - <https://www.upsti.fr/espace-etudiants/annales-de-concours> pour quelques sujets ;
 
 ## En vrac
 
 - Un livre d'algorithmique en C : « Algorithmique & programmation en langage C » [supports de cours (vol #1)](https://cel.archives-ouvertes.fr/cel-01176119), [sujets TP (vol #2)](https://cel.archives-ouvertes.fr/cel-01176120v1) et [corrections TP (vol #3)](https://cel.archives-ouvertes.fr/cel-01176120v1) ;
+- Plein de ressources en [MPSI](https://www.alloschool.com/course/informatique-mpsi) et [MP](https://www.alloschool.com/course/informatique-mp-1) ;
 - Plein d'algorithmes et d'exemples niveau ISN (seconde) écrits en C/C++/Java/JS/Py/ML : <https://github.com/OCamlPro/ISN-OCaml> (2012) ;
+- Le livre « Algorithms in C, Parts 1-4: Fundamentals, Data Structures, Sorting, Searching, by Robert Sedgewick » ([corrections en C](https://github.com/caisah/Sedgewick-algorithms-in-c-exercises-and-examples)) ;
 - Des algorithmes écrits en Python :
   - <https://tryalgo.org/> dont leur blogue, leur code (sur GitHub et PyPI) et leur livre ;
   - <https://github.com/Any0ne22/Informatique-MPSI-MP/>
+- Des ressources en Caml un peu datées, mais très inspirantes :
+  - [Michel Quercia](https://caml.inria.fr/pub/old_caml_site/polycopies/quercia/index-fra.html) : [cours (PDF, 2002)](https://caml.inria.fr/pub/old_caml_site/polycopies/quercia/cours/cours.pdf.gz), et [une quinzaine de TP (PDF, .tex, corrigés .ml)](https://caml.inria.fr/pub/old_caml_site/polycopies/quercia/index-fra.html) ;
+  - [Yves Lemaire](https://caml.inria.fr/pub/old_caml_site/polycopies/lemaire/index-fra.html) : et TODO: d'autres ressources ;
+  - [Jean-Christophe Filliâtre](https://www.lri.fr/~filliatr/) : [des TP (1997 !)](https://www.lri.fr/~filliatr/tp_caml.en.html), [livres d'informatique préférés](https://backtracking.github.io/fr/2020/02/20/cs-books.html), [plein de codes OCaml](https://www.lri.fr/~filliatr/software.fr.html) et TODO: d'autres ressources ;
+  - [Laurent Chéno](http://pauillac.inria.fr/~cheno/): [des codes (.ml/.mli)](https://caml.inria.fr/pub/old_caml_site/polycopies/cheno/sources-caml/index-fra.html) et des [polys](http://pauillac.inria.fr/~cheno/taupe/poly.pdf) et slides de [cours](http://pauillac.inria.fr/~cheno/taupe/cours.pdf) (1995, 1997) en prépas ;
 
 ### Exercices d'algorithmique et de programmation
 
@@ -140,6 +149,10 @@ TODO: rédiger pages programmes
   - [Pydéfis](https://callicode.fr/pydefis/index)
 
 - C : TODO:
+  - [Ces exercices de programmation et algorithmique corrigés en C](https://github.com/ankitpokhrel/c-code-katas) ;
+  - [Ces exemples d'algorithmes classiques implémentés en C](https://github.com/amitbansal7/Data-Structures-and-Algorithms) ;
+  - [Ces autres exemples d'algorithmes classiques implémentés en C](https://github.com/AllAlgorithms/c) ;
+  - [Et d'autres](https://github.com/topics/algorithms?l=c) ;
 
 - SQL : TODO:
 
@@ -175,5 +188,6 @@ TODO: rédiger pages programmes
 
 - [« Hitler en prépa »](https://www.youtube.com/watch?c0UmN3fXS94) (et bonus [« Hitler face à ParcourSup »](https://www.youtube.com/watch?v=wx5cKGDzWKo))
   <iframe width="1060" height="596" src="https://www.youtube.com/embed/c0UmN3fXS94" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 - [Mèmes en prépa](https://youtu.be/7g2wVCaWA3U) :
   <iframe width="1600" height="900" src="https://www.youtube.com/embed/7g2wVCaWA3U" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
