@@ -13,23 +13,40 @@
     url:   book.pdf
 
 - part: Des liens
-  chapters:
+  sections:
   - file: Outils-pedagogiques
   - file: Liens-autres-ressources-pedagogiques
   - file: livre-dor
 
 - part: Des notebooks (exemples)
-  chapters:
+  sections:
+  - file: index
   - file: notebooks
   - file: notebooks/Exemple de notebook avec Python
+  - title: PDF d'un notebook avec Python
+    url:   notebooks/Exemple de notebook avec Python.pdf
+  - title: Source .py d'un notebook avec Python
+    url:   notebooks/Exemple de notebook avec Python.py
   - file: notebooks/Exemple de notebook avec OCaml
+  - title: Slides d'un notebook avec OCaml
+    url:   notebooks/Exemple de notebook avec OCaml.slides.html
+  - title: Source .ml d'un notebook avec OCaml
+    url:   notebooks/Exemple de notebook avec OCaml.ml
   - file: notebooks/Exemple de notebook avec C
+  - title: Source .c d'un notebook avec C
+    url:   notebooks/Exemple de notebook avec C.c
   - file: notebooks/Exemple de notebook avec Bash
+  - title: Source .sh d'un notebook avec Bash
+    url:   notebooks/Exemple de notebook avec Bash.sh
   - file: notebooks/Exemple de notebook avec Rust
+  - title: Source .rust d'un notebook avec Rust
+    url:   notebooks/Exemple de notebook avec Rust.rust
   - file: notebooks/Exemple de notebook avec Java
+  - title: Source .java d'un notebook avec Java
+    url:   notebooks/Exemple de notebook avec Java.java
 
 - part: Fonctionnalités de Jupyter book
-  chapters:
+  sections:
   - file: demo-rST
   - file: demo-myST
   # - file: Extensions_sphinx
@@ -37,17 +54,17 @@
   - file: Glossaire
 
 # - part: Des pages de maths
-#   chapters:
+#   sections:
 #   - file: maths/index
 # TODO: taper un développement d'agrég avec des environnements Sphinx/Jupyter book?
 
 # - part: Des pages d'informatique
-#   chapters:
+#   sections:
 #   - file: info/index
 # TODO: taper un développement d'agrég avec des environnements Sphinx/Jupyter book?
 
 - part: Contribuer ?
-  chapters:
+  sections:
   - file: README
   - file: TODO
   - file: utterances
