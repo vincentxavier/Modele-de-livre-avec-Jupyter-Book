@@ -1,3 +1,15 @@
+---
+jupytext:
+  formats: md:myst
+  text_representation:
+    extension: .md
+    format_name: myst
+kernelspec:
+  display_name: OCaml
+  language: ocaml
+  name: ocaml-jupyter
+---
+
 # Outils pédagogiques
 
 Ce document (déjà trop long) est un **brouillon**, qui essaie de fixer par écrit mes réflexions.
@@ -274,9 +286,73 @@ Autres :
 **TikZ (PGF) avec LaTeX**
 
 - côté bureau : utiliser [QTikz](https://linuxx.info/qtikz/) (ou [kTikz](https://userbase.kde.org/KtikZ) ou [tikzzz](https://github.com/francoisschwarzentruber/tikzzz)) pour rapidement itérer sur une figure ;
-- depuis LaTeX : c'est concus pour !
-- dans Jupyter notebook : avec [itikz](https://github.com/jbn/itikz), indépendant de Python mais à tester depuis kernel OCaml aussi ;
-- dans Sphinx (rST) ou Jupyter book (rST / MyST / nb) : [sphinxcontrib.tikz](https://sphinxcontrib-tikz.readthedocs.io/)
+- depuis LaTeX : c'est conçu pour ! Toujours inclure la figure avec `\input{tikz-figures/graphe-compilation12.tex}`, pour les avoir réutilisables ailleurs (un dépôt git avec juste les figures ? peut-être pas nécessaire) ;
+- dans Jupyter notebook : avec [itikz](https://github.com/jbn/itikz), indépendant de Python FIXME: mais ne fonctionne pas dans d'autres kernels...
+- dans Sphinx (rST) ou Jupyter book (rST / MyST / nb) : [sphinxcontrib.tikz](https://sphinxcontrib-tikz.readthedocs.io/) ? mais peut-être plus simple d'utiliser juste `%%itikz` depuis Jupyter notebooks ?
+- Documentation : [« TikZ pour l'impatient - Free »](http://math.et.info.free.fr/TikZ/index.html) ([PDF](http://math.et.info.free.fr/TikZ/bdd/TikZ-Impatient.pdf)) est LA référence en français ;
+
+```{seealso}
+En 2013, j'aurai voulu utiliser [gastex](http://www.lsv.fr/~gastin/gastex/index.html), maintenu par mon ancien professeur [Paul Gastin](http://www.lsv.fr/~gastin/) ([gastex @CTAN](https://www.ctan.org/pkg/gastex)), mais plus maintenant, car `gastex` semble incompatible avec TexLive 2014.
+```
+
+### Écrire des algorithmes
+
+- Pour LaTeX : je préfère choisir [`algorithm2e`](https://en.wikibooks.org/wiki/LaTeX/Algorithms) (utilisé [dans ma thèse](https://github.com/Naereen/phd-thesis/search?q=%22begin%7Balgorithm%22)). [Cf documentation](http://mirror.ctan.org/tex-archive/macros/latex/contrib/algorithm2e/doc/algorithm2e.pdf)
+
+```latex
+\usepackage[algochapter,linesnumbered,commentsnumbered,inoutnumbered, french]{algorithm2e}
+```
+
+- FIXME: Pour d'autres formats, il n'y a pas de possibilité bien propre... c'est un souci ! On peut toujours écrire un ptit document LaTeX avec classe `standalone`, convertir PDF to SVG ou to PNG, et inclure ça dans le document... mais c'est sale.
+
+### Écrire du code
+
+- En Markdown, MyST, rST, et Jupyter notebook, c'est trivial :
+
+```ocaml
+let rec fact (n: int) : int = if n <= 1 then 1 else n * (fact (n-1));;
+```
+
+- Pour LaTeX : je préfère choisir [`minted`](https://en.wikibooks.org/wiki/LaTeX/Algorithms) (utilisé [dans ma thèse](https://github.com/Naereen/phd-thesis/search?q=minted)) C'est le package utilisé quand on convertit avec `pandoc`, et donc l'export LaTeX et PDF depuis Jupyter notebook, mais pas Sphinx ni Jupyter-book. [Cf documentation](https://github.com/gpoore/minted/blob/master/source/minted.pdf)
+
+```latex
+\usepackage[chapter,draft=false,final=true]{minted}
+```
+
+### Écrire du code et montrer sa sortie
+
+- En Markdown, et rST, c'est trivial mais il faut un peu copier-coller :
+
+```ocaml
+# let rec fact (n: int) : int = if n <= 1 then 1 else n * (fact (n-1));;
+val fact : int -> int = <fun>
+# fact 12;;
+- : int = 479001600
+```
+
+- En [MyST](https://jupyterbook.org/file-types/myst-notebooks.html) ou Jupyter notebooks qui exécutent le code tapé, normalement ça se fait tout seul :
+
+```{code-cell} ocaml
+let rec fact (n: int) : int = if n <= 1 then 1 else n * (fact (n-1));;
+fact 12;;
+```
+
+- Sinon on peut toujours écrire ça à la main :
+
+```ocaml
+# let rec fact (n: int) : int = if n <= 1 then 1 else n * (fact (n-1));;
+val fact : int -> int = <fun>
+# fact 12;;
+- : int = 479001600
+```
+
+```ocaml
+In [1]: let rec fact (n: int) : int = if n <= 1 then 1 else n * (fact (n-1));;
+Out[1]:
+val fact : int -> int = <fun>
+```
+
+- Pour LaTeX : je connais pas de package bien propre qui permette de recalculer les sorties et de tout bien inclure. Je suspecte que tous les polys de cours qui sont tapés en LaTeX et inclus entrées et sorties contiennent les sorties en dure dans les `.tex`, et je trouve pas ça élégant.
 
 ### Autres choix
 
@@ -284,13 +360,16 @@ Autres :
 
 - Page web unique de la classe ? [Cahier de Prépa](https://cahier-de-prepa.fr/) semble une super idée... et c'est libre, gratuit, hébergé en France, et fiable. Balèze !
 
-- Publier des slides PDF : sur [SpeakerDeck](https://speakerdeck.com/naereen) s'ils sont bien propres et terminés ;
 - Publier des cours en PDF qui sont très bien terminés : sur [CEL (HAL)](https://cel.archives-ouvertes.fr/) ?
-### Je dois automatiser...
+- Publier des slides PDF : sur [SpeakerDeck](https://speakerdeck.com/naereen) s'ils sont bien propres et terminés ;
+
+### Je dois automatiser...?
 
 > Par exemple, écrire un script qui fait `marp2pdf` ;
 
-### Je dois m'entraîner...
+### Je dois m'entraîner...?
 
-- TikZ
+- TikZ ;
+- Écrire des algorithmes dans LaTeX ;
 - Utiliser BibTeX dans Jupyter notebook, ou Sphinx ;
+- Utiliser Zotero pour gérer la bibliographie ;

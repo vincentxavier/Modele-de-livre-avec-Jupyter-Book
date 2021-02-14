@@ -82,9 +82,39 @@ for i in range(1, 23):
     print(f"fact_imp({i:2}) = {fact_imp(i)}")
 
 
-# D'autres exemples ?
+# ### Figures avec TikZ
+# 
+# Voir <https://github.com/jbn/itikz>
+
+# In[7]:
+
+
+get_ipython().run_line_magic('load_ext', 'itikz')
+
+
+# In[8]:
+
+
+get_ipython().run_cell_magic('itikz', '--file-prefix tikz-figures-from-Python- --implicit-pic', '\\draw[help lines] grid (5, 5);\n\\draw[fill=black!50] (1, 1) rectangle (2, 2);\n\\draw[fill=black!50] (2, 1) rectangle (3, 2);\n\\draw[fill=black!50] (3, 1) rectangle (4, 2);\n\\draw[fill=black!50] (3, 2) rectangle (4, 3);\n\\draw[fill=black!50] (2, 3) rectangle (3, 4);')
+
+
+# In[9]:
+
+
+get_ipython().run_cell_magic('itikz', '--file-prefix tikz-figures-from-Python-  --implicit-pic --scale=0.4', '\\tikzstyle{vertexcover} = [circle,fill=green,draw];\n\\tikzstyle{matching} = [ draw=blue!55, line width=5];\n\\tikzstyle{matchingN} = [ draw=green!55, line width=5];\n\\tikzstyle{vertex} = [circle,fill=none,draw];\n\\node[vertex] (v2) at (0,0) {};\n\\node[vertexcover] (v3) at (0,3) {};\n\\node[vertexcover] (v4) at (2,2) {};\n\\node[vertexcover] (v11) at (3,0) {};\n\\node[vertexcover] (v5) at (2,-2) {};\n\\node[vertexcover] (v6) at (1,-3) {};\n\\node[vertexcover] (v8) at (-1,-3) {};\n\\node[vertexcover] (v9) at (-2,-2) {};\n\\node[vertexcover] (v10) at (-3,0) {};\n\\node[vertexcover] (v1) at (-2,2) {};\n\\draw  (v1) edge (v2);\n\\draw  (v3) edge (v2);\n\\draw  (v4) edge (v2);\n\\draw  (v5) edge (v2);\n\\draw  (v6) edge (v2);\n\\draw  (v8) edge (v2);\n\\draw  (v9) edge (v2);\n\\draw  (v2) edge (v10);\n\\draw  (v2) edge (v11);')
+
+
+# In[10]:
+
+
+get_ipython().system('ls tikz-figures-from-Python-*')
+
+
+# ### D'autres exemples ?
 # 
 # TODO: plus tard !
+
+# Cellule invisible en mode slides RISE (type de diapo : sauter).
 
 # ## Pour en apprendre plus
 # 
