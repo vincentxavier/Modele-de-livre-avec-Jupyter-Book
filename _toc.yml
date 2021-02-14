@@ -24,11 +24,12 @@
   - file: notebooks
   - file: notebooks/Exemple de notebook avec Python
     # TODO: how to use a relative URL and not absolute?
+    # TODO: see https://github.com/executablebooks/jupyter-book/issues/1222
     sections:
     - title: Slides d'un notebook avec Python
-      url:   ./notebooks/Exemple de notebook avec Python.slides.html
+      url:   https://perso.crans.org/besson/Info-Prepas-MP2I/Modele-de-livre-avec-Jupyter-Book/notebooks/Exemple de notebook avec Python.slides.html
     - title: Source .py d'un notebook avec Python
-      url:   notebooks/Exemple de notebook avec Python.py
+      url:   https://perso.crans.org/besson/Info-Prepas-MP2I/Modele-de-livre-avec-Jupyter-Book/notebooks/Exemple de notebook avec Python.py
     - title: PDF d'un notebook avec Python
       url:   https://perso.crans.org/besson/Info-Prepas-MP2I/Modele-de-livre-avec-Jupyter-Book/notebooks/Exemple de notebook avec Python.pdf
   - file: notebooks/Exemple de notebook avec OCaml

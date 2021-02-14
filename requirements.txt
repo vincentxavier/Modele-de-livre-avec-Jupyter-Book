@@ -38,6 +38,7 @@ scipy
 scikit-learn
 pandas
 sympy
+itikz
 
 # GitHub pages import, FIXME: could I remove this dependency?
 ghp-import

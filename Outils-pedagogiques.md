@@ -158,16 +158,23 @@ Pour toutes ces idées, deux remarques :
   - SQL(ite) : TODO: ?
   - notamment les applis mobiles pour OCaml, Python et C ? Cf [apk.fr.html](https://perso.crans.org/besson/apk.fr.html) sur mon site ;
 
-- **Éditeur et interprète/compilateur en ligne** ?
+- **Éditeur et interprète/compilateur en ligne** ? Pour pouvoir travailler depuis un simple navigateur web, sans rien avoir à installer :
   - **OCaml** : [TryOcaml](https://try.ocamlpro.com/), et [OCaml](https://perso.crans.org/besson/ocaml.fr.html) sur mon site perso, et plus expérimentalement [Dominical](https://alpha.iodide.io/notebooks/1627/) () ;
   - **Python** : [PythonTutor.com](http://pythontutor.com/), et [Python 2](https://perso.crans.org/besson/python.html) sur mon site perso ;
   - **Tout langage** : [REPL.it](https://repl.it/) (dont [le C](https://repl.it/languages/c)), [myCompiler.io](https://www.mycompiler.io/) (dont [le C](https://www.mycompiler.io/new/c)) ;
   - **Jupyter notebook** : [Google Colab](https://colab.research.google.com/) (cf [mes notebooks](https://colab.research.google.com/github/Naereen/notebooks/blob/master/)) et [Binder](https://mybinder.org/) (cf [mes notebooks](https://mybinder.org/v2/gh/Naereen/notebooks/)), et [Basthon](https://notebook.basthon.fr/) ;
+  - **SQL** : [SQLite-Online](https://github.com/jacques56100/NSI-SqliteOnline) comme sur [ce site d'un cours de NSI terminale](http://nsi.colbert.bzh/sql/) : TODO: faire pareil et héberger localement ? [Il en plein existe d'autres](https://duckduckgo.com/?t=canonical&q=sqlite+online+editor&ia=web) mais pas en français je pense.
 
 - **Prise de note collaborative en ligne** ?
   - [HackMD.io](https://hackmd.io/#) et [StackEdit.io](https://stackedit.io/) pour des notes en Markdown ;
   - [Etherpad](http://etherpad.org/) et [pad.crans.org](https://pad.crans.org/) si besoin ;
   - [OverLeaf](https://www.overleaf.com/) pour des notes en LaTeX (cf [ShareLaTeX.irisa.fr](https://sharelatex.irisa.fr/)) ;
+
+- **Recommandation de style de programmation** (*styleguide*) : faire une liste de styleguides pour chaque langage :
+  - **OCaml** : [*CIS 120 OCaml Style Guide*](https://www.seas.upenn.edu/~cis120/20fa/ocaml_style/) à l'[Université de Pennsylvanie](https://www.upenn.edu/) TODO: traduire ;
+  - **C** : TODO: en trouver un bon, TODO: traduire ;
+  - **Python** : TODO: en trouver un bon, TODO: traduire ;
+  - **Makefile** : TODO: en trouver un bon, TODO: traduire ;
 
 ----
 
