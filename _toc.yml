@@ -6,6 +6,7 @@
   - file: content
   - file: intro
   - file: markdown
+  - file: slides
   - title: Version PDF
     url:   https://perso.crans.org/besson/Info-Prepas-MP2I/Modele-de-livre-avec-Jupyter-Book/book.pdf
   # # TODO: how to use a relative URL and not absolute?

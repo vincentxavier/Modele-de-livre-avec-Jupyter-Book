@@ -3,6 +3,7 @@
     "python.pythonPath": "venv3/bin/python",
     "files.exclude": {
         "_build/": true,
-        "venv3/": true
-    }
+        "venv3/": true,
+    },
+    "markdown.marp.mathTypesetting": "mathjax"
 }
