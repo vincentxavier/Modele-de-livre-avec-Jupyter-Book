@@ -1,6 +1,7 @@
 *~
 .*.swp
 *.git/
+*.pdf
 venv3/
 _build/
 .ipynb_checkpoints/

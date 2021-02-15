@@ -159,10 +159,10 @@ Pour toutes ces idées, deux remarques :
   - notamment les applis mobiles pour OCaml, Python et C ? Cf [apk.fr.html](https://perso.crans.org/besson/apk.fr.html) sur mon site ;
 
 - **Éditeur et interprète/compilateur en ligne** ? Pour pouvoir travailler depuis un simple navigateur web, sans rien avoir à installer :
-  - **OCaml** : [TryOcaml](https://try.ocamlpro.com/), et [OCaml](https://perso.crans.org/besson/ocaml.fr.html) sur mon site perso, et plus expérimentalement [Dominical](https://alpha.iodide.io/notebooks/1627/) () ;
-  - **Python** : [PythonTutor.com](http://pythontutor.com/), et [Python 2](https://perso.crans.org/besson/python.html) sur mon site perso ;
-  - **Tout langage** : [REPL.it](https://repl.it/) (dont [le C](https://repl.it/languages/c)), [myCompiler.io](https://www.mycompiler.io/) (dont [le C](https://www.mycompiler.io/new/c)) ;
-  - **Jupyter notebook** : [Google Colab](https://colab.research.google.com/) (cf [mes notebooks](https://colab.research.google.com/github/Naereen/notebooks/blob/master/)) et [Binder](https://mybinder.org/) (cf [mes notebooks](https://mybinder.org/v2/gh/Naereen/notebooks/)), et [Basthon](https://notebook.basthon.fr/) ;
+  - **OCaml** : [TryOcaml](https://try.ocamlpro.com/) ou [BetterOCaml](https://betterocaml.ml/) (et plus expérimentalement [Dominical](https://alpha.iodide.io/notebooks/1627/) et [OCaml](https://perso.crans.org/besson/ocaml.fr.html) sur mon site perso) ;
+  - **Python** : [PythonTutor.com](http://pythontutor.com/) est incroyable pour les visualisations qu'il propose, mais de façon plus légère il y a aussi un [terminal Python 2](https://perso.crans.org/besson/python.html) sur mon site perso ;
+  - **Jupyter notebook** : [Google Colab](https://colab.research.google.com/) (sans connexion, cf [mes notebooks](https://colab.research.google.com/github/Naereen/notebooks/blob/master/)), [Binder](https://mybinder.org/) (sans connexion, cf [mes notebooks](https://mybinder.org/v2/gh/Naereen/notebooks/)) et [DeepNote](https://deepnote.com/) (demande un compte, cf [un de mes notebooks](https://deepnote.com/launch?template=python_3.6&url=https%3A%2F%2Fgithub.com%2FNaereen%2Fnotebooks%2Fblob%2Fmaster%2FPy_Pi_Day_2017.ipynb)), et [Basthon](https://notebook.basthon.fr/) ;
+  - **Tout langage** : [REPL.it](https://repl.it/) (dont [le C](https://repl.it/languages/c)), ou [myCompiler.io](https://www.mycompiler.io/) (dont [le C](https://www.mycompiler.io/new/c)) ;
   - **SQL** : [SQLite-Online](https://github.com/jacques56100/NSI-SqliteOnline) comme sur [ce site d'un cours de NSI terminale](http://nsi.colbert.bzh/sql/) : TODO: faire pareil et héberger localement ? [Il en plein existe d'autres](https://duckduckgo.com/?t=canonical&q=sqlite+online+editor&ia=web) mais pas en français je pense.
 
 - **Prise de note collaborative en ligne** ?
@@ -170,11 +170,13 @@ Pour toutes ces idées, deux remarques :
   - [Etherpad](http://etherpad.org/) et [pad.crans.org](https://pad.crans.org/) si besoin ;
   - [OverLeaf](https://www.overleaf.com/) pour des notes en LaTeX (cf [ShareLaTeX.irisa.fr](https://sharelatex.irisa.fr/)) ;
 
-- **Recommandation de style de programmation** (*styleguide*) : faire une liste de styleguides pour chaque langage :
+- **Recommandation de style de programmation** (*styleguide*) : faire une liste de style-guides pour chaque langage enseigné (et s'y tenir !) :
   - **OCaml** : [*CIS 120 OCaml Style Guide*](https://www.seas.upenn.edu/~cis120/20fa/ocaml_style/) à l'[Université de Pennsylvanie](https://www.upenn.edu/) TODO: traduire ;
   - **C** : TODO: en trouver un bon, TODO: traduire ;
   - **Python** : TODO: en trouver un bon, TODO: traduire ;
   - **Makefile** : TODO: en trouver un bon, TODO: traduire ;
+  - Si besoin, [cette liste maintenu par Google](https://google.github.io/styleguide/) est utile ;
+  - TODO: Aussi parler de linter/formateur automatiques ?
 
 ----
 
@@ -186,7 +188,7 @@ TODO: cette liste est encore en chantier.
 
 ### Ce que je maîtrise bien
 
-Production de documents :
+#### Production de documents
 
 - **Markdown** : je connais très bien [le langage de base](https://daringfireball.net/projects/markdown/), et les extensions [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
   - Convertir un seul petit fichier (HTML, PDF) : `pandoc` est parfait ;
@@ -194,40 +196,43 @@ Production de documents :
   - Imprimable : [cheat-sheet](https://www.markdownguide.org/cheat-sheet), [cheat-sheet2](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf).
 
 - **Documents LaTeX** : je maîtrise bien, mais ça prend du temps de retrouver des bons automatismes.
-  - **avantages** :
+  - :+1: **avantages** :
     - documents super propres ;
     - et langage programmable, on peut rajouter des macros, et faire plein de choses puissantes qui sont impossibles avec les autres solutions ;
-  - **inconvénients** :
+  - :-1: **inconvénients** :
     - chaque document génère un PDF indépendant, c'est plus difficile de tout lier ;
     - difficile de générer des pages web équivalentes aux documents PDF ;
   - Conclusion ? A préférer pour des documents destinés à être imprimés.
 
-Production de slides :
+#### Production de slides
 
-- **Slides Markdown** : [Marp](https://marp.app/) avec Markdown + maths $\KaTeX$ (un sous ensemble de $\LaTeX$) : un peu primitif, mais ça force à avoir des slides épurés et simples.
-  - **avantages** :
+- **Slides Markdown** : [Marp](https://marp.app/) avec Markdown + maths $\KaTeX$ (un sous ensemble de $\LaTeX$) :
+  - :+1: **avantages** :
     - un peu primitif, mais ça force à avoir des slides épurés et simples ;
     - ça fonctionne depuis VSCode !
     - on peut ajouter des émojis comme sur GitHub avec :+1: etc ;
     - export facile en PDF ;
-  - **inconvénients** :
+    - on peut faire des slides vraiment très propres avec ça : [cf ce tutorial sur Julia donné en conférence en 2018](https://hal.archives-ouvertes.fr/cel-01830248/document) ;
+  - :-1: **inconvénients** :
+    - quelques changements depuis l'époque de l'[appli Marp (2017)](https://yhatt.github.io/marp/), comme [expliqué ici](https://marp.app/blog/the-story-of-marp-next#migration-plan), TODO: [donc je dois mettre à jour](https://github.com/Naereen/slides/issues/29) [mon vieuw thème](https://github.com/Naereen/slides/blob/master/common/marp-naereen.css) ;
     - très peu de contrôle sur l'apparence finale, on ne peut pas faire aussi bien qu'avec LaTeX Beamer ;
+    - pas d'intégration entre les figures (TikZ ou `algorithm2e`) et les commandes spéciales de Beamer (`\pause`, `\alert` etc) ;
 
 - **Slides LaTeX Beamer** :
-  - **avantages** : documents super propres, et possibilités de montrer du code et des figures TikZ apparaître interactivement à chaque slide ;
-  - **inconvénients** : syntaxe trop lourde ! J'ai déjà écrit plein de slides Beamer, mais je trouve ça trop lourd ;
-  - **idée** : un premier prototype, sans figure, peut être rapidement écrit en Markdown + Marp, ou
+  - :+1: **avantages** : documents super propres, et possibilités de montrer du code et des figures (TikZ ou `algorithm2e`) apparaître interactivement à chaque slides, et autres ;
+  - :-1: **inconvénients** : syntaxe trop lourde ! J'ai déjà écrit plein de slides Beamer, mais je trouve ça trop lourd ;
+  - **idée** : un premier prototype, sans jolie figure, peut être rapidement écrit en Markdown + Marp, puis on utilise `pandoc` pour transformer en LaTeX, avec [un template/style que l'on aime bien](https://github.com/Naereen/slides/blob/master/my.beamer) (c'est ce que j'ai fait pendant quatre ans, sur [@Naereen/slides](https://github.com/Naereen/slides/)) ;
 
 - Slides depuis Jupyter notebook avec **RISE** :
-  - **avantages** : tous les avantages d'un notebook ; c'est très innovant, et modifiable en live ; ça permet de montrer du code exécutable et de l'exécuter devant les élèves ! Ca permet aussi d'avoir un document qui sera directement exportable en HTML/PDF comme un notebook classique, ou en slide statique aussi !
-  - **inconvénients** : il faut que les cellules ne soient jamais trop longues, et une fois le notebook fini il faut une petite passe manuelle pour ajouter les tags "nouveau slide" ou "sous slide", mais ça marche bien !
+  - :+1: **avantages** : tous les avantages d'un notebook ; c'est très innovant, et modifiable en live ; ça permet de montrer du code exécutable et de l'exécuter devant les élèves ! Ca permet aussi d'avoir un document qui sera directement exportable en HTML/PDF comme un notebook classique, ou en slide statique aussi !
+  - :-1: **inconvénients** : il faut que les cellules ne soient jamais trop longues, et une fois le notebook fini il faut une petite passe manuelle pour ajouter les tags "nouveau slide" ou "sous slide" (qui prend 2 secondes par slides), mais ça marche bien !
   - **améliorations possibles** :
     - le template d'export en slide PDF ou en HTML slide n'est pas génial, il y a trop de marges à gauche et en haut, mais je peux sûrement bidouiller ça ;
     - je peux facilement écrire un script qui rajoute le tag "nouveau slide" à chaque cellule, et ensuite il faudra juste refaire une passe pour fusionner certaines cellules ou enlever/modifier des tags ;
     - comment convertir en LaTeX Beamer ? Pas possible je pense, ou alors avec IPYNB -> Markdown (Marp) -> LaTeX Beamer ?
   - Démo : [@Naereen/Tutoriel-notebooks-Jupyter-a-Didapro-8-Lille-fevrier-2020](https://github.com/Naereen/Tutoriel-notebooks-Jupyter-a-Didapro-8-Lille-fevrier-2020) tutoriel d'une heure sur les notebooks Jupyter, présenté à ~25 profs de lycée en février 2020 à Didapro 8 à Lille.
 
-Autres :
+#### Autres
 
 - [StrapDown.js](https://naereen.github.io/StrapDown.js/) : pour une petite page indépendante, ça peut permettre d'aller vite !
   - scripts `strapdown2pdf` (avec `lunamark` + my `autotex` + `pdflatex`) pour convertir en PDF : primitif mais peut dépanner ? Cf [CS101](https://perso.crans.org/besson/cs1010).
@@ -238,7 +243,10 @@ Autres :
 ### Ce que je connais un peu
 
 - **pandoc** :
-  - slides Markdown (Marp) -> LaTeX -> PDF possible (cf [@Naereen/slides](https://github.com/Naereen/slides/))
+  - [Documentation](https://pandoc.org)
+  - slides Markdown (Marp) -> LaTeX -> PDF possible (cf [@Naereen/slides](https://github.com/Naereen/slides/)) ;
+  - fichier Markdown -> LaTeX -> possible ;
+  - en fait, `jupyter-nbconvert --to latex/pdf` utilise pandoc, donc on peut changer le template aussi !
 
 - **BibTeX** :
   - utilisable depuis LaTeX, et Sphinx et Jupyter book ;
@@ -266,7 +274,7 @@ Autres :
 
 1. *Tout en LaTeX* intelligemment : avec des templates de nouveaux documents, un jeu de macro super costaux, et un script pour transformer des slides en `article` (comme faisait [Serge Haddad](http://www.lsv.fr/~haddad/) notamment pour son cours [ALGO2](http://www.lsv.fr/~haddad/coursalgorithmique.pdf)) ;
 
-2. Avec `org-mode` : je sais que c'est balèze, mais pas tellement mieux que d'autres trucs, si ? [Luc Pélissier](http://lacl.fr/~lpellissier/) et [Martin Quinson](http://people.irisa.fr/Martin.Quinson/) rédigent avec `org-mode` ;
+2. Avec `org-mode` : je sais que c'est balèze, mais pas tellement mieux que d'autres trucs, si ? [Certains arguments en faveur de `ord-mode` sont solides](https://karl-voit.at/2017/09/23/orgmode-as-markup-only/), et par exemple [Luc Pélissier](http://lacl.fr/~lpellissier/) et [Martin Quinson](http://people.irisa.fr/Martin.Quinson/) rédigent avec `org-mode` ;
 
 3. Autres idées ?
 
