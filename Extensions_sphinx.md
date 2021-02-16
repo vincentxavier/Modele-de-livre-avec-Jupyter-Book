@@ -142,6 +142,8 @@ You can label and reference definition and theorems (e.g. :numref:`theorem {numb
 
 > sphinxemoji       : https://github.com/sphinx-contrib/emojicodes
 
+==> honnêtement, je préfère insérer des émojis directement ! 👍 c'est plus simple !
+
 ```{note}
 Pour la [documentation](https://SMPyBandits.github.io/) de [SMPyBandits](https://github.com/SMPyBandits/SMPyBandits/), durant ma thèse, j'avais écrit [ce script](https://github.com/SMPyBandits/SMPyBandits/blob/master/other_scripts/fixes_html_in_doc.sh), mais mieux vaut utiliser une extension bien propre !
 
@@ -156,12 +158,16 @@ Don't you love it? |:heart_eyes:|
 
 Est-ce que ça marche dans le titre de cette partie aussi ?
 
-### D'autres idées
+## Diagrammes avec Mermaid
 
-- https://github.com/sphinx-contrib/gravizo
-- https://github.com/sphinx-contrib/spelling
-- https://sphinxcontrib-autoprogram.readthedocs.io/en/stable/
-- https://jupyterbook.org/advanced/sphinx.html#an-example-sphinx-inline-tabs
-- https://github-activity.readthedocs.io/en/latest/
-- https://ebp-sphinx-exercise.readthedocs.io/en/latest/
+Voir cette page {ref}`Demo-Mermaid`.
+
+## D'autres idées
+
+- <https://github.com/sphinx-contrib/gravizo>
+- <https://github.com/sphinx-contrib/spelling>
+- <https://sphinxcontrib-autoprogram.readthedocs.io/en/stable/>
+- <https://jupyterbook.org/advanced/sphinx.html#an-example-sphinx-inline-tabs>
+- <https://github-activity.readthedocs.io/en/latest/>
+- <https://ebp-sphinx-exercise.readthedocs.io/en/latest/>
 

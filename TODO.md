@@ -12,9 +12,9 @@
 - [ ] try each builder:
   - [x] make dirhtml: okay, but I don't see the point so won't use
   - [x] make pdfhtml DONE: it works, but it's not so pretty. It can be useful but not great, without cheating with [this config](https://jupyterbook.org/advanced/pdf.html#control-the-look-of-pdf-via-html)
-  - [x] make latex
-  - [x] make pdflatex
-  - [ ] make linkcheck ?
+  - [ ] make latex ? TODO: check that new pages don't break the latex output
+  - [ ] make pdflatex ? TODO: check that new pages don't break the latex output
+  - [x] make linkcheck ? très utile !
 - [ ] write demo pages
 - [ ] for each extensions
   - [ ] install it, try it, add it to requirements.txt

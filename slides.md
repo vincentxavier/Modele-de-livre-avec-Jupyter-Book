@@ -56,7 +56,7 @@ On peut les exporter comme une présentation HTML/js interactive, depuis VSCode,
 3. *This is random paragraph:* Et commodo culpa adipisicing culpa irure officia excepteur. Irure exercitation veniam laboris quis elit tempor amet pariatur aute est dolore. Excepteur cillum sint in ea laborum in ex duis laboris nostrud minim.
 
 <!-- _class: titre -->
-# Maths using $\LaTeX$ notations
+## Maths using $\LaTeX$ notations
 
 ## Maths, with *MathJax*
 
@@ -73,7 +73,7 @@ $$ 4 \sum_{n=1}^{+\infty} \rho_n^2 \sin^2 nh = \frac{1}{2\pi} \int_{-\pi}^{\pi}\
 See <https://naereen.github.io/StrapDown.js/example3.html>
 
 <!-- _class: titre -->
-# Images
+## Images
 
 J'ai essayé de faire de ce slide un "titre" avec :
 ```markdown
@@ -179,7 +179,7 @@ Demo of using
 to change font color and slide background.
 (Marp Markdown's syntax extension)
 
-# RGB values (Orange BG + White text)
+## RGB values (Orange BG + White text)
 
 ![bg](rgb(255,128,0))
 ![](rgb(255,255,255))
@@ -210,13 +210,13 @@ Image on right background side
 <!-- ![bg right](logo.png) -->
 <!-- FIXME: don't work -->
 
-## TODO:
+## ~~TODO:~~ DONE!
 
-- [ ] Titles are NOT top aligned yet, I managed to obtain this on old Marp, I want it again!
-- [ ] [fontify](https://github.com/Naereen/fontify/) and [my own handwriting font](https://naereen.github.io/My-Own-HandWriting-Font/) don't work yet!
-- [ ] Test de ligature fi if si tl rst rest Naereen
-- [ ] How to export slides to PDF? Use [`decktape`](https://github.com/astefanutti/decktape) or [`marp-cli`](https://github.com/marp-team/marp-cli)
-- [ ] TODO lines are not correctly converted?
+- [x] Titles are ~~NOT~~ top aligned ~~yet, I managed to obtain this on old Marp, I want it again!~~ DONE
+- [x] [fontify](https://github.com/Naereen/fontify/) and [my own handwriting font](https://naereen.github.io/My-Own-HandWriting-Font/) don't work yet!
+- [x] ~~Test de ligature fi if si tl rst rest Naereen~~ failed
+- [x] How to export slides to PDF? Use [`decktape`](https://github.com/astefanutti/decktape) or [`marp-cli`](https://github.com/marp-team/marp-cli)
+- [x] TODO lines are not correctly converted?
 
 ## Test of empty slide
 <!-- _class: titre -->

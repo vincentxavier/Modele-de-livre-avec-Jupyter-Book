@@ -8,6 +8,8 @@ Ces définitions contiennent parfois mon propre point de vue, qui n'est en rien 
 
 ## Vocabulaire d'informatique
 
+TODO: à terminer.
+
 ```{glossary}
 Algorithme
     Ce qui est étudié par l'algorithmique. TODO:
@@ -47,6 +49,8 @@ Logiciel propriétaire
 ```
 
 ## Vocabulaire de la programmation
+
+TODO: à terminer.
 
 ```{glossary}
 Signature
@@ -88,6 +92,8 @@ Objet
 
 ### Vocabulaire spécifique à l'architecture des ordinateurs
 
+TODO: à terminer.
+
 ```{glossary}
 Mémoire
     RAM/ROM/? TODO:
@@ -118,6 +124,8 @@ Cœur
 ```
 
 ### Matériels informatique
+
+TODO: à terminer.
 
 ```{glossary}
 Écran
@@ -153,6 +161,8 @@ Microphone
 
 ### Vocabulaire spécifique à Internet
 
+TODO: à terminer.
+
 ```{glossary}
 Protocole
     TODO:
@@ -180,6 +190,8 @@ URL
 ```
 
 ### Verbes spécifiques en informatique
+
+TODO: à terminer.
 
 ```{glossary}
 Coder
@@ -237,13 +249,23 @@ Bash
 
 Makefile
     Un petit langage de description de tâches, généralement utilisé pour faciliter la compilation de code, très populaire depuis les années 1980. Ce n'est pas un des langages enseignés en classes préparatoires mais nous nous en servirons quand même. Les Makefiles sont notamment utiles pour écrire des programmes non triviaux en {term}`C<C>` et en {term}`OCaml<OCaml>`. Ce livre est généré grâce à un {term}`Makefile<Makefile>` TODO: lien.
+
+Langage interprété
+    Une implémentation concrète d'un langage (qui est une spécification théorique). Le programme écrit en langage A est lu par un interprète (ou interpréteur), qui l'exécute directement, ou le traduit en langage intermédiaire (bytecode ou non), qui est ensuite exécuté par un autre programme dit machine virtuelle (*Virtual Machine*).
+
+Langage compilé
+    Une implémentation concrète d'un langage (qui est une spécification théorique). Le programme écrit en langage A est lu par un compilateur, qui le traduit en langage intermédiaire (bytecode ou code machine natif), qui est ensuite exécuté par un autre programme dit machine virtuelle (*Virtual Machine*) pour le bytecode ou par le {term}`CPU`.
+    La frontière entre langages compilés et interprétés est floue, comme le montre {term}`OCaml` (`ocaml`, `ocamlc` et `ocamlopt` permettent les trois modes différents), et par exemple [cat article (en anglais)](https://thevaluable.dev/difference-between-compiler-interpreter/).
+
+Langage transpilé
+    Une autre variante d'un langage compilé, où le langage de destination n'est pas un bytecode ou du code natif, mais un autre langage. Par exemple, on peut compiler des programmes {term}`OCaml` en {term}`JavaScript` avec [`js_of_ocaml`](https://github.com/ocsigen/js_of_ocaml), comme le montre cet exemple [MariOCaml](https://matthewhsu.me/mariocaml/).
 ```
 
 ### D'autres langages
 
 ```{glossary}
 JavaScript
-    Un autre langage très populaire, utilisé principalement pour programmer des petites fonctionnalités dans des pages web, mais aussi de plus en plus pour des applications mobiles ou bureaux (avec [Electron](https://www.electronjs.org/)) ou des applications en lignes de commande ou côté serveur (avec [nodejs](https://nodejs.org/en/>)). Ces ressources peuvent vous aider à apprendre : [WikiBooks JavaScript]([XXX](https://fr.wikibooks.org/wiki/Programmation_JavaScript)), <https://javascript.info/> très complet mais en anglais.
+    Un autre langage très populaire, utilisé principalement pour programmer des petites fonctionnalités dans des pages web, mais aussi de plus en plus pour des applications mobiles ou bureaux (avec [Electron](https://www.electronjs.org/)) ou des applications en lignes de commande ou côté serveur (avec [nodejs](https://nodejs.org/en/)). Ces ressources peuvent vous aider à apprendre : [WikiBooks JavaScript]([XXX](https://fr.wikibooks.org/wiki/Programmation_JavaScript)), <https://javascript.info/> très complet mais en anglais.
 
 Java
     Un autre langage très populaire, orienté objet et destiné à être compilé en bytecode exécuté sur une JVM (*Java Virtual Machine*). Très populaire dans les années 1995-2010. Pas enseigné en classes préparatoires, mais dans certaines écoles d'ingénieurs et des Universités. Android et la plupart de ses applications, mais aussi (la première édition de) Minecraft sont programmés en Java. Ces ressources peuvent vous aider à apprendre : [WikiBooks Java](https://fr.wikibooks.org/wiki/Programmation_Java) et les références.
@@ -507,7 +529,7 @@ Banque X/ENS
     [Un concours de recrutement commun à l'X et aux 4 ENS](https://banques-ecoles.fr/).
 
 Concours commun INP
-    [Un concours de recrutement commun à un grand groupe d'écoles](http://www.concours-commun-inp.fr/>)  (nouveau nom de CCP).
+    [Un concours de recrutement commun à un grand groupe d'écoles](http://www.concours-commun-inp.fr/)  (nouveau nom de CCP).
 
 E3A
     [Un autre concours de  recrutement commun à un grand groupe d'écoles (plus de 60)](https://www.e3a-polytech.fr/).

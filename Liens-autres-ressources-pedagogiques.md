@@ -42,6 +42,14 @@ TODO: rédiger pages programmes
   - beaucoup de [TP MPSI](http://info-llg.fr/option-mpsi/?a=tp) et [TP MP](http://info-llg.fr/option-mp/?a=tp) énoncés et corrigés (PDF et .ml) ;
   - et beaucoup de [DS MPSI](http://info-llg.fr/option-mpsi/prive/?a=controles) et [DS MP](http://info-llg.fr/option-mp/prive/?a=controles) énoncés et corrigés (PDF) ;
 
+- [MPSI et MP](http://jdreichert.fr/Enseignement/) au lycée Albert Schweitzer @ Mulhouse :
+  - des bons cours (PDF) ;
+  - plein de TD/TP (PDF, corrigés) etc ;
+
+- [MPSI et MP](https://stephane-legros.pagesperso-orange.fr/CPGE/info/optioninfo.html/) au lycée Pierre Corneille @ Rouen :
+  - des bons cours (PDF) ;
+  - plein de TD/TP (PDF, corrigés) etc ;
+
 - [MPSI1](https://cahier-de-prepa.fr/mpsi1-kerichen/docs?info) et [MPSI1](https://cahier-de-prepa.fr/mpsi2-kerichen/docs?info) au Lycée Kerichen @ Brest
   - quelques cours (PDF) ;
   - des TP (PDF), révisions MPSI ;
@@ -123,16 +131,19 @@ TODO: rédiger pages programmes
 
 - Le [livre « Apprendre à programmer avec OCaml »](http://programmer-avec-ocaml.lri.fr/), dont le site web propose notamment [une centaine de programmes .ml](http://programmer-avec-ocaml.lri.fr/code.html) et solutions à leurs exercices ;
 - Un livre d'algorithmique en C : « Algorithmique & programmation en langage C » [supports de cours (vol #1)](https://cel.archives-ouvertes.fr/cel-01176119), [sujets TP (vol #2)](https://cel.archives-ouvertes.fr/cel-01176120v1) et [corrections TP (vol #3)](https://cel.archives-ouvertes.fr/cel-01176120v1) ;
+
 - Plein de ressources en [MPSI](https://www.alloschool.com/course/informatique-mpsi) et [MP](https://www.alloschool.com/course/informatique-mp-1) ;
+
 - Plein d'algorithmes et d'exemples niveau ISN (seconde) écrits en C/C++/Java/JS/Py/ML : <https://github.com/OCamlPro/ISN-OCaml> (2012) ;
 - Le livre « Algorithms in C, Parts 1-4: Fundamentals, Data Structures, Sorting, Searching, by Robert Sedgewick » ([corrections en C](https://github.com/caisah/Sedgewick-algorithms-in-c-exercises-and-examples)) ;
 - Des algorithmes écrits en Python :
   - <https://tryalgo.org/> dont leur blogue, leur code (sur GitHub et PyPI) et leur livre ;
   - <https://github.com/Any0ne22/Informatique-MPSI-MP/>
+
 - Des ressources en Caml un peu datées, mais très inspirantes :
-  - [Michel Quercia](https://caml.inria.fr/pub/old_caml_site/polycopies/quercia/index-fra.html) : [cours (PDF, 2002)](https://caml.inria.fr/pub/old_caml_site/polycopies/quercia/cours/cours.pdf.gz), et [une quinzaine de TP (PDF, .tex, corrigés .ml)](https://caml.inria.fr/pub/old_caml_site/polycopies/quercia/index-fra.html) ;
-  - [Yves Lemaire](https://caml.inria.fr/pub/old_caml_site/polycopies/lemaire/index-fra.html) : et TODO: d'autres ressources ;
-  - [Jean-Christophe Filliâtre](https://www.lri.fr/~filliatr/) : [des TP (1997 !)](https://www.lri.fr/~filliatr/tp_caml.en.html), [livres d'informatique préférés](https://backtracking.github.io/fr/2020/02/20/cs-books.html), [plein de codes OCaml](https://www.lri.fr/~filliatr/software.fr.html) et TODO: d'autres ressources ;
+  - [Michel Quercia](http://pauillac.inria.fr/~quercia/) : [cours (PDF, 2002)](https://caml.inria.fr/pub/old_caml_site/polycopies/quercia/cours/cours.pdf.gz), et [une quinzaine de TP (PDF, .tex, corrigés .ml)](http://pauillac.inria.fr/~quercia/cdrom/cours/index.html#tp-caml) ;
+  - [Yves Lemaire](https://caml.inria.fr/pub/old_caml_site/polycopies/lemaire/index-fra.html) : un polycopié, et [des TPs](http://pauillac.inria.fr/~quercia/exos-ens/index.html) sur un autre site ;
+  - [Jean-Christophe Filliâtre](https://www.lri.fr/~filliatr/) : [des TP (1997 !)](https://www.lri.fr/~filliatr/tp_caml.en.html), [livres d'informatique préférés](https://backtracking.github.io/fr/2020/02/20/cs-books.html), [plein de codes OCaml](https://www.lri.fr/~filliatr/software.fr.html) ;
   - [Laurent Chéno](http://pauillac.inria.fr/~cheno/): [des codes (.ml/.mli)](https://caml.inria.fr/pub/old_caml_site/polycopies/cheno/sources-caml/index-fra.html) et des [polys](http://pauillac.inria.fr/~cheno/taupe/poly.pdf) et slides de [cours](http://pauillac.inria.fr/~cheno/taupe/cours.pdf) (1995, 1997) en prépas ;
 
 ### Exercices d'algorithmique et de programmation
@@ -147,11 +158,13 @@ TODO: rédiger pages programmes
   - 99 problèmes en OCaml : [énoncés (anglais)](https://ocaml.org/learn/tutorials/99problems.html) et [corrections](https://github.com/MassD/99) ;
 
 - Python :
+  - [Ces exemples d'algorithmes classiques implémentés en Python](https://thealgorithms.github.io/#programmingLanguages) ;
   - [Pydéfis](https://callicode.fr/pydefis/index)
 
 - C : TODO:
+  - [Ces exemples d'algorithmes classiques implémentés en C](https://thealgorithms.github.io/#programmingLanguages) ;
   - [Ces exercices de programmation et algorithmique corrigés en C](https://github.com/ankitpokhrel/c-code-katas) ;
-  - [Ces exemples d'algorithmes classiques implémentés en C](https://github.com/amitbansal7/Data-Structures-and-Algorithms) ;
+  - [Ces autres exemples d'algorithmes classiques implémentés en C](https://github.com/amitbansal7/Data-Structures-and-Algorithms) ;
   - [Ces autres exemples d'algorithmes classiques implémentés en C](https://github.com/AllAlgorithms/c) ;
   - [Et d'autres](https://github.com/topics/algorithms?l=c) ;
 
