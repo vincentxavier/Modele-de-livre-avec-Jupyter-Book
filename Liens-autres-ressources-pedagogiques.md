@@ -206,11 +206,13 @@ TODO: rédiger pages programmes
 
 ### Bonus humoristiques
 
+Quelques vidéos humoristiques sur YouTube
+
 - [« Hitler en prépa »](https://www.youtube.com/watch?c0UmN3fXS94) (et bonus [« Hitler face à ParcourSup »](https://www.youtube.com/watch?v=wx5cKGDzWKo))
-  <iframe width="1060" height="596" src="https://www.youtube.com/embed/c0UmN3fXS94" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <iframe width="840" height="472" src="https://www.youtube.com/embed/c0UmN3fXS94" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 - [Mèmes en prépa](https://youtu.be/7g2wVCaWA3U) :
-  <iframe width="1600" height="900" src="https://www.youtube.com/embed/7g2wVCaWA3U" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <iframe width="840" height="472" src="https://www.youtube.com/embed/7g2wVCaWA3U" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-- [Francois l'embrouille : Vendeur Informatique](https://vimeo.com/47188353)
-  <iframe src="https://player.vimeo.com/video/47188353" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+- [Francois l'embrouille : Vendeur Informatique](https://vimeo.com/47188353), où l'importance de connaître un peu le vocabulaire de base côté matériel...
+  <iframe src="https://player.vimeo.com/video/47188353" width="840" height="472" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>

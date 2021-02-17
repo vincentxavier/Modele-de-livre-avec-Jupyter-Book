@@ -230,10 +230,10 @@ TODO: cette liste est encore en chantier.
   - Imprimable : [cheat-sheet](https://www.markdownguide.org/cheat-sheet), [cheat-sheet2](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf).
 
 - **Documents LaTeX** : je maîtrise bien, mais ça prend du temps de retrouver des bons automatismes.
-  - :+1: **avantages** :
+  - 👍 **avantages** :
     - documents super propres ;
     - et langage programmable, on peut rajouter des macros, et faire plein de choses puissantes qui sont impossibles avec les autres solutions ;
-  - :-1: **inconvénients** :
+  - 👎 **inconvénients** :
     - chaque document génère un PDF indépendant, c'est plus difficile de tout lier ;
     - difficile de générer des pages web équivalentes aux documents PDF ;
   - Conclusion ? A préférer pour des documents destinés à être imprimés.
@@ -241,13 +241,13 @@ TODO: cette liste est encore en chantier.
 #### Production de slides
 
 - **Slides Markdown** : [Marp](https://marp.app/) avec Markdown + maths $\KaTeX$ (un sous ensemble de $\LaTeX$) :
-  - :+1: **avantages** :
+  - 👍 **avantages** :
     - un peu primitif, mais ça force à avoir des slides épurés et simples ;
     - ça fonctionne depuis VSCode !
     - on peut ajouter des émojis comme sur GitHub avec :+1: etc ;
     - export facile en PDF ;
     - on peut faire des slides vraiment très propres avec ça : [cf ce tutorial sur Julia donné en conférence en 2018](https://hal.archives-ouvertes.fr/cel-01830248/document) ;
-  - :-1: **inconvénients** :
+  - 👎 **inconvénients** :
     - quelques changements depuis l'époque de l'[appli Marp (2017)](https://yhatt.github.io/marp/), comme [expliqué ici](https://marp.app/blog/the-story-of-marp-next#migration-plan), TODO: [donc je dois mettre à jour](https://github.com/Naereen/slides/issues/29) [mon vieuw thème](https://github.com/Naereen/slides/blob/master/common/marp-naereen.css) ;
     - très peu de contrôle sur l'apparence finale, on ne peut pas faire aussi bien qu'avec LaTeX Beamer ;
     - pas d'intégration entre les figures (TikZ ou `algorithm2e`) et les commandes spéciales de Beamer (`\pause`, `\alert` etc) ;
@@ -359,7 +359,7 @@ En 2013, j'aurai voulu utiliser [gastex](http://www.lsv.fr/~gastin/gastex/index.
 ```
 
 ```{note}
-Apparemment, [les versions récentes de PGF/TikZ viennent avec des dizaines de librairies](https://en.wikipedia.org/wiki/PGF/TikZ#Libraries) pour dessiner plein de choses, des automates et machines de Turing, des graphes et plein d'autres ! Et on peut faire des [animations]() comme [le montrent ces documents](https://github.com/jjfPCSI1/animations_latex) ?
+Apparemment, [les versions récentes de PGF/TikZ viennent avec des dizaines de librairies](https://en.wikipedia.org/wiki/PGF/TikZ#Libraries) pour dessiner plein de choses, des automates et machines de Turing, des graphes (de fonctions et avec noeuds/arêtes) et plein d'autres ! Et on peut faire des [animations]() comme [le montrent ces documents](https://github.com/jjfPCSI1/animations_latex) ?
 ```
 
 ### Écrire des algorithmes
@@ -380,7 +380,7 @@ Apparemment, [les versions récentes de PGF/TikZ viennent avec des dizaines de l
 let rec fact (n: int) : int = if n <= 1 then 1 else n * (fact (n-1));;
 ```
 
-- Pour LaTeX : je préfère choisir [`minted`](https://en.wikibooks.org/wiki/LaTeX/Algorithms) (utilisé [dans ma thèse](https://github.com/Naereen/phd-thesis/search?q=minted)) C'est le package utilisé quand on convertit avec `pandoc`, et donc l'export LaTeX et PDF depuis Jupyter notebook, mais pas Sphinx ni Jupyter-book. [Cf documentation](https://github.com/gpoore/minted/blob/master/source/minted.pdf)
+- Pour LaTeX : je préfère choisir [`minted`](https://en.wikibooks.org/wiki/LaTeX/Algorithms) (utilisé [dans ma thèse](https://github.com/Naereen/phd-thesis/search?q=minted)) C'est le package utilisé quand on convertit avec `pandoc`, et aussi l'export LaTeX et PDF depuis Jupyter notebook, mais pas Sphinx ni Jupyter-book. [Cf documentation](https://github.com/gpoore/minted/blob/master/source/minted.pdf)
 
 ```latex
 \usepackage[chapter,draft=false,final=true]{minted}
@@ -420,8 +420,9 @@ val fact : int -> int = <fun>
 ```
 
 - **Pour LaTeX** : je connais pas de package bien propre qui permette de recalculer les sorties et de tout bien inclure...
-  - TODO: ça existe peut-être ? [CTAN:runcode](https://www.ctan.org/pkg/runcode) (Bash mais générique ?), [CTAN:jupynotex](https://www.ctan.org/pkg/jupynotex)
-  - Je suspecte que tous les polys de cours qui sont tapés en LaTeX et inclus entrées et sorties contiennent les sorties en dure dans les `.tex`, et je trouve pas ça élégant.
+  - TODO: ça existe peut-être ? [CTAN:runcode](https://www.ctan.org/pkg/runcode) (Bash mais générique ?), [CTAN:jupynotex](https://www.ctan.org/pkg/jupynotex) ;
+  - En fait il vaudrait mieux garder des notebooks (quitte les inclure, à l'intérieur d'une autre page) pour toute partie qui montre du code ? Pénible de devoir tout faire dans un même document (algorithm2e/TikZ et code entrée/sortie)...
+  - Je suspecte que tous les polys de cours qui sont tapés en LaTeX et inclus entrées et sorties contiennent les sorties en dure dans les `.tex`, et je trouve pas ça élégant ;
   - Ou alors ils utilisent **pandoc**...
 
 ### Autres choix
