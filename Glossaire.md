@@ -3,49 +3,94 @@
 Cette page est un glossaire, qui liste des termes et les définitions que j'en donne.
 
 ```{warning}
-Ces définitions contiennent parfois mon propre point de vue, qui n'est en rien celui de mes employeurs, passés, actuels ou futurs.
+Ces définitions contiennent parfois mon propre point de vue, qui n'est en rien celui de mes employeurs, passés, actuels ou futurs. Elle sont volontairement courtes, et donc, au mieux partielles au pire inexactes.
 ```
 
 ## Vocabulaire d'informatique
 
-TODO: à terminer.
-
 ```{glossary}
-Algorithme
-    Ce qui est étudié par l'algorithmique. TODO:
-
-Algorithmique
-    Science qui étudie les algorithmes. TODO:
-
 Informatique
-    Science de l'information, de ses traitements et manipulations, de ses représentations. L'informatique est à la fois une science (la branche des mathématiques qui répond notamment à la question « Qu'est-ce qu'un calcul ? »), une industrie, un rayon de supermarché, un ensemble d'outils techniques que tout le monde utilise... Autrement dit, l'informatique mélange des aspects théoriques, techniques, commerciaux.
+    **Science de l'information**, de ses traitements et manipulations, de ses représentations. L'informatique est à la fois une science (la branche des mathématiques qui répond notamment à la question « qu'est-ce qu'un calcul ? »), une industrie, un rayon de supermarché, un ensemble d'outils techniques que tout le monde utilise...
+    Autrement dit, l'informatique mélange des aspects *théoriques*, *techniques*, *commerciaux*. Nous nous focaliserons sur le premier, et un peu sur le second, mais pas le troisième.
+
+Ordinateur
+    Un [ordinateur](https://fr.wikipedia.org/wiki/Ordinateur)[^ordinateur] est un **système (généralement physique) de traitement de l'information**, générique et programmable, et qui fonctionne par la lecture (généralement séquentielle) d'un ensemble d'instructions, organisées en {term}`programmes<Programme>`, qui lui font exécuter des opérations logiques et arithmétiques.
+
+    La structure physique actuelle de l'énorme majorité des ordinateurs est séquentielles, suit l'architecture de Von Neumann, et toutes les opérations reposent sur la logique binaire et sur des nombres formés à partir de chiffres binaires.
+    La technique actuelle des ordinateurs date du milieu du XXe siècle, et il est possible que le paradigme actuellement dominant change significativement à l'avenir, notamment avec l'Informatique quantique.
+
+    Les ordinateurs peuvent être classés selon plusieurs critères tels que le domaine d'application, la taille, l'architecture, ou encore leur système d'exploitation.
+    À part les ordinateurs de bureau ou portables, on peut aussi noter les consoles (de jeux vidéo), les téléphones intelligents (*smartphones*), les calculatrices programmables, les super-calculateurs, les serveurs, etc.
+    Bien que contenant de l'électronique binaire, un grille pain ou une montre numérique ne sont pas à proprement parler des ordinateurs car ils ne sont pas reprogrammables.
+
+    [^ordinateur] Synonyme de calculateur (*computer* en anglais), à l'origine ce mot désignait le Dieu Chrétien, aussi appelé Ordonnateur.
+
+Matériel
+    Le matériel informatique d'un ordinateur est le complémentaire du {ref}`logiciel<Logiciel>`. En anglais, *hardware*.
+
+    > « Le matériel est constitué des musiciens et des instruments, tandis que le logiciel est la partition »
+
+Logiciel
+    Un [logiciel](https://fr.wikipedia.org/wiki/Logiciel) est un ensemble de séquences d'instructions interprétables par une {term}`machine<Ordinateur>`, et d'un jeu de données nécessaires à ces opérations. Le logiciel détermine donc les tâches qui peuvent être effectuées par la machine, ordonne son fonctionnement et lui procure ainsi son utilité fonctionnelle. Les séquences d'instructions appelées programmes ainsi que les données du logiciel sont ordinairement structurées en fichiers.
+
+    Logiciel n'est pas synonyme de {ref}`programme<Programme>` informatique. Un logiciel est un ensemble typiquement composé de plusieurs programmes, ainsi que tout le nécessaire pour les rendre opérationnels : fichiers de configuration, images, procédures automatiques, etc.
+
+    À l'origine, un mot-valise entre « logique » et « matériel » (1969), en anglais, *software*.
+    Voir [mes logiciels préférés](https://perso.crans.org/besson/mes-outils-preferes.fr.html) si vous êtes curieux-ses.
 
 Programme
-    Produit par programmation. TODO:
+    « Un programme informatique est un ensemble d'opérations destinées à être exécutées par un ordinateur. »
+    (*Définition récursive* : produit par {term}`programmation`.)
+
+    - Un programme source est un code, généralement écrit par un informaticien ou une informaticienne, dans un langage de programmation. Il peut être {term}`compilé<Langage compilé>` vers une forme binaire, ou (plus ou moins) directement {term}`interprété<Langage interprété>`.
+    - Un programme binaire décrit les instructions à exécuter par un microprocesseur sous forme numérique. Ces instructions définissent un langage machine.
 
 Programmation
-    Qui produit des programmes. TODO:
+    « La [programmation](https://fr.wikipedia.org/wiki/Programmation_informatique), appelée aussi codage[^codage] dans le domaine informatique, est l'ensemble des activités qui permettent l'écriture des programmes informatiques. C'est une étape importante du développement de logiciels (voire de matériel). L'écriture d'un programme se fait dans un langage de programmation. »
+    (*Définition récursive* : Qui produit des {term}`programmes<Programme>`.)
+
+    [^codage] Je recommande d'oublier ce mot codage, qui en informatique théorique désigne quelque chose de plus précis (par exemple, le codage de Church des entiers dans le Lambda-calcul). Voir [Cours de Christophe Darmangeat](http://cours.pise.info/algo/codage.htm).
 
 Bogue
-    Version française d'un *bug* en anglais : un problème dans un programme informatique.
+    Traduction[^bogue] française d'un *{ref}`bug`* en anglais : un problème dans un programme informatique.
+    Plus précisément, c'est un défaut de conception d'un programme informatique à l'origine d'un dysfonctionnement.
+    Vous apprendrez à les éviter, ou à les chercher et les éliminer, en {term}`déboguant<Déboguer>` !
+
+    [^bogue]: Littéralement un *bug* veut dire un insecte, et *bogue* désigne la protection piquante sur les châtaignes, à vous de trouver les liens entre les deux métaphores...
 
 Bug
     On lui préférera la version française {term}`bogue<Bogue>`.
 
-Logiciel
-    TODO:
+Algorithme
+    « Un [algorithme](https://fr.wikipedia.org/wiki/Algorithme) est une **suite finie et non ambiguë d'opérations ou d'instructions permettant de résoudre une classe de problèmes**. Le mot algorithme vient du nom d'un mathématicien perse du IXe siècle, [Al-Khwârizmî](https://fr.wikipedia.org/wiki/Al-Khw%C3%A2rizm%C3%AE) (en arabe : الخوارزمي). »
+    (*Définition récursive* : Ce qui est étudié par l'{term}`algorithmique`).
+
+Algorithmique
+    « L'[algorithmique](https://fr.wikipedia.org/wiki/Algorithmique) est l'étude et la production de règles et techniques qui sont impliquées dans la définition et la conception d'algorithmes. » {cite}`Cormen`
+    Liens : [Cours de Christophe Darmangeat](http://cours.pise.info/algo/introduction.htm)
+    (*Définition récursive* : science qui étudie les {term}`algorithmes<Algorithme>`).
 
 Langage
-    TODO:
+    - Au sens de l'informatique théorique, un langage est un ensemble (possiblement infini mais généralement dénombrable) de mots (finis) sur un alphabet (aussi fini), par exemple les mots de tailles impaires $L = \{a, aaa, \dots, a^{2n+1}, \dots\}$ sur l'alphabet $\Sigma=\{a\}$ ;
+    - Au sens de l'informatique pratique, désigne un **langage informatique**, qui peut être un **langage de programmation** comme {term}`Python`, {term}`OCaml` et {term}`C`, un langage de rédaction de document, comme {ref}`Markdown`, {ref}`HTML` ou {ref}`LaTeX`, ou d'autres langages plus spécialisés ;
+    - Au sens linguistique, on dit plutôt une *langue*. Attention en anglais c'est écrit _lang**u**age_, **langage** en français, par exemple le français, l'anglais ou l'espéranto sont des langues.
 
 Logiciel libre
-    Free software: *Free as in free speech, not free beer!* TODO:
+    Un [logiciel libre](https://fr.wikipedia.org/wiki/Logiciel_libre) est un logiciel qui permet d'exercer simultanément les *quatre libertés logicielles*, que sont l'exécution du logiciel pour tout type d'utilisation, l'étude de son code source (et donc l'accès à ce code source, {ref}`Open source`), la distribution de copies, ainsi que la modification et donc l'amélioration du code source.
+    L'inverse des {term}`logiciels propriétaires<Logiciel propriétaire>`.
+
+    > Free software: _Free as in free speech, not free beer!_
 
 Open source
-    Pas comme logiciel libre
+    Pas comme logiciel libre, mais [les différences sont subtiles](https://fr.wikipedia.org/wiki/Open_source). Logiciel libre implique open source, mais pas l'inverse.
 
 Logiciel propriétaire
-    L'inverse des logiciels libres.
+    **L'inverse des {term}`logiciels libres<Logiciel libre>`** : un [logiciel propriétaire](https://fr.wikipedia.org/wiki/Logiciel_propri%C3%A9taire), logiciel non libre ou parfois logiciel privatif voire logiciel privateur, est un logiciel qui ne permet pas légalement ou techniquement, ou par quelque autre moyen que ce soit, d'exercer simultanément les *quatre libertés logicielles*.
+    *Avis personnel* : à éviter autant que possible[^exceptionLogicielProprietaire].
+
+    Attention, bien que l'expression « acheter un logiciel » soit courante, elle concerne en fait l'achat d'une {term}`license d'exploitation`, un droit d'utilisation limité au cadre établi par la licence ; le transfert de propriété n'existant qu'en cas de vente du droit d'auteur ou copyright associé. Mais un logiciel propriétaire n'est pas nécessairement payant ; les logiciels gratuits mais non libres sont appelés *freeware* ou gratuiciel.
+
+    [^exceptionLogicielProprietaire] À l'exception acceptable des jeux vidéo ou des logiciels très spécialisés.
 ```
 
 ## Vocabulaire de la programmation
@@ -53,41 +98,285 @@ Logiciel propriétaire
 TODO: à terminer.
 
 ```{glossary}
-Signature
-    TODO:
+Valeur
+    En informatique, la valeur d'une donnée (par exemple une {term}`variable<Variable>`) correspond à son contenu (en binaire), à interpréter selon son {term}`type<Type>`.
 
 Variable
-    TODO:
+    En informatique, [les variables](https://fr.wikipedia.org/wiki/Variable_(informatique)) sont des symboles qui associent un nom (l'identifiant) à une {term}`valeur<Valeur>`.
+    Dans la plupart des langages et notamment les plus courants, les variables peuvent changer de valeur au cours du temps (dynamique). Dans les langages de certains paradigmes, notamment la programmation fonctionnelle, leur valeur est au contraire figée dans le temps (statique).
+    Semblable mais différent des [variables en mathématiques](https://fr.wikipedia.org/wiki/Variable_(math%C3%A9matiques)) ou des variables aléatoires en probabilité, ou dans d'autre science.
 
-Liste
-    TODO:
-
-Tableau
-    TODO:
-
-Dictionnaire
-    TODO:
+Type
+    En programmation informatique, un [type de donnée](https://fr.wikipedia.org/wiki/Type_(informatique)), ou simplement un type, définit la nature des valeurs que peut prendre une donnée, ainsi que les opérateurs qui peuvent lui être appliqués.
 
 Référence
-    TODO:
+    Subtile différence avec les variables, les [références](https://fr.wikipedia.org/wiki/R%C3%A9f%C3%A9rence_(programmation)) sont omniprésentes en programmation. TODO:
+
+Pointeur
+    Subtile différence avec les variables, les [pointeurs](https://fr.wikipedia.org/wiki/Pointeur_(programmation)) seront surtout utilisés en {term}`C`. TODO:
 
 Passage par valeur
-    TODO:
+    Une stratégie d'appel de {term}`fonction<Fonction>`, qui donne les *valeurs* des arguments.
 
 Passage par référence
-    TODO:
+    Une stratégie d'appel de {term}`fonction<Fonction>`, qui donne des *références* vers les arguments.
 
-Passage par recopie
-    TODO:
+Argument
+    En informatique, les [arguments](https://fr.wikipedia.org/wiki/Param%C3%A8tre_(programmation_informatique)#Les_param%C3%A8tres_d'entr%C3%A9e) sont donnés lors des appels de {term}`fonctions<Fonction>` (et de méthodes). Ils peuvent être des valeurs, des variables, des types ou encore des fonctions (valeurs d'ordre supérieur).
 
-Tuple
-    Aussi appelés couples ou n-uplet en français. TODO:
+Paramètre
+    Globalement synonyme d'{term}`argument<Argument>` dans le contexte d'appels de fonctions, mais plus général.
+
+Fonction
+    En informatique, une [fonction](https://fr.wikipedia.org/wiki/Routine_(informatique))
+    Attention, la notion est différente des mathématiques.
+
+Signature
+    Pour une {term}`fonction<Fonction>`, sa signature déclare les listes de ses arguments et des valeurs {term}`renvoyées<Renvoyer>` (avec ou sans leurs types, selon le langage).
 
 Classe
     TODO:
 
 Objet
     TODO:
+```
+
+### Types de données primitifs
+
+Selon les langages, les types de donnés suivants sont disponibles directement, voir par exemple les [en OCaml](https://fr.wikiversity.org/wiki/Premiers_pas_en_OCaml/Types_primitifs), et [en C](https://fr.wikibooks.org/wiki/Programmation_C/Types_de_base).
+
+TODO: use [sphinx-panels](https://jupyterbook.org/content/content-blocks.html#content-tabs) or [sphinx-inline-tabs](https://jupyterbook.org/advanced/sphinx.html#an-example-sphinx-inline-tabs) to nicely present these code samples? But how to compile to $\LaTeX$...?
+
+```{glossary}
+bool
+    **Booléen**, deux valeurs possibles, `true` et `false` (ou `True` et `False`).
+
+    - Python : `boolean`, écrits avec une majuscule :
+      ```python
+      x = True; y = False
+      ```
+    - OCaml : `bool`, écrits en minuscules :
+      ```ocaml
+      let x : bool = true and y : bool = false;;
+      ```
+    - En C : sans l'entête [`bool.h`](https://koor.fr/C/cstdbool/cstdbool.wp), `false` est l'{term}`int` 0 et `true` tous les autres entiers :
+      ```c
+      int true = 1; int false = 0;
+      ```
+
+int
+    **Entiers naturels ou relatifs** (non signés ou signés), généralement sur 32 ou 64 bits, quasiment toujours inexacts (non associatifs, dépassement de capacité).
+
+    - Python : type `int`, supporte les entiers en précision arbitraire par défaut, contrairement à la plupart des autres langages :
+      ```python
+      i = 1; j = -1993; k = 2**12413
+      ```
+    - OCaml : `int`, généralement sur 64 bits :
+      ```ocaml
+      let i : int = 1 and j : int = -1993;;
+      ```
+    - En C : plein de types différents, `short`/`int`/`long`/`long long`, et variantes `unsigned` :
+      ```c
+      unsigned int i = 1; int j = -1993;
+      ```
+
+float
+    **Nombres à virgules flottants**, représentant inexacts des nombres réels, décimaux ou rationnels, généralement sur 32 ou 64 bits, quasiment toujours inexacts (non associatifs, non distributif, erreurs d'arrondis, dépassement de capacité, etc), généralement selon la [norme IEEE 754](https://fr.wikipedia.org/wiki/IEEE_754).
+
+    - Python : type `float`, à 64 bits :
+      ```python
+      a = 3.1415; b = 1.0/1993; c = 1e32
+      ```
+    - OCaml : `float`, généralement sur 64 bits :
+      ```ocaml
+      let a : float = 3.1415 and b : float = 1.0 /. 1993.0 and c : float = 1e32
+      ```
+    - En C : encore quelques types différents, `float`/`double long`/`long double` :
+      ```c
+      float a = 3.1415; double b = 1.0/1993; long double c = 1e32;
+      ```
+
+complex
+    **Nombres complexes**, souvent vu comme un simple couple de deux {term}`nombres flottants<float>`.
+
+    - Python : type `complex`, à 64 bits :
+      ```python
+      a = 3.1415; b = 1.0/1993; c = 1e32
+      ```
+    - OCaml : [`Complex`](http://caml.inria.fr/pub/docs/manual-ocaml/libref/Complex.html) :
+      ```ocaml
+      open Complex;;
+      let z1 : complex = { re = 0.5; im = -0.5 };;
+      ```
+    - En C : avec [`complex.h`](https://koor.fr/C/ccomplex/ccomplex.wp)
+      ```c
+      z1 : complex = { re = 0.5; im = -0.5 };;
+      ```
+
+char
+    **Un caractère**, ou symbole d'une {term}`chaîne de caractère<string>`. Généralement un entier sur 8 bits, à 256 valeurs possibles, dans la table ASCII, et noté `'a'` avec un des *apostrophes* (`4` sur les {term}`claviers<Clavier>` classiques).
+
+    - Python : type `str` pour des {term}`string` :
+      ```python
+      nom = 'R'; prenom = 'G'
+      ```
+    - OCaml : `char` un entier 8 bit, écrit avec apostrophes :
+      ```ocaml
+      let nom : char = 'L' and prenom : char = 'X';;
+      ```
+    - En C : `char` est en fait un alias vers {term}`int`, mais mieux vaut faire attention et l'utiliser quand il faut :
+      ```c
+      char nom1 = 'R'; char prenom1 = 'D';
+      char nom2 = 'T'; char prenom2 = 'K';
+      ```
+
+string
+    **Chaîne de caractère**, souvent vue comme un {term}`tableau` de {term}`char`, et immuable ou mutable selon les langage. Généralement notée `"salut"` avec un des guillemets (`3` sur les {term}`claviers<Clavier>` classiques).
+
+    - Python : type `str`, qui peuvent utiliser au choix les apostrophes `'`, les guillemets `"` ou les triples apostrophes `'''...'''` ou guillemets `"""..."""` :
+      ```python
+      nom = "van Rossum"; prenom = "Guido"
+      ```
+    - OCaml : `string` se comporte vraiment comme un `char array`, mais avec une syntaxe différente (et [étaient mutables avant OCaml 4.02 en 2014](https://caml.inria.fr/pub/docs/manual-ocaml/libref/String.html)) :
+      ```ocaml
+      let nom : string = "Leroy" and prenom : string = "Xavier";;
+      ```
+    - En C : `char` est en fait un alias vers {term}`int`, mais mieux vaut faire attention et l"utiliser quand il faut :
+      ```c
+      char nom1 = "Richie";   char prenom1 = "Denie";
+      char nom2 = "Thompson"; char prenom2 = "Ken";
+      ```
+```
+
+### Structures de données
+
+```{glossary}
+Type abstrait
+    Une spécification mathématique d'un ensemble de données et de l'ensemble des opérations qu'on peut effectuer sur elles. On qualifie d'abstrait ce type de données car il correspond à un cahier des charges qu'une {term}`structure de données` doit ensuite mettre en œuvre.
+
+    *Exemples en CPGE* : {term}`Liste`, {term}`Tableau`, {term}`Arbre`, {term}`Graphe`, {term}`File`, {term}`Pile`, {term}`File de priorité`, formules propositionnelles, etc. TODO:
+
+Structure de données
+    Une manière d'organiser les données pour les traiter plus facilement. Une structure de données est une mise en œuvre concrète d'un {term}`type abstrait`.
+
+    *Exemples en CPGE* : liste simplement chaîne (type = liste), graphe par listes d'adjacence ou matrice d'adjacence (type = graphe), tas binaire min (type = file de priorité min), etc. TODO:
+
+Liste
+    Structure de donnée linéaire, généralement implémentée par simplement chaîné (ou doublement chaînée), permettant d'accéder rapidement au premier élément et à la suite de la liste.
+
+    - Python : [`list`](https://docs.python.org/3/tutorial/datastructures.html?highlight=list#more-on-lists) est intermédiaire avec les tableaux !
+      ```python
+      lis = [1, 2, 3, 4]
+      ```
+    - OCaml : [`List`](http://caml.inria.fr/pub/docs/manual-ocaml/libref/List.html#VALinit)
+      ```ocaml
+      let lis : int list = 1 :: 2 :: 3 :: 4;;
+      let lis : int list = [1; 2; 3; 4];;
+      ```
+    - En C : avec un `typedef` et des pointeurs.
+
+Tableau
+    Structure de donnée linéaire, généralement implémentée par tableau statique ou dynamique, permettant d'accéder rapidement à chaque élément.
+
+    - Python : [`list`](https://docs.python.org/3/tutorial/datastructures.html?highlight=list#more-on-lists) est intermédiaire avec les listes !
+      ```python
+      tab = [1, 2, 3, 4]
+      ```
+    - OCaml : [`Array`](http://caml.inria.fr/pub/docs/manual-ocaml/libref/Array.html#VALinit)
+      ```ocaml
+      let tab : int array = [|1; 2; 3; 4|];;
+      ```
+    - En C : plusieurs syntaxes, avec ou sans [malloc](https://fr.wikipedia.org/wiki/Malloc).
+      ```c
+      int tab[4] = {1, 2, 3, 4};
+      int* tab = malloc(4 * sizeof(int));
+      ```
+
+Tuple
+    Aussi appelés couples, ou n-uplets en français. Un mélange entre une liste et un tableau, ils sont souvent immuables.
+    Les fonctions ayant plusieurs arguments reçoivent des n-uplets d'arguments.
+    Aussi très utilisé en informatique théorique, par exemple une {term}`Machine de Turing` est un sextuplet $(Q, \Sigma, \#, q_I, F, \delta)$., et un {term}`Automate` est un quintuplet $(Q, \Sigma, q_I, F, \delta)$.
+
+    - Python : [`tuple`](https://docs.python.org/3/tutorial/datastructures.html?highlight=tuple#tuples-and-sequences)
+      ```python
+      xy = (1, -3)
+      ```
+    - OCaml : par la syntaxe
+      ```ocaml
+      let xy : (int, int) = (1, -3)
+      ```
+    - En C : avec un `typedef` et des pointeurs. TODO:
+
+Dictionnaire
+    Structure de donnée non linéaire aussi appelée [tableau associatif](https://fr.wikipedia.org/wiki/Tableau_associatif), généralement implémentée par table de hachage ou arbre (binaire) de recherche, ou dynamique, permettant d'accéder rapidement à une valeur associée à chaque clé stockée.
+
+    - Python : [`dict`](https://docs.python.org/3/tutorial/datastructures.html?highlight=dict#dictionaries)
+      ```python
+      dic = {"soleil": "joie", "neige": "ski"}
+      ```
+    - OCaml : [`HashTbl`](http://caml.inria.fr/pub/docs/manual-ocaml/libref/Hashtbl.html#VALinit)
+      ```ocaml
+      open Hashtbl
+      let dic : (string, string) Hashtbl.t = Hashtbl.create 10;;
+      Hashtbl.add dic "soleil" "joie";;
+      Hashtbl.add dic "neige" "ski";;
+      ```
+    - En C : avec un `typedef` et des pointeurs.
+
+Pile
+    Structure de donnée linéaire, "first in first out" (FIFO), *stack* en anglais, comme des assiettes sales.
+
+    - Python : [`list`](https://docs.python.org/3/tutorial/datastructures.html?highlight=dict#dictionaries)
+      ```python
+      dic = {"soleil": "joie", "neige": "ski"}
+      ```
+    - OCaml : [`HashTbl`](http://caml.inria.fr/pub/docs/manual-ocaml/libref/Hashtbl.html#VALinit)
+      ```ocaml
+      open Hashtbl
+      let dic : (string, string) Hashtbl.t = Hashtbl.create 10;;
+      Hashtbl.add dic "soleil" "joie";;
+      Hashtbl.add dic "neige" "ski";;
+      ```
+    - En C : avec un `typedef` et des pointeurs.
+
+File
+    Structure de donnée linéaire, "first in last out" (FILO), *queue* en anglais, comme dans une file d'attente au marché.
+
+    - Python : [`list`](https://docs.python.org/3/tutorial/datastructures.html?highlight=dict#dictionaries)
+      ```python
+      dic = {"soleil": "joie", "neige": "ski"}
+      ```
+    - OCaml : [`HashTbl`](http://caml.inria.fr/pub/docs/manual-ocaml/libref/Hashtbl.html#VALinit)
+      ```ocaml
+      open Hashtbl
+      let dic : (string, string) Hashtbl.t = Hashtbl.create 10;;
+      Hashtbl.add dic "soleil" "joie";;
+      Hashtbl.add dic "neige" "ski";;
+      ```
+    - En C : avec un `typedef` et des pointeurs.
+
+Graphe
+    Structure de donnée non linéaire, souvent représentées par liste d'adjacence ou matrice d'adjacence (et plus rarement, par liste d'arêtes).
+
+    - Python : avec des tableaux bi-dimensionnels, avec une {term}`classe` et des {term}`pointeurs` ;
+    - OCaml : pas standard, mais rapide à écrire selon le besoin :
+      ```ocaml
+      (* Graphes dont les sommets ont des numéros entiers entre 0 et n-1 *)
+      type matrice_adj = int array array;;
+      type liste_adj   = (int list) array;;
+      ```
+    - En C : avec des tableaux bi-dimensionnels, ou un `typedef` et des pointeurs, encore et toujours...
+
+Arbre
+    Structure de donnée non linéaire, un type de {term}`graphe` (acyclique et connexe).
+
+    - Python : pas standard, avec une {term}`classe` et des {term}`pointeurs` ;
+    - OCaml : pas standard, mais rapide à écrire selon le besoin :
+      ```ocaml
+      (* Arbre binaire avec un 'a aux feuilles *)
+      type 'a arbre = Feuille of 'a | Noeud of arbre * arbre
+      ```
+    - En C : avec un `typedef` et des pointeurs, encore et toujours...
 ```
 
 ### Vocabulaire spécifique à l'architecture des ordinateurs
@@ -209,11 +498,11 @@ Programmer
 Compiler
     Exécuter un compilateur. TODO:
 
-Débogguer
+Déboguer
     Version française de *to debug* en anglais : chasser les bogues d'un programme informatique.
 
 Debug
-    On lui préférera la version française {term}`débogguer<Débogguer>`.
+    On lui préférera la version française {term}`débogguer<Déboguer>`.
 
 Retourner
     Un anglicisme dans la plupart des cas, qui est à éviter : une fonction {term}`renvoie<Renvoyer>` une valeur, elle ne la retourne pas... Sauf si la fonction demandée doit vraiment *retourner* une liste (`[x0,..,xN] -> [xN,..,x0]`) ou une chaîne (`"Canoë" -> "ëonaC`). Je serai impitoyable sur cet anglicisme !
@@ -230,7 +519,7 @@ Renvoyer
 
 ```{glossary}
 OCaml
-    Langage de programmation créé par l'INRIA, principalement fonctionnel mais aussi impératif et orienté objet (*Objective Caml*). Disponible sur toutes les plateformes, gratuitement. Un des langages enseignés en classes préparatoires (avec {term}`Python`, {term}`SQL` et {term}`C`). Cf. <https://www.ocaml.org/>, [Wikibooks:Programmation_OCaml](https://fr.wikibooks.org/wiki/Programmation_OCaml).
+    Langage de programmation créé par l'INRIA, principalement fonctionnel mais aussi impératif et orienté objet (*Objective Caml*). Disponible sur toutes les plateformes, gratuitement. Un des langages enseignés en classes préparatoires (avec {term}`Python`, {term}`SQL` et {term}`C`). Cf. <https://www.ocaml.org/>, [Wikibooks:Programmation_OCaml](https://fr.wikibooks.org/wiki/Programmation_OCaml) et [tutoriels officiels](https://ocaml.org/learn/tutorials/index.fr.html).
 
 Python
     Langage de programmation impératif, mais aussi orienté objet. Disponible sur toutes les plateformes, gratuitement. Un des langages enseignés en classes préparatoires (avec {term}`SQL`, {term}`C` et {term}`OCaml`). Cf. <https://www.python.org/>, et [WikiBooks Python](https://fr.wikibooks.org/wiki/Programmation_Python) ainsi que <https://python-prepa.github.io/>. Mes suggestions pour apprendre Python sont sur <https://perso.crans.org/besson/apprendre-python.fr.html>
@@ -245,10 +534,10 @@ C
     Langage de programmation impératif, très proche de la machine (bas niveau). Un des principaux langages utilisés au monde, quasiment disponible sur toutes les plateformes, gratuitement. Un des langages enseignés en classes préparatoires (avec {term}`OCaml`, {term}`Python` et {term}`SQL`). Cf [Wikiversity:Langage C](https://fr.wikiversity.org/wiki/Langage_C) et [Wikibooks:Programmation_C](https://fr.wikibooks.org/wiki/Programmation_C)
 
 Bash
-    Langage de script du projet GNU Bash, utilisé depuis les années 1980. Ce n'est pas un des langages enseignés en classes préparatoires mais nous nous en servirons quand même. Si vous devenez accro à GNU/Linux je vous suggère de travailler avec [Fish Shell](https://www.fishshell.com), plus moderne et plus agréable à utiliser.
+    Langage de script du projet GNU Bash, utilisé depuis les années 1980. Ce n'est pas un des langages enseignés en classes préparatoires mais nous nous en servirons quand même (un tout petit peu). Si vous devenez accro à GNU/Linux je vous suggère de travailler avec [Fish Shell](https://www.fishshell.com), plus moderne et plus agréable à utiliser.
 
 Makefile
-    Un petit langage de description de tâches, généralement utilisé pour faciliter la compilation de code, très populaire depuis les années 1980. Ce n'est pas un des langages enseignés en classes préparatoires mais nous nous en servirons quand même. Les Makefiles sont notamment utiles pour écrire des programmes non triviaux en {term}`C` et en {term}`OCaml`. Ce livre est généré grâce à un {term}`Makefile<Makefile>` TODO: lien.
+    Un petit langage de description de tâches, généralement utilisé pour faciliter la compilation de code, très populaire depuis les années 1980. Ce n'est pas un des langages enseignés en classes préparatoires mais nous nous en servirons quand même. Les Makefiles sont notamment utiles pour écrire des programmes non triviaux en {term}`C` et en {term}`OCaml`. Ce livre est généré grâce à un {term}`Makefile`. Cf <https://makefiletutorial.com/>
 
 Langage interprété
     Une implémentation concrète d'un langage (qui est une spécification théorique). Le programme écrit en langage A est lu par un interprète (ou interpréteur), qui l'exécute directement, ou le traduit en langage intermédiaire (bytecode ou non), qui est ensuite exécuté par un autre programme dit machine virtuelle (*Virtual Machine*).
@@ -271,7 +560,7 @@ Java
     Un autre langage très populaire, orienté objet et destiné à être compilé en bytecode exécuté sur une JVM (*Java Virtual Machine*). Très populaire dans les années 1995-2010. Pas enseigné en classes préparatoires, mais dans certaines écoles d'ingénieurs et des Universités. Android et la plupart de ses applications, mais aussi (la première édition de) Minecraft sont programmés en Java. Ces ressources peuvent vous aider à apprendre : [WikiBooks Java](https://fr.wikibooks.org/wiki/Programmation_Java) et les références.
 
 C++
-    Le grand frère du langage C, qui est vraiment différent et n'est pas juste une extension. Très populaire depuis 1990, et un des langages les plus populaires même encore en 2021. Pas enseigné en classes préparatoires, mais dans certaines écoles d'ingénieurs et des Universités. La plupart des "gros" jeux vidéos sont programmés en C++, que ce soit pour consoles ou ordinateurs, notamment le Unreal Engine et Unity.
+    Souvent considéré comme le grand frère du langage {term}`C`, mais c'est vraiment un langage différent et non une simple extension. Très populaire depuis 1990, et un des langages les plus populaires même encore en 2021. Pas enseigné en classes préparatoires, mais dans certaines écoles d'ingénieurs et des Universités. La plupart des jeux vidéo de grosses productions sont programmés en C++, ou langages similaires comme le C#, que ce soit pour consoles ou ordinateurs (avec notamment les engins *Unreal Engine* et *Unity*).
 
 PHP
     Un autre langage très populaire dans les années 2000-2015, surtout utilisé pour programmer des serveurs et des applications web dynamiques. Facebook et MediaWiki (qui fait fonctionner Wikipédia) sont notamment programmés en PHP.
@@ -355,22 +644,28 @@ Cf ma liste d'outils préférés <https://perso.crans.org/besson/mes-outils-pref
 
 ### Site web
 
+> Vous en trouverez plus dans {ref}`Outils-pedagogiques` et {ref}`Liens-autres-ressources-pedagogiques`.
+
 ```{glossary}
 DuckDuckGo
-    Moteur de recherche libre et non intrusif, qui ne vous espionne pas. Je vous recommande d'oublier Google et Bing.
+    Moteur de recherche libre et non intrusif, qui ne vous espionne pas. Je vous recommande d'oublier Google et Bing : <https://duckduckgo.com/> vous fera du bien !
 
 Wikipédia
     L'encyclopédie libre en ligne, à laquelle tout le monde peut contribuer : <https://fr.wikipedia.org/> !
 
 SCEI
-    Pour vos concours.
+    Pour vos concours : <https://www.scei-concours.fr/>.
 
 GitHub
-    TODO:
+    Leader mondial des hébergeurs de code source en ligne, racheté par Microsoft en 2019 : <https://github.com/>.
+    Mes ressources pédagogiques sont là : <https://github.com/Info-Prepas-MP2I/>, utilisant le gestionnaire de version {term}`git`.
 
 YouTube
-    TODO:
+    Plateforme leader mondiale pour héberger des vidéos, filiale de Google : <https://www.youtube.com/>.
+    *Si besoin*, certains cours en distanciel ou des vidéos bonus seront diffusées sur YouTube.
 ```
+
+TODO: rajouter quelques sites vraiment importants ?
 
 ### Outils génériques
 
@@ -382,10 +677,11 @@ Visual Studio Code
     L'éditeur de texte générique suggéré (cf <https://code.visualstudio.com/>) pour travailler en {term}`C`, {term}`OCaml` et {term}`Python`. Un petit nouveau en comparaison des vénérables Emacs et Vi(m), mais bien plus moderne et à la prise en main plus facile. Disponible sur toutes les plateformes d'ordinateurs bureau et portable, gratuitement. On peut lui ajouter plein d'extensions intéressantes, cf <https://perso.crans.org/besson/visualstudiocode.fr.html> pour mes suggestions.
 
 Jupyter notebook
-    L'environnement recommandé pour programmer en {term}`Python`, cf <https://www.jupyter.org/>. On peut s'en servir pour programmer en {term}`OCaml` et en {term}`C` TODO: liens.
+    L'environnement recommandé pour programmer en {term}`Python`, cf <https://www.jupyter.org/>. On peut s'en servir pour programmer en {term}`OCaml` ([ocaml-jupyter](https://github.com/akabe/ocaml-jupyter/)) et en {term}`C` ([jupyter-c-kernel](https://github.com/brendan-rius/jupyter-c-kernel)) mais l'installation de ces *kernels* n'est pas forcément facile.
 
 Git
     Gestionnaire de version que vous prendrez en main en deuxième année. cf <https://perso.crans.org/besson/tutogit.fr.html> pour mes suggestions.
+    Mes ressources pédagogiques sont là : <https://github.com/Info-Prepas-MP2I/>
 ```
 
 
@@ -393,19 +689,29 @@ Git
 
 ```{glossary}
 ocamlc
-    Compilateur de code {term}`OCaml` vers du bytecode. A éviter, soit vous interprétez le code avec `ocaml` directement, soit vous compilez en code natif avec `ocamlopt`.
+    Compilateur de code {term}`OCaml` vers du bytecode. A éviter, soit vous interprétez le code avec `ocaml` directement, soit vous compilez en code natif avec la commande `ocamlopt`.
 
 ocamlopt
     Compilateur de code {term}`OCaml` vers du code natif. A préférer face à `ocamlc`.
-
-ocamlc -i
-    Pour afficher (ou générer) les signatures d'un ou plusieurs fichiers {term}`OCaml`. TODO: donner ce genre de détails ici ? Ou ailleurs ?
 
 GCC
     Le vénérable GNU {term}`C` Compiler, pour compiler vos programmes en {term}`C`. Nous utiliserons plutôt clang, qui est plus moderne et aux messages d'erreurs souvent moins cryptiques.
 
 Clang
     Un autre compilateur {term}`C`, pour compiler vos programmes en {term}`C`. Nous le préférons à GCC, qui est plus ancien et aux messages d'erreurs souvent plus cryptiques.
+
+GDB
+    Débogueur du projet GNU, référence pour déboguer des programmes {term}`C` compilés.
+    A utiliser avec [Valgrind](https://fr.wikipedia.org/wiki/Valgrind) pour du débogage plus sérieux et approfondi (pas en CPGE).
+
+ocamldebug
+    Similaire à {term}`GDB`, mais pour déboguer des programmes {term}`OCaml` compilés. S'utilise quasiment pareil.
+
+CPython
+    Pas à proprement parler un compilateur, mais l'implémentation standard du {term}`Python` utilise [cpython](https://github.com/python/cpython/) écrit en C, pour interpréter vos programmes Python.
+
+pdb
+    Similaire à {term}`GDB`, mais pour déboguer des programmes en {term}`Python`. S'utilise quasiment pareil. Regardez [ipdb](https://pypi.org/project/ipdb/) depuis IPython ou des notebooks Jupyter, qui est moins austère.
 ```
 
 
@@ -434,7 +740,7 @@ Windows
 
 ## Licences
 
-Cf <https://choosealicense.com/> pour plus d'informations.
+Les pages [wiki:Licence_de_logiciel](https://fr.wikipedia.org/wiki/Licence_de_logiciel) et [wiki:Licence_libre](https://fr.wikipedia.org/wiki/Licence_libre) donnent plus d'informations, et <https://choosealicense.com/> si vous souhaitez choisir une license pour un de vos propres projets.
 
 ```{glossary}
 MIT
@@ -543,3 +849,5 @@ IEP
 Autres concours
     TODO: actuaires ? pilotes ? écoles militaires.
 ```
+
+> Fin de ce glossaire. J'espère qu'il sera assez exhaustif, mais pas trop long. -- 2021-02-17 22:06:51
