@@ -124,7 +124,7 @@ TODO: rédiger pages programmes
   - Quelques cours (PDF) et TP (PDF) de la [MP](https://cahier-de-prepa.fr/mp*-corneille/docs?caml) et [MP](https://cahier-de-prepa.fr/mp-corneille/docs?IPT) du Lycée Corneille @ Rouen ;
   - Cours en page web (Sphinx-doc) de la [MP du Lycée Thiers @ Marseille](https://mp-thiers-ipt.pagesperso-orange.fr/Ipt/index.html) (avec sources !) ;
   - Quelques ressources de la [PCSI du Lycée Kléber @ Strasbourg](http://pcsi.kleber.free.fr/IPT/index.html) comme un [bon cours sur les BDD](http://pcsi.kleber.free.fr/IPT/doc/BDD1_la_totale.pdf), avec d'autres sur [GitHub/@jjfPCSI1](https://github.com/jjfPCSI1/) ;
-  - Des ressources très complètes mais très en vrac, [MPSI et PCS au lycée La Martinière Monplaisir @ Lyon](http://xpessoles-cpge.fr/) (et sur [github/@xpessoles](https://github.com/xpessoles))
+  - Des ressources très complètes mais très en vrac, [MPSI et PCS au lycée La Martinière Monplaisir @ Lyon](http://xpessoles-cpge.fr/) (et sur [github/@xpessoles](https://github.com/xpessoles)) ;
 
 ## Annales de sujets de concours
 

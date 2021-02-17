@@ -73,7 +73,7 @@ Lorsque l'on enseigne, en particulier l'informatique dans le supérieur, on a be
 
 - **Cheat-sheet** : documents en LaTeX, optimisés aux petits oignons. A faire bien et donner après quelques cours sur le langage, utilisés tout le temps par les élèves.
   - TODO: En faire une avec le cours de maths et physique : symboles maths, alphabet grec, et commandes LaTeX ?
-  - Pas besoin de réinventer la roue, juste copier celles ci : [C](https://mquinson.frama.io/ensr-arcsys1/refcard-c.pdf), [shell](https://raw.githubusercontent.com/mquinson/C-2nd-language/master/refcard/refcard-shell.pdf), [python](https://www.pythoncheatsheet.org/) TODO: trouver en français et mieux, [OCaml](https://github.com/OCamlPro/ocaml-cheat-sheets), SQL : [MySQL](https://sql.sh/ressources/document/mysql-aide-memoire-sql.pdf) (trop technique) [SQLite](http://nsi.colbert.bzh/sql/TP/memento.pdf) ;
+  - Pas besoin de réinventer la roue, juste copier celles ci : [C](https://mquinson.frama.io/ensr-arcsys1/refcard-c.pdf), [shell](https://raw.githubusercontent.com/mquinson/C-2nd-language/master/refcard/refcard-shell.pdf), [python](https://www.pythoncheatsheet.org/) TODO: trouver en français et mieux, [OCaml](https://github.com/OCamlPro/ocaml-cheat-sheets), SQL : [MySQL](https://sql.sh/ressources/document/mysql-aide-memoire-sql.pdf) (trop technique) [SQLite](http://nsi.colbert.bzh/sql/TP/memento.pdf), [GNU Make](https://ljk.imag.fr/membres/Jean-Guillaume.Dumas/Enseignements/CPP_M1MAI/gnu_make.pdf) ;
 
 
 ### Pour l'organisation
@@ -93,7 +93,7 @@ Pour toutes ces idées, deux remarques :
 
 - **Gestion des colles** :
   - "colloscope" automatisé ? TODO: Demander à @Loïc ;
-  - Ou voir sur GitHub : [greg904/carnot-colles](https://github.com/greg904/carnot-colles), [stephanekirsch/e-colle](https://github.com/stephanekirsch/e-colle) ;
+  - Ou voir sur GitHub ? [@pykol/pykhollet](https://github.com/pykol/pykhollet) semble trop complet (au niveau de tout le lycée), [@greg904/carnot-colles](https://github.com/greg904/carnot-colles), [@stephanekirsch/e-colle](https://github.com/stephanekirsch/e-colle), [@Blackhol3/kholgen](https://github.com/Blackhol3/kholgen) mais très mal/peu documentés, [@LeoColomb/kholloscope](https://github.com/LeoColomb/kholloscope) semble aussi chouette mais archivé depuis 2014 ?
 
 - **Conseils de classe** :
   - rien à faire de spécial ;
@@ -167,6 +167,10 @@ Pour toutes ces idées, deux remarques :
   - faire une première démo à la main dans un terminal ([OCamlDebug](https://caml.inria.fr/pub/docs/manual-ocaml/debugger.html), [GCC debugger (GDB)](https://fr.wikipedia.org/wiki/GNU_Debugger), [pdb](https://docs.python.org/3/library/pdb.html) ou [ipdb](https://pypi.org/project/ipdb/) pour Python), et dans un notebook Jupyter pour Python (voir [ce notebook](https://nbviewer.jupyter.org/github/Naereen/notebooks/blob/master/Debugguer_du_code_Python_depuis_Notebook_Jupyter.ipynb)) ;
   - puis dans VSCode de façon interactive : pour OCaml j'ai réussi à utiliser [vscode-ocaml-debugger](https://github.com/hackwaly/vscode-ocaml-debugger) (avec [ces fichiers, par exemple](https://bitbucket.org/lbesson/bin/src/master/test_ocamldebug/)), avec [hackwaly.ocam](https://marketplace.visualstudio.com/items?itemName=hackwaly.ocaml) (*deprecated*, plutôt que [ocamllabs.ocaml-platform](https://marketplace.visualstudio.com/items?itemName=ocamllabs.ocaml-platform) qui ne propose pas encore le débogueur) ; pour Python c'est intégré ; pour C aussi et ça marche très bien !
 
+- **Statistiques sur les performances aux concours** : en s'organisant bien, on peut garder des traces des notes/rangs/résultats/admissions finales des élèves...
+  - Sur GitHub, j'ai trouvé [@lcswillems/cpge-statistics-generator/](https://github.com/lcswillems/cpge-statistics-generator/) qui semble génial, mais pas à jour depuis 2016 (et avec les données de juste un seul élève, mais semble solide) ;
+  - Voir aussi [@h2o64/scei_statistics](https://github.com/h2o64/scei_statistics) ;
+
 ### Bonus pour les élèves
 
 - **Installeurs faciles pour les logiciels** ?
@@ -184,7 +188,7 @@ Pour toutes ces idées, deux remarques :
   - **Python** : [PythonTutor.com](http://pythontutor.com/) est incroyable pour les visualisations qu'il propose, mais de façon plus légère il y a aussi un [terminal Python 2](https://perso.crans.org/besson/python.html) sur mon site perso ;
   - **C et Python** : [REPL.it](https://repl.it/) ([C](https://repl.it/languages/c),[Python](https://repl.it/languages/python)), ou [myCompiler.io](https://www.mycompiler.io/) ([C](https://www.mycompiler.io/new/c), [Python](https://www.mycompiler.io/new/python)) -- mais pas OCaml ;
   - **Jupyter notebook** : [Google Colab](https://colab.research.google.com/) (sans connexion, cf [mes notebooks](https://colab.research.google.com/github/Naereen/notebooks/blob/master/)), [Binder](https://mybinder.org/) (sans connexion, cf [mes notebooks](https://mybinder.org/v2/gh/Naereen/notebooks/)) et [DeepNote](https://deepnote.com/) (demande un compte, cf [un de mes notebooks](https://deepnote.com/launch?template=python_3.6&url=https%3A%2F%2Fgithub.com%2FNaereen%2Fnotebooks%2Fblob%2Fmaster%2FPy_Pi_Day_2017.ipynb)), et [Basthon.fr](https://notebook.basthon.fr/) peut dépanner si besoin ;
-  - **SQL** : [SQLite-Online](https://github.com/jacques56100/NSI-SqliteOnline) comme sur [ce site d'un cours de NSI terminale](http://nsi.colbert.bzh/sql/) : TODO: m'en servir pour des TP de SQL et les héberger [localement](https://perso.crans.org/besson/publis/NSI-SqliteOnline/) ? Il y a aussi [ce TP sur CNAM.fr](http://deptfod.cnam.fr/bd/tp/) mais j'aime moins ; [Il en plein existe d'autres](https://duckduckgo.com/?t=canonical&q=sqlite+online+editor&ia=web), mais pas en français je pense, et moins bien conçu pour l'enseignement.
+  - **SQL** : [SQLite-Online](https://github.com/jacques56100/NSI-SqliteOnline) comme sur [ce site d'un cours de NSI terminale](http://nsi.colbert.bzh/sql/) : TODO: m'en servir pour des TP de SQL et les héberger [localement](https://perso.crans.org/besson/publis/NSI-SqliteOnline/) ? Il y a aussi [ce TP sur CNAM.fr](http://deptfod.cnam.fr/bd/tp/) mais j'aime moins ; [Il en plein existe d'autres](https://duckduckgo.com/?t=canonical&q=sqlite+online+editor&ia=web), mais pas en français je pense, et moins bien conçu pour l'enseignement ([«  SQL Murder Mystery  »](https://mystery.knightlab.com/) est amusant).
 
 - **Prise de note collaborative en ligne** ?
   - [HackMD.io](https://hackmd.io/#) et [StackEdit.io](https://stackedit.io/) pour des notes en Markdown (voir aussi [Madoko](https://www.madoko.net/), ?) ;
@@ -276,6 +280,10 @@ TODO: cette liste est encore en chantier.
   - j'avais aussi bidouillé un truc pour ajouter un bouton TD/TP suivant/précédent, c'est simple mais chouette ;
   - si je m'en sers : passer de `lunamark` à `pandoc` pour la conversion Markdown -> HTML ? Et mettre à jour vers Bootstrap 4+ ?
 
+- **Automatisation de compilation** : [GNU](https://www.gnu.org/software/make/) [Make](https://fr.wikipedia.org/wiki/Make) et [Makefiles](https://learnxinyminutes.com/docs/make/)
+  - 👍 semble être la meilleure solution pour apprendre aux élèves à écrire des petites automatisations de leurs compilation (OCaml + C), avec des [bons conseils](https://slashvar.github.io/2017/02/13/using-gnu-make.html) et des bons exemples ça n'est pas trop compliqué à prendre en main ;
+  - 🤔 TODO: A voir si [SCons](https://www.scons.org/) ne serait pas plus approprié en prépa, pour leur faire faire du Python ? C'est très puissant, mais moins standard (et pas présent aux oraux !)... Pour les motivés ou les frustrés de Make seulement ?
+
 ### Ce que je connais déjà pas mal
 
 - [**pandoc**](https://pandoc.org) :
@@ -302,7 +310,7 @@ TODO: cette liste est encore en chantier.
 
 #### Autres
 
-- [Mermaid.js](https://github.com/mermaid-js/mermaid) pour faire des dessins variés (graphes, diagrammes de classes etc) peut être utilisé depuis Sphinx-doc avec [sphinxcontrib-mermaid](https://github.com/mgaitan/sphinxcontrib-mermaid), mais pas essayé avec MyST et depuis un notebook avec Jupyter-book (il y a [nb-mermaid](https://github.com/bollwyvl/nb-mermaid) mais déprécié, 2017), on peut aussi éditer depuis VSCode avec [vscode-mermaid-editor](https://github.com/tomoyukim/vscode-mermaid-editor) et [aquarius - A mermaid.js GUI](https://github.com/aimed/aquarius) (2017) ;
+- [Mermaid.js](https://github.com/mermaid-js/mermaid) pour faire des dessins variés (graphes, diagrammes de classes etc) peut être utilisé depuis Sphinx-doc avec [sphinxcontrib-mermaid](https://github.com/mgaitan/sphinxcontrib-mermaid), mais pas essayé avec MyST et depuis un notebook avec Jupyter-book (il y a [nb-mermaid](https://github.com/bollwyvl/nb-mermaid) mais déprécié, 2017), on peut aussi éditer depuis VSCode avec [vscode-mermaid-editor](https://github.com/tomoyukim/vscode-mermaid-editor), [aquarius - A mermaid.js GUI](https://github.com/aimed/aquarius), et [mermaid-live-editor](https://mermaid-js.github.io/mermaid-live-editor/) ;
 
 ### Mauvaises idées ?
 
@@ -320,6 +328,12 @@ TODO: cette liste est encore en chantier.
 
 ### Autres pistes, considérées mais oubliées
 
+- [Madoko](http://madoko.org/) : un pré-processeur Markdown qui semble très puissant, indépendant de [pandoc](https://pandoc.org/) (mais écrit dans un langage rare), gère juste la sortie en `HTML` et `PDF` mais avec une apparence identique (notes / slides reveal.js ou Beamer / articles).
+  - Propose [madoko.net](https://www.madoko.net/) un puissant éditeur en ligne, mais aussi installable/utilisable en ligne de commande.
+  - Je trouve ça beau et chouette, TODO: à creuser un peu plus.
+  - 👍 *Avantages* : original, éditeur très chouette (mais bon, pas VSCode...) ;
+  - 👎 *Inconvénients* : très peu populaire, plus activement maintenu, risque de passer du temps sur un système pas stable sur le long terme ;
+
 - `AsciiDoc` et `AsciiDoctor` : format texte un peu comme `rST` et `Markdown`, produit des `HTML` et `PDF` à la `Sphinx` ou `pandoc` : je vois pas l'intérêt comparé à ces autres outils. Le code est en Ruby, donc je serai pas/moins capable de bidouiller.
 
 - [fastdoc](https://github.com/fastai/fastdoc) utilise `AsciiDoc` et des notebooks Jupyter uniquement, et semble focalisé sur du code Python. Approprié si je développe une autre "grosse" bibliothèque Python, mais pas pour des cours.
@@ -334,7 +348,7 @@ TODO: cette liste est encore en chantier.
 
 - dans Jupyter notebook : avec [graphviz](https://graphviz.readthedocs.io/en/stable/notebooks.html) mais que depuis Python... TODO: une extension avec une magic cell `%%graphviz` ?
 - dans Sphinx (rST) ou Jupyter book (rST / MyST / nb) : [`sphinx.ext.graphviz`](https://www.sphinx-doc.org/en/master/usage/extensions/graphviz.html) déjà utilisé dans [graph.fr.html](https://perso.crans.org/besson/graph.fr.html) sur mon site perso ;
-- dans LaTeX : je crois pas que ce soit simple, on peut faire `dot -Tsvg` ou `dot -Tpdf` pour exporter en SVG ou PDF et inclure ça dans le LaTeX, TODO: mais comment exporter en TikZ ou autre ? J'ai déjà bidouillé [`dot2tex`](https://dot2tex.readthedocs.io/en/latest/) en 2018, et ça supporte Python 3 maintenant, et [l'utilisation depuis LaTeX](https://dot2tex.readthedocs.io/en/latest/tipsandtricks.html#the-dot2texi-latex-package) !
+- dans LaTeX : je crois pas que ce soit simple, on peut faire `dot -Tsvg` ou `dot -Tpdf` pour exporter en SVG ou PDF et inclure ça dans le LaTeX, TODO: mais comment exporter en TikZ ou autre ? J'ai déjà bidouillé [`dot2tex`](https://dot2tex.readthedocs.io/en/latest/) en 2018, et ça supporte Python 3 maintenant, et [l'utilisation depuis LaTeX](https://dot2tex.readthedocs.io/en/latest/tipsandtricks.html#the-dot2texi-latex-package) ([CTAN:dot2texi](https://www.ctan.org/pkg/dot2texi)) !
 
 ### Dessiner des figures scientifiques quelconques
 
@@ -411,7 +425,10 @@ Out[1]:
 val fact : int -> int = <fun>
 ```
 
-- **Pour LaTeX** : je connais pas de package bien propre qui permette de recalculer les sorties et de tout bien inclure. Je suspecte que tous les polys de cours qui sont tapés en LaTeX et inclus entrées et sorties contiennent les sorties en dure dans les `.tex`, et je trouve pas ça élégant. Ou alors ils utilisent **pandoc**...
+- **Pour LaTeX** : je connais pas de package bien propre qui permette de recalculer les sorties et de tout bien inclure...
+  - TODO: ça existe peut-être ? [CTAN:runcode](https://www.ctan.org/pkg/runcode) (Bash mais générique ?), [CTAN:jupynotex](https://www.ctan.org/pkg/jupynotex)
+  - Je suspecte que tous les polys de cours qui sont tapés en LaTeX et inclus entrées et sorties contiennent les sorties en dure dans les `.tex`, et je trouve pas ça élégant.
+  - Ou alors ils utilisent **pandoc**...
 
 ### Autres choix
 
@@ -429,7 +446,7 @@ val fact : int -> int = <fun>
 ### Je dois m'entraîner...?
 
 - **TikZ** pour dessiner des jolies figures scientifiques ;
+  - Mermaid.js ? c'est mignon mais bon autant maîtriser TikZ !
 - Écrire des **algorithmes dans LaTeX** ;
 - **Utiliser BibTeX** dans Jupyter notebook, ou Sphinx ;
 - **Utiliser Zotero** pour gérer la bibliographie ;
-- Mermaid.js ?
