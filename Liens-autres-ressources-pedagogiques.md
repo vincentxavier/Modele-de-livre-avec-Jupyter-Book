@@ -110,6 +110,9 @@ TODO: rédiger pages programmes
   - Des [cours](https://sites.google.com/view/siiptpasteur/informatique---mpsi/cours) (PDF) ;
   - Des [TP](https://sites.google.com/view/siiptpasteur/informatique---mpsi/tp) (PDF) ;
 
+- [MPSI du lycée Jean-Baptiste Corot @ Savigny-sur-Orge](https://lgarcin.github.io/) : site libre [sur GitHub](https://github.com/lgarcin/lgarcin.github.io)
+  - Un [cours](https://lgarcin.github.io/CoursPythonCPGE/) assez complet et bien illustré, écrit en reST et généré avec Sphinx ! Avec des animations vraiment géniales en Matplotlib (jshtml framework ? avec bokeh ?), tours de Hanoï, tris, intégration, recherche, dichotomie, Euler ! Avec des figures en TikZ ! Mais pas de documentation pour recompiler le site web ?
+
 - En vrac :
   - Des cours (PDF), un devoirs et quelques corrigés de la [MP du Lycée Thiers @ Marseille](https://cahier-de-prepa.fr/mp-thiers/docs?ipt)
   - Des TD et quelques cours (PDF) de la [MPSI1](https://cahier-de-prepa.fr/mpsi1-malherbe/docs?info) et [MPSI2](https://cahier-de-prepa.fr/mpsi2-malherbe/docs?rep=94) au Lycée Malherbe @ Caen ;
@@ -120,12 +123,15 @@ TODO: rédiger pages programmes
   - Quelques DM (PDF) de la [MP du Lycée Henri-Wallon @ Valenciennes](https://cahier-de-prepa.fr/mp-wallon/docs?Informatique) ;
   - Quelques cours (PDF) et TP (PDF) de la [MP](https://cahier-de-prepa.fr/mp*-corneille/docs?caml) et [MP](https://cahier-de-prepa.fr/mp-corneille/docs?IPT) du Lycée Corneille @ Rouen ;
   - Cours en page web (Sphinx-doc) de la [MP du Lycée Thiers @ Marseille](https://mp-thiers-ipt.pagesperso-orange.fr/Ipt/index.html) (avec sources !) ;
+  - Quelques ressources de la [PCSI du Lycée Kléber @ Strasbourg](http://pcsi.kleber.free.fr/IPT/index.html) comme un [bon cours sur les BDD](http://pcsi.kleber.free.fr/IPT/doc/BDD1_la_totale.pdf), avec d'autres sur [GitHub/@jjfPCSI1](https://github.com/jjfPCSI1/) ;
+  - Des ressources très complètes mais très en vrac, [MPSI et PCS au lycée La Martinière Monplaisir @ Lyon](http://xpessoles-cpge.fr/) (et sur [github/@xpessoles](https://github.com/xpessoles))
 
 ## Annales de sujets de concours
 
 - <https://concours-maths-cpge.fr/> pour tous les sujets (IPT, option info), et plein de corrigés (partiels, mais avec LaTeX et PDF disponibles) ;
-- <https://www.alloschool.com/course/concours-informatique-mp> plein de sujets et corrigés ;
-- <https://www.upsti.fr/espace-etudiants/annales-de-concours> pour quelques sujets ;
+- [plein de sujets et corrigés (alloschool.com)](https://www.alloschool.com/course/concours-informatique-mp) ;
+- [pour quelques sujets (UPTSI.fr)](https://www.upsti.fr/espace-etudiants/annales-de-concours) ;
+- [aussi des corrigés en Python de quelques sujets récents (GitHub/@jjfPCSI1)](https://github.com/jjfPCSI1/codes_concours_CPGE);
 
 ## En vrac
 

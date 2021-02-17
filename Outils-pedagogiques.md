@@ -92,14 +92,15 @@ Pour toutes ces idées, deux remarques :
   - agenda partagé, hébergé librement. L'intérêt peut être de donner un lien CalDAV. Avec [FramAgenda](https://framagenda.org/login#TutoSync) ? Demander à @Corentin ;
 
 - **Gestion des colles** :
-  - "colloscope" automatisé ? Demander à @Loïc ;
+  - "colloscope" automatisé ? TODO: Demander à @Loïc ;
+  - Ou voir sur GitHub : [greg904/carnot-colles](https://github.com/greg904/carnot-colles), [stephanekirsch/e-colle](https://github.com/stephanekirsch/e-colle) ;
 
 - **Conseils de classe** :
   - rien à faire de spécial ;
 
 - **Recrutements ParcourSup** :
   - normalement géré avant une arrivée en septembre ;
-  - Cf [`commission` de Nicolas Mesnier](http://nmesnier.free.fr/#codes)
+  - Cf [`commission` de Nicolas Mesnier](http://nmesnier.free.fr/#codes) ?
 
 
 ### Bonus qui seraient utiles
@@ -178,11 +179,12 @@ Pour toutes ces idées, deux remarques :
   - notamment les applis mobiles pour OCaml, Python et C ? Cf [apk.fr.html](https://perso.crans.org/besson/apk.fr.html) sur mon site ;
 
 - **Éditeur et interprète/compilateur en ligne** ? Pour pouvoir travailler depuis un simple navigateur web, sans rien avoir à installer :
-  - **OCaml** : [TryOcaml](https://try.ocamlpro.com/) ou [BetterOCaml](https://betterocaml.ml/) (et plus expérimentalement [Dominical](https://alpha.iodide.io/notebooks/1627/) et [OCaml](https://perso.crans.org/besson/ocaml.fr.html) sur mon site perso). Voir aussi [Learn-OCaml](https://ocaml-sf.org/learn-ocaml/) ;
+  - **OCaml** : [TryOcaml](https://try.ocamlpro.com/) ou [BetterOCaml](https://betterocaml.ml/) (et plus expérimentalement [Dominical](https://alpha.iodide.io/notebooks/1627/) et [OCaml](https://perso.crans.org/besson/ocaml.fr.html) sur mon site perso). Voir aussi [Learn-OCaml](https://ocaml-sf.org/learn-ocaml/) qui semble incroyable (cf [démo Learn-OCaml](https://ocaml-sf.org/learn-ocaml-public/index.html#activity%3Dexercises), [déployable statiquement](https://ocaml-sf.org/learn-ocaml/howto-deploy-learn-ocaml-statically.html), et avec [learn-ocaml-cpge](https://github.com/ocaml-sf/learnocaml-cpge-public) (très peu complet, TODO: à remplir ?)) ;
+  - **C** : [C Tutor](http://pythontutor.com/c.html#mode=display) est minimaliste mais très utile pour apprendre et visualiser, [onlineGDB.com](https://www.onlinegdb.com/) permet de déboguer des petits programmes en ligne ;
   - **Python** : [PythonTutor.com](http://pythontutor.com/) est incroyable pour les visualisations qu'il propose, mais de façon plus légère il y a aussi un [terminal Python 2](https://perso.crans.org/besson/python.html) sur mon site perso ;
-  - **Jupyter notebook** : [Google Colab](https://colab.research.google.com/) (sans connexion, cf [mes notebooks](https://colab.research.google.com/github/Naereen/notebooks/blob/master/)), [Binder](https://mybinder.org/) (sans connexion, cf [mes notebooks](https://mybinder.org/v2/gh/Naereen/notebooks/)) et [DeepNote](https://deepnote.com/) (demande un compte, cf [un de mes notebooks](https://deepnote.com/launch?template=python_3.6&url=https%3A%2F%2Fgithub.com%2FNaereen%2Fnotebooks%2Fblob%2Fmaster%2FPy_Pi_Day_2017.ipynb)), et [Basthon.fr](https://notebook.basthon.fr/) ;
-  - **Tout langage** : [REPL.it](https://repl.it/) (dont [le C](https://repl.it/languages/c)), ou [myCompiler.io](https://www.mycompiler.io/) (dont [le C](https://www.mycompiler.io/new/c)) ;
-  - **SQL** : [SQLite-Online](https://github.com/jacques56100/NSI-SqliteOnline) comme sur [ce site d'un cours de NSI terminale](http://nsi.colbert.bzh/sql/) : TODO: m'en servir pour des TP de SQL et les héberger [localement](https://perso.crans.org/besson/publis/NSI-SqliteOnline/) ? [Il en plein existe d'autres](https://duckduckgo.com/?t=canonical&q=sqlite+online+editor&ia=web), mais pas en français je pense, et moins bien conçu pour l'enseignement.
+  - **C et Python** : [REPL.it](https://repl.it/) ([C](https://repl.it/languages/c),[Python](https://repl.it/languages/python)), ou [myCompiler.io](https://www.mycompiler.io/) ([C](https://www.mycompiler.io/new/c), [Python](https://www.mycompiler.io/new/python)) -- mais pas OCaml ;
+  - **Jupyter notebook** : [Google Colab](https://colab.research.google.com/) (sans connexion, cf [mes notebooks](https://colab.research.google.com/github/Naereen/notebooks/blob/master/)), [Binder](https://mybinder.org/) (sans connexion, cf [mes notebooks](https://mybinder.org/v2/gh/Naereen/notebooks/)) et [DeepNote](https://deepnote.com/) (demande un compte, cf [un de mes notebooks](https://deepnote.com/launch?template=python_3.6&url=https%3A%2F%2Fgithub.com%2FNaereen%2Fnotebooks%2Fblob%2Fmaster%2FPy_Pi_Day_2017.ipynb)), et [Basthon.fr](https://notebook.basthon.fr/) peut dépanner si besoin ;
+  - **SQL** : [SQLite-Online](https://github.com/jacques56100/NSI-SqliteOnline) comme sur [ce site d'un cours de NSI terminale](http://nsi.colbert.bzh/sql/) : TODO: m'en servir pour des TP de SQL et les héberger [localement](https://perso.crans.org/besson/publis/NSI-SqliteOnline/) ? Il y a aussi [ce TP sur CNAM.fr](http://deptfod.cnam.fr/bd/tp/) mais j'aime moins ; [Il en plein existe d'autres](https://duckduckgo.com/?t=canonical&q=sqlite+online+editor&ia=web), mais pas en français je pense, et moins bien conçu pour l'enseignement.
 
 - **Prise de note collaborative en ligne** ?
   - [HackMD.io](https://hackmd.io/#) et [StackEdit.io](https://stackedit.io/) pour des notes en Markdown (voir aussi [Madoko](https://www.madoko.net/), ?) ;
@@ -342,10 +344,14 @@ TODO: cette liste est encore en chantier.
 - depuis LaTeX : c'est conçu pour ! Toujours inclure la figure avec `\input{tikz-figures/graphe-compilation12.tex}`, pour les avoir réutilisables ailleurs (un dépôt git avec juste les figures ? peut-être pas nécessaire) ;
 - dans Jupyter notebook : avec [itikz](https://github.com/jbn/itikz), indépendant de Python FIXME: mais ne fonctionne pas dans d'autres kernels...
 - dans Sphinx (rST) ou Jupyter book (rST / MyST / nb) : [sphinxcontrib.tikz](https://sphinxcontrib-tikz.readthedocs.io/) ? mais peut-être plus simple d'utiliser juste `%%itikz` depuis Jupyter notebooks ?
-- Documentation : [« TikZ pour l'impatient - Free »](http://math.et.info.free.fr/TikZ/index.html) ([PDF](http://math.et.info.free.fr/TikZ/bdd/TikZ-Impatient.pdf)) est LA référence en français ;
+- Documentation : [« TikZ pour l'impatient - Free » (~150 pages)](http://math.et.info.free.fr/TikZ/index.html) ([PDF](http://math.et.info.free.fr/TikZ/bdd/TikZ-Impatient.pdf)) est LA référence en français, et [le manuel PGF/TikZ (~1300 pages)](https://pgf-tikz.github.io/pgf/pgfmanual.pdf) en anglais peut aussi aider ;
 
 ```{seealso}
 En 2013, j'aurai voulu utiliser [gastex](http://www.lsv.fr/~gastin/gastex/index.html), maintenu par mon ancien professeur [Paul Gastin](http://www.lsv.fr/~gastin/) ([gastex @CTAN](https://www.ctan.org/pkg/gastex)), mais plus maintenant, car `gastex` semble incompatible avec TexLive 2014.
+```
+
+```{note}
+Apparemment, [les versions récentes de PGF/TikZ viennent avec des dizaines de librairies](https://en.wikipedia.org/wiki/PGF/TikZ#Libraries) pour dessiner plein de choses, des automates et machines de Turing, des graphes et plein d'autres ! Et on peut faire des [animations]() comme [le montrent ces documents](https://github.com/jjfPCSI1/animations_latex) ?
 ```
 
 ### Écrire des algorithmes
