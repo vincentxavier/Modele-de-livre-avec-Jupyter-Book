@@ -82,6 +82,16 @@
   # TODO: add this file back?
   - file: Glossaire
 
+- part: Nouveaux programmes d'informatique en CPGE
+  chapters:
+  - file: programmes-CPGE/index
+  - file: programmes-CPGE/Informatique en MP2I et MPI
+  - file: programmes-CPGE/Option informatique en MPSI et MP
+  - file: programmes-CPGE/Informatique tronc commun
+  - file: programmes-CPGE/Informatique en BCPST
+  - file: programmes-CPGE/Informatique libre en TIPE
+  # TODO: write these pages
+
 - part: Guide de styles
   chapters:
   - file: styleguide/Guides de style

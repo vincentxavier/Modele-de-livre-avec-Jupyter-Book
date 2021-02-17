@@ -60,5 +60,5 @@ These pages should render perfectly, otherwise something is broken in the jupyte
 - [x] DONE write demo for other kernels: Python 3, C, OCaml, Java, Shell/Bash, SQL:
   - [x] {doc}`notebooks/index` ;
   - [x] are they all correctly included?
+  - [x] Fix example of C ;
   - [ ] See SQL ;
-  - [ ] Fix example of C ;
