@@ -9,11 +9,11 @@ Certains d'entre eux sont des directives générales de style de programmation e
 
 ## Liste
 
-- {ref}`Guide de style OCaml`
-- {ref}`Guide de style C`
-- {ref}`Guide de style Python`
-- {ref}`Guide de style Makefile`
-- {ref}`Guide de style Bash`
+- {ref}`styleguide/Guide de style OCaml`
+- {ref}`styleguide/Guide de style C`
+- {ref}`styleguide/Guide de style Python`
+- {ref}`styleguide/Guide de style Makefile`
+- {ref}`styleguide/Guide de style Bash`
 - TODO: more ?
 
 
