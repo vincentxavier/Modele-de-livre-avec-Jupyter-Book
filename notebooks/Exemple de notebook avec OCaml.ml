@@ -349,6 +349,6 @@ TODO: plus tard ! *)
 
 (* ## Pour en apprendre plus
 
-- Ce petit tutoriel : https://perso.crans.org/besson/apprendre-python.fr.html (sous licence GPLv3) ;
-- Ce WikiBooks : https://fr.wikibooks.org/wiki/Programmation_Python (sous licence libre) ;
-- Ces deux livres de Python au niveau lycée : https://github.com/exo7math/python1-exo7 et https://github.com/exo7math/python2-exo7 (sous licence Creative Commons). *)
+- Ce petit tutoriel : <https://perso.crans.org/besson/apprendre-python.fr.html> (sous licence GPLv3) ;
+- Ce WikiBooks : <https://fr.wikibooks.org/wiki/Programmation_Python> (sous licence libre) ;
+- Ces deux livres de Python au niveau lycée : <https://github.com/exo7math/python1-exo7> et <https://github.com/exo7math/python2-exo7> (sous licence Creative Commons). *)

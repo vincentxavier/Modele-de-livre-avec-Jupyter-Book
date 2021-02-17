@@ -230,25 +230,25 @@ Renvoyer
 
 ```{glossary}
 OCaml
-    Langage de programmation créé par l'INRIA, principalement fonctionnel mais aussi impératif et orienté objet (*Objective Caml*). Disponible sur toutes les plateformes, gratuitement. Un des langages enseignés en classes préparatoires (avec {term}`Python<Python>`, {term}`SQL<SQL>` et {term}`C<C>`). Cf. <https://www.ocaml.org/>.
+    Langage de programmation créé par l'INRIA, principalement fonctionnel mais aussi impératif et orienté objet (*Objective Caml*). Disponible sur toutes les plateformes, gratuitement. Un des langages enseignés en classes préparatoires (avec {term}`Python`, {term}`SQL<SQL>` et {term}`C`). Cf. <https://www.ocaml.org/>.
 
 Python
-    Langage de programmation impératif, mais aussi orienté objet. Disponible sur toutes les plateformes, gratuitement. Un des langages enseignés en classes préparatoires (avec {term}`SQL<SQL>`, {term}`C<C>` et {term}`OCaml<OCaml>`). Cf. <https://www.python.org/>, et [WikiBooks Python](https://fr.wikibooks.org/wiki/Programmation_Python) ainsi que <https://python-prepa.github.io/>. Mes suggestions pour apprendre Python sont sur <https://perso.crans.org/besson/apprendre-python.fr.html>
+    Langage de programmation impératif, mais aussi orienté objet. Disponible sur toutes les plateformes, gratuitement. Un des langages enseignés en classes préparatoires (avec {term}`SQL<SQL>`, {term}`C` et {term}`OCaml`). Cf. <https://www.python.org/>, et [WikiBooks Python](https://fr.wikibooks.org/wiki/Programmation_Python) ainsi que <https://python-prepa.github.io/>. Mes suggestions pour apprendre Python sont sur <https://perso.crans.org/besson/apprendre-python.fr.html>
 
 SQL
-    Langage de requête de bases de données (*Structured Query Language*). Disponible en plein de variantes, nous nous focaliserons sur SQLite. Disponible sur toutes les plateformes, gratuitement. Un des langages enseignés en classes préparatoires (avec {term}`OCaml<OCaml>`, {term}`Python<Python>` et {term}`C<C>`). Cf. <https://sql.sh/> pour un très bon cours en français.
+    Langage de requête de bases de données (*Structured Query Language*). Disponible en plein de variantes, nous nous focaliserons sur SQLite. Disponible sur toutes les plateformes, gratuitement. Un des langages enseignés en classes préparatoires (avec {term}`OCaml`, {term}`Python` et {term}`C`). Cf. <https://sql.sh/> pour un très bon cours en français.
 
 SQLite
     Un petit SQL, qui n'a pas besoin d'un serveur gestionnaire de base de données mais qui stocke la base de données sur un fichier local sur un disque. Pratique pour enseigner et pratiquer le SQL sans se prendre la tête avec un serveur, et pour de petites applications dont les performances n'importent peu et dont les bases de données sont petites. Cf. <https://www.sqlite.org/>.
 
 C
-    Langage de programmation impératif, très proche de la machine (bas niveau). Un des principaux langages utilisés au monde, quasiment disponible sur toutes les plateformes, gratuitement. Un des langages enseignés en classes préparatoires (avec {term}`OCaml<OCaml>`, {term}`Python<Python>` et {term}`SQL<SQL>`).
+    Langage de programmation impératif, très proche de la machine (bas niveau). Un des principaux langages utilisés au monde, quasiment disponible sur toutes les plateformes, gratuitement. Un des langages enseignés en classes préparatoires (avec {term}`OCaml`, {term}`Python` et {term}`SQL<SQL>`).
 
 Bash
     Langage de script du projet GNU Bash, utilisé depuis les années 1980. Ce n'est pas un des langages enseignés en classes préparatoires mais nous nous en servirons quand même. Si vous devenez accro à GNU/Linux je vous suggère de travailler avec [Fish Shell](https://www.fishshell.com), plus moderne et plus agréable à utiliser.
 
 Makefile
-    Un petit langage de description de tâches, généralement utilisé pour faciliter la compilation de code, très populaire depuis les années 1980. Ce n'est pas un des langages enseignés en classes préparatoires mais nous nous en servirons quand même. Les Makefiles sont notamment utiles pour écrire des programmes non triviaux en {term}`C<C>` et en {term}`OCaml<OCaml>`. Ce livre est généré grâce à un {term}`Makefile<Makefile>` TODO: lien.
+    Un petit langage de description de tâches, généralement utilisé pour faciliter la compilation de code, très populaire depuis les années 1980. Ce n'est pas un des langages enseignés en classes préparatoires mais nous nous en servirons quand même. Les Makefiles sont notamment utiles pour écrire des programmes non triviaux en {term}`C` et en {term}`OCaml`. Ce livre est généré grâce à un {term}`Makefile<Makefile>` TODO: lien.
 
 Langage interprété
     Une implémentation concrète d'un langage (qui est une spécification théorique). Le programme écrit en langage A est lu par un interprète (ou interpréteur), qui l'exécute directement, ou le traduit en langage intermédiaire (bytecode ou non), qui est ensuite exécuté par un autre programme dit machine virtuelle (*Virtual Machine*).
@@ -265,7 +265,7 @@ Langage transpilé
 
 ```{glossary}
 JavaScript
-    Un autre langage très populaire, utilisé principalement pour programmer des petites fonctionnalités dans des pages web, mais aussi de plus en plus pour des applications mobiles ou bureaux (avec [Electron](https://www.electronjs.org/)) ou des applications en lignes de commande ou côté serveur (avec [nodejs](https://nodejs.org/en/)). Ces ressources peuvent vous aider à apprendre : [WikiBooks JavaScript]([XXX](https://fr.wikibooks.org/wiki/Programmation_JavaScript)), <https://javascript.info/> très complet mais en anglais.
+    Un autre langage très populaire, utilisé principalement pour programmer des petites fonctionnalités dans des pages web, mais aussi de plus en plus pour des applications mobiles ou bureaux (avec [Electron](https://www.electronjs.org/)) ou des applications en lignes de commande ou côté serveur (avec [nodejs](https://nodejs.org/en/)). Ces ressources peuvent vous aider à apprendre : [WikiBooks JavaScript](https://fr.wikibooks.org/wiki/Programmation_JavaScript), <https://javascript.info/> très complet mais en anglais.
 
 Java
     Un autre langage très populaire, orienté objet et destiné à être compilé en bytecode exécuté sur une JVM (*Java Virtual Machine*). Très populaire dans les années 1995-2010. Pas enseigné en classes préparatoires, mais dans certaines écoles d'ingénieurs et des Universités. Android et la plupart de ses applications, mais aussi (la première édition de) Minecraft sont programmés en Java. Ces ressources peuvent vous aider à apprendre : [WikiBooks Java](https://fr.wikibooks.org/wiki/Programmation_Java) et les références.
@@ -328,19 +328,19 @@ JPEG
     Format d'images compressées avec pertes, principalement utilisées pour les photographies. <https://fr.wikipedia.org/wiki/JPEG>
 
 AVI
-    Un format de stockage de vidéo avec du son, compressées avec pertes. TODO:? <https://fr.wikipedia.org/wiki/Audio_Video_Interleave>
+    Un format de stockage de vidéo avec du son, compressées avec pertes. <https://fr.wikipedia.org/wiki/Audio_Video_Interleave>
 
 MKV
-    Un format de stockage de vidéo avec du son, compressées avec pertes. TODO:? <https://fr.wikipedia.org/wiki/MPEG-1/2_Audio_Layer_3>
+    Un format de stockage de vidéo avec du son, compressées avec pertes. <https://fr.wikipedia.org/wiki/MPEG-1/2_Audio_Layer_3>
 
 MP3
-    Le format standard pour la musique compressée avec pertes. Format et logiciels non libres mais gratuits. TODO:? <https://fr.wikipedia.org/wiki/MPEG-1/2_Audio_Layer_3>
+    Le format standard pour la musique compressée avec pertes. Format et logiciels non libres mais gratuits. <https://fr.wikipedia.org/wiki/MPEG-1/2_Audio_Layer_3>
 
 Ogg Vorbis
-    Un autre format de musique compressé avec pertes. Format libre, mais moins standard. TODO:? <https://fr.wikipedia.org/wiki/Vorbis>
+    Un autre format de musique compressé avec pertes. Format libre, mais moins standard. <https://fr.wikipedia.org/wiki/Vorbis>
 
 GIF
-    Un format de stockage de petite vidéo sans son, compressées avec beaucoup de pertes. TODO:? (prononcé "guiffe", [gif] en API). <https://fr.wikipedia.org/wiki/Graphics_Interchange_Format>
+    Un format de stockage de petite vidéo sans son, compressées avec beaucoup de pertes. (prononcé "guiffe", [gif] en API). <https://fr.wikipedia.org/wiki/Graphics_Interchange_Format>
 
 JSON
     Un format texte qui ressemble à un dictionnaire Python, stockage de clés/valeurs. C'est notamment le format utilisé par les notebooks Jupyter. Quasiment le standard pour l'échange de format texte par des programmes sur Internet. Cf <https://json.org/>.
@@ -379,10 +379,10 @@ Firefox
     Le navigateur web suggéré (cf <https://www.mozilla.org/firefox/>) pour lire ce livre en ligne et utiliser les notebooks Jupyter. Un des principaux navigateur utilisés au monde, et le dernier "grand" navigateur qui soit libre et indépendant, quasiment disponible sur toutes les plateformes, gratuitement. On peut lui ajouter plein d'extensions intéressantes, cf <https://perso.crans.org/besson/firefox-extensions.fr.html> pour mes suggestions.
 
 Visual Studio Code
-    L'éditeur de texte générique suggéré (cf <https://code.visualstudio.com/>) pour travailler en {term}`C<C>`, {term}`OCaml<OCaml>` et {term}`Python<Python>`. Un petit nouveau en comparaison des vénérables Emacs et Vi(m), mais bien plus moderne et à la prise en main plus facile. Disponible sur toutes les plateformes d'ordinateurs bureau et portable, gratuitement. On peut lui ajouter plein d'extensions intéressantes, cf <https://perso.crans.org/besson/visualstudiocode.fr.html> pour mes suggestions.
+    L'éditeur de texte générique suggéré (cf <https://code.visualstudio.com/>) pour travailler en {term}`C`, {term}`OCaml` et {term}`Python`. Un petit nouveau en comparaison des vénérables Emacs et Vi(m), mais bien plus moderne et à la prise en main plus facile. Disponible sur toutes les plateformes d'ordinateurs bureau et portable, gratuitement. On peut lui ajouter plein d'extensions intéressantes, cf <https://perso.crans.org/besson/visualstudiocode.fr.html> pour mes suggestions.
 
 Jupyter notebook
-    L'environnement recommandé pour programmer en {term}`Python<Python>`, cf <https://www.jupyter.org/>. On peut s'en servir pour programmer en {term}`OCaml<OCaml>` et en {term}`C<C>` TODO: liens.
+    L'environnement recommandé pour programmer en {term}`Python`, cf <https://www.jupyter.org/>. On peut s'en servir pour programmer en {term}`OCaml` et en {term}`C` TODO: liens.
 
 Git
     Gestionnaire de version que vous prendrez en main en deuxième année. cf <https://perso.crans.org/besson/tutogit.fr.html> pour mes suggestions.
@@ -393,19 +393,19 @@ Git
 
 ```{glossary}
 ocamlc
-    Compilateur de code {term}`OCaml<OCaml>` vers du bytecode. A éviter, soit vous interprétez le code avec `ocaml` directement, soit vous compilez en code natif avec `ocamlopt`.
+    Compilateur de code {term}`OCaml` vers du bytecode. A éviter, soit vous interprétez le code avec `ocaml` directement, soit vous compilez en code natif avec `ocamlopt`.
 
 ocamlopt
-    Compilateur de code {term}`OCaml<OCaml>` vers du code natif. A préférer face à `ocamlc`.
+    Compilateur de code {term}`OCaml` vers du code natif. A préférer face à `ocamlc`.
 
 ocamlc -i
-    Pour afficher (ou générer) les signatures d'un ou plusieurs fichiers {term}`OCaml<OCaml>`. TODO: donner ce genre de détails ici ? Ou ailleurs ?
+    Pour afficher (ou générer) les signatures d'un ou plusieurs fichiers {term}`OCaml`. TODO: donner ce genre de détails ici ? Ou ailleurs ?
 
 GCC
-    Le vénérable GNU {term}`C<C>` Compiler, pour compiler vos programmes en {term}`C<C>`. Nous utiliserons plutôt clang, qui est plus moderne et aux messages d'erreurs souvent moins cryptiques.
+    Le vénérable GNU {term}`C` Compiler, pour compiler vos programmes en {term}`C`. Nous utiliserons plutôt clang, qui est plus moderne et aux messages d'erreurs souvent moins cryptiques.
 
 Clang
-    Un autre compilateur {term}`C<C>`, pour compiler vos programmes en {term}`C<C>`. Nous le préférons à GCC, qui est plus ancien et aux messages d'erreurs souvent plus cryptiques.
+    Un autre compilateur {term}`C`, pour compiler vos programmes en {term}`C`. Nous le préférons à GCC, qui est plus ancien et aux messages d'erreurs souvent plus cryptiques.
 ```
 
 
@@ -413,7 +413,7 @@ Clang
 
 ```{glossary}
 Android
-    Le principal système d'exploitation pour téléphone mobile en 2021, produit principalement par Google. On peut lui ajouter plein d'extensions intéressantes, cf <https://perso.crans.org/besson/apk.fr.html> pour mes suggestions.
+    Le principal système d'exploitation pour téléphone mobile en 2021, produit principalement par Google. On peut lui ajouter plein d'applications intéressantes, cf <https://perso.crans.org/besson/apk.fr.html> pour mes suggestions.
 
 iOS
     Un autre système d'exploitation pour téléphone mobile en 2021, produit par Apple. Apple vous espionne quasiment sur tous les aspects possibles, lorsque vous utilisez un appareil Apple, sachez le ! Je n'y connais rien, je ne pourrais pas vous aider.
@@ -422,7 +422,7 @@ Windows phone
     Un système d'exploitation pour téléphone mobile, quasiment disparu en 2021, produit par Microsoft. Microsoft vous espionne quasiment sur tous les aspects possibles, lorsque vous utilisez un appareil Microsoft, sachez le ! Je n'y connais rien, je ne pourrais pas vous aider.
 
 Ubuntu
-    Mon système d'exploitation pour ordinateur, bureau et portable, en 2021, produit par Canonical Ltd. Je vous recommande d'installer Ubuntu sur votre ordinateur, cf ce guide <https://doc.ubuntu-fr.org/>. C'est un système d'exploitation basée sur GNU/Linux.
+    Mon système d'exploitation pour ordinateur, bureau et portable, en 2021, produit par Canonical Ltd. Je vous recommande d'installer Ubuntu sur votre ordinateur, cf ce guide <https://doc.ubuntu-fr.org/>. C'est un système d'exploitation basé sur GNU/Linux.
 
 Mac OS
     Un autre système d'exploitation pour ordinateur, bureau et portable, en 2021, produit par Apple. Apple vous espionne quasiment sur tous les aspects possibles, lorsque vous utilisez un appareil Apple, sachez le ! Je ne connais pas très bien, je ne pourrais pas vous aider aussi bien que sous Ubuntu.
@@ -455,10 +455,10 @@ Une liste très partielle, sans jugement aucun et juste avec des pointeurs. Si u
 
 ```{glossary}
 Licence
-    Trois premières années de formations à l'Université. Avant, les deux premières années donnait un DEUG.
+    Trois premières années de formations à l'Université. Avant, les deux premières années donnaient un DEUG.
 
 Master
-    Quatrième et cinquième années de formations à l'Université. Avant, les quatre premières années donnait un DEA. Un diplôme d'ingénieur est équivalent à un master. Un master est requis pour passer les concours de recrutements des enseignants (CAPES, agrégations).
+    Quatrième et cinquième années de formations à l'Université. Avant, les quatre premières années donnaient un DEA. Un diplôme d'ingénieur est équivalent à un master. Un master est requis pour passer les concours de recrutements des enseignants (CAPES, agrégations).
 
 Doctorat
     Sixième, septième et huitième années de formations à l'Université. Donne le grade de docteur.

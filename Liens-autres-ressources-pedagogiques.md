@@ -42,7 +42,7 @@ TODO: rédiger pages programmes
   - beaucoup de [TP MPSI](http://info-llg.fr/option-mpsi/?a=tp) et [TP MP](http://info-llg.fr/option-mp/?a=tp) énoncés et corrigés (PDF et .ml) ;
   - et beaucoup de [DS MPSI](http://info-llg.fr/option-mpsi/prive/?a=controles) et [DS MP](http://info-llg.fr/option-mp/prive/?a=controles) énoncés et corrigés (PDF) ;
 
-- [MPSI et MP](http://jdreichert.fr/Enseignement/) au lycée Albert Schweitzer @ Mulhouse :
+- [MPSI et MP](http://jdreichert.fr/Enseignement/) au lycée Albert Schweitzer @ Le Raincy :
   - des bons cours (PDF) ;
   - plein de TD/TP (PDF, corrigés) etc ;
 

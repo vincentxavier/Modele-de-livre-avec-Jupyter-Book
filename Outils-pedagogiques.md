@@ -169,21 +169,20 @@ Pour toutes ces idées, deux remarques :
 ### Bonus pour les élèves
 
 - **Installeurs faciles pour les logiciels** ?
-  - chiant de se taper la maintenance de ces trucs là ;
+  - chiant de se taper la maintenance de ces trucs là, notamment les applis bureaux pour OCaml (Windows notamment), Python et C ?
   - mais on peut en trouver (faits par d'autres gens), et les héberger au même endroit, au cas où ils deviennent indisponibles ;
-  - notamment les applis bureaux pour OCaml (Windows notamment), Python et C ?
   - Python : [EduPython](https://edupython.tuxfamily.org/),
-  - OCaml : [pour OCaml](https://info.prepa-carnot.fr/index.php/2020/01/26/installer-ocaml-sur-sa-machine/) et liens dans ces pages là ;
+  - OCaml : [pour OCaml](https://info.prepa-carnot.fr/index.php/2020/01/26/installer-ocaml-sur-sa-machine/) et liens dans ces pages là, ou alors [OCaml-Top](https://github.com/OCamlPro/ocaml-top/releases) ;
   - C : TODO: ?
   - SQL(ite) : TODO: ?
   - notamment les applis mobiles pour OCaml, Python et C ? Cf [apk.fr.html](https://perso.crans.org/besson/apk.fr.html) sur mon site ;
 
 - **Éditeur et interprète/compilateur en ligne** ? Pour pouvoir travailler depuis un simple navigateur web, sans rien avoir à installer :
-  - **OCaml** : [TryOcaml](https://try.ocamlpro.com/) ou [BetterOCaml](https://betterocaml.ml/) (et plus expérimentalement [Dominical](https://alpha.iodide.io/notebooks/1627/) et [OCaml](https://perso.crans.org/besson/ocaml.fr.html) sur mon site perso) ;
+  - **OCaml** : [TryOcaml](https://try.ocamlpro.com/) ou [BetterOCaml](https://betterocaml.ml/) (et plus expérimentalement [Dominical](https://alpha.iodide.io/notebooks/1627/) et [OCaml](https://perso.crans.org/besson/ocaml.fr.html) sur mon site perso). Voir aussi [Learn-OCaml](https://ocaml-sf.org/learn-ocaml/) ;
   - **Python** : [PythonTutor.com](http://pythontutor.com/) est incroyable pour les visualisations qu'il propose, mais de façon plus légère il y a aussi un [terminal Python 2](https://perso.crans.org/besson/python.html) sur mon site perso ;
   - **Jupyter notebook** : [Google Colab](https://colab.research.google.com/) (sans connexion, cf [mes notebooks](https://colab.research.google.com/github/Naereen/notebooks/blob/master/)), [Binder](https://mybinder.org/) (sans connexion, cf [mes notebooks](https://mybinder.org/v2/gh/Naereen/notebooks/)) et [DeepNote](https://deepnote.com/) (demande un compte, cf [un de mes notebooks](https://deepnote.com/launch?template=python_3.6&url=https%3A%2F%2Fgithub.com%2FNaereen%2Fnotebooks%2Fblob%2Fmaster%2FPy_Pi_Day_2017.ipynb)), et [Basthon.fr](https://notebook.basthon.fr/) ;
   - **Tout langage** : [REPL.it](https://repl.it/) (dont [le C](https://repl.it/languages/c)), ou [myCompiler.io](https://www.mycompiler.io/) (dont [le C](https://www.mycompiler.io/new/c)) ;
-  - **SQL** : [SQLite-Online](https://github.com/jacques56100/NSI-SqliteOnline) comme sur [ce site d'un cours de NSI terminale](http://nsi.colbert.bzh/sql/) : TODO: faire pareil et héberger [localement](https://perso.crans.org/besson/publis/NSI-SqliteOnline/) ? [Il en plein existe d'autres](https://duckduckgo.com/?t=canonical&q=sqlite+online+editor&ia=web), mais pas en français je pense, et moins bien conçu pour l'enseignement.
+  - **SQL** : [SQLite-Online](https://github.com/jacques56100/NSI-SqliteOnline) comme sur [ce site d'un cours de NSI terminale](http://nsi.colbert.bzh/sql/) : TODO: m'en servir pour des TP de SQL et les héberger [localement](https://perso.crans.org/besson/publis/NSI-SqliteOnline/) ? [Il en plein existe d'autres](https://duckduckgo.com/?t=canonical&q=sqlite+online+editor&ia=web), mais pas en français je pense, et moins bien conçu pour l'enseignement.
 
 - **Prise de note collaborative en ligne** ?
   - [HackMD.io](https://hackmd.io/#) et [StackEdit.io](https://stackedit.io/) pour des notes en Markdown (voir aussi [Madoko](https://www.madoko.net/), ?) ;
@@ -197,6 +196,21 @@ Pour toutes ces idées, deux remarques :
   - **Makefile** : TODO: en trouver un bon, TODO: traduire ;
   - Si besoin, [cette liste maintenu par Google](https://google.github.io/styleguide/) est utile ;
   - TODO: Aussi parler de linter/formateur automatiques ?
+
+#### Autres bonus pour les élèves
+
+- **Pour des élèves ayant un ordinateur mais pas d'Internet**
+  - **Accès à la documentation** (OCaml, Python, C, SQL, etc) : [Zeal-docs](https://zealdocs.org/) est parfait pour ça !
+  - [WebCatalog](https://webcatalog.app/) peut permettre d'installer des sites web statiques qui peuvent ensuite être utilisés comme des applications natives !
+  - OCaml : utilisez [WebCatalog](https://webcatalog.app/) avec le site [BetterOCaml](https://betterocaml.ml/editor/) ou [TryOCaml](https://try.ocamlpro.com/) (cf [ce tutoriel](https://github.com/jbdo99/BetterOCaml/issues/6#issuecomment-780269129)) ;
+  - Idée : écrire une appli Electron (packager) contenant BetterOCaml ? Ou avec [webcatalog.app](https://webcatalog.app/) : ça marche très bien pour BetterOCaml ?
+  - C/SQL/Python : trouver des alternatives ?
+
+- **Pour des élèves n'ayant pas d'ordinateur**
+  - Là, je peux pas faire de miracle...
+  - Mais les lycées et Universités proposent des salles informatique en accès libre !
+
+- **Faire le lien entre informatique bureau et calculatrices programmables** : TODO: réfléchir à ça
 
 ----
 
