@@ -113,6 +113,10 @@ TODO: rédiger pages programmes
 - [MPSI du lycée Jean-Baptiste Corot @ Savigny-sur-Orge](https://lgarcin.github.io/) : site libre [sur GitHub](https://github.com/lgarcin/lgarcin.github.io)
   - Un [cours](https://lgarcin.github.io/CoursPythonCPGE/) assez complet et bien illustré, écrit en reST et généré avec Sphinx ! Avec des animations vraiment géniales en Matplotlib (jshtml framework ? avec bokeh ?), tours de Hanoï, tris, intégration, recherche, dichotomie, Euler ! Avec des figures en TikZ ! Mais pas de documentation pour recompiler le site web ?
 
+- [PCSI au lycée ? @ Montpellier](http://mpechaud.fr/itc.html)
+  - [Plein de tutoriels avec des tas d'animations sympas](http://mpechaud.fr/#info), sous licences CC-4.0, d'algorithmes et applications ;
+  - Et [des liens et idées](http://mpechaud.fr/itc.html) pour le nouveau programme d'informatique tronc commun, y compris en "machine learning" ;
+
 - En vrac :
   - Des cours (PDF), un devoirs et quelques corrigés de la [MP du Lycée Thiers @ Marseille](https://cahier-de-prepa.fr/mp-thiers/docs?ipt)
   - Des TD et quelques cours (PDF) de la [MPSI1](https://cahier-de-prepa.fr/mpsi1-malherbe/docs?info) et [MPSI2](https://cahier-de-prepa.fr/mpsi2-malherbe/docs?rep=94) au Lycée Malherbe @ Caen ;

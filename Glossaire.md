@@ -1,10 +1,15 @@
 # Glossaire
 
 Cette page est un glossaire, qui liste des termes et les définitions que j'en donne.
+Je vais me limiter à maximum 200 définitions, il y en a actuellement **164**.
 
 ```{warning}
-Ces définitions contiennent parfois mon propre point de vue, qui n'est en rien celui de mes employeurs, passés, actuels ou futurs. Elle sont volontairement courtes, et donc, au mieux partielles au pire inexactes.
+Ces définitions contiennent parfois mon propre point de vue, qui n'est en rien celui de mes employeurs, passés, actuels ou futurs. Elle sont volontairement courtes, et donc, au mieux partielles au pire inexactes. Beaucoup viennent de [Wikipédia](https://fr.wikipedia.org/wiki/).
 ```
+
+<!-- TODO: include this bash command to count number of definitions?
+$ egrep '^[^ \`#]+( [^ \`]+)?$' Glossaire.md | wc -l
+-->
 
 ## Vocabulaire d'informatique
 
@@ -132,13 +137,31 @@ Fonction
     Attention, la notion est différente des mathématiques.
 
 Signature
-    Pour une {term}`fonction<Fonction>`, sa signature déclare les listes de ses arguments et des valeurs {term}`renvoyées<Renvoyer>` (avec ou sans leurs types, selon le langage).
+    Pour une {term}`fonction<Fonction>`, sa signature déclare les listes de ses arguments et des valeurs {term}`renvoyées<Renvoyer>` (avec ou sans leurs types, selon le langage). Par exemple, le produit `prod(x,y)` de deux entiers aura les signatures suivantes :
+
+    - Python :
+      ```python
+    # étiquettes de type, conseillée à partir de Python 3.6
+      def prod(x : int, y : int) -> int:
+          return x * y
+      ```
+    - OCaml :
+      ```ocaml
+      let prod (x : int) (y : int) : int = x * y;;
+      ```
+    - En C :
+      ```c
+      int prod(int x, int y) { return x * y; }
+      ```
 
 Classe
-    TODO:
+    En [programmation orientée objet](https://fr.wikipedia.org/wiki/Programmation_orient%C3%A9e_objet), la déclaration d'une classe regroupe des membres, méthodes et propriétés (attributs) communs à un ensemble d'objets.
+    La classe déclare, d'une part, des attributs représentant l'état des objets et, d'autre part, des méthodes représentant leur comportement.
+    Une classe représente donc une catégorie d'objets. Elle apparaît aussi comme un moule ou une usine à partir de laquelle il est possible de créer des objets ; c'est en quelque sorte une « boîte à outils » qui permet de fabriquer un objet. On parle alors d'un objet en tant qu'instance d'une classe (création d'un objet ayant les propriétés de la classe).
+    Vous n'étudierez pas la programmation objet en CPGE.
 
 Objet
-    TODO:
+    En informatique, un [objet](https://fr.wikipedia.org/wiki/Objet_(informatique)) est un conteneur symbolique et autonome qui contient des informations et des mécanismes1 concernant un sujet, manipulés dans un programme. Le sujet est souvent quelque chose de tangible appartenant au monde réel2,3. C'est le concept central de la programmation orientée objet (POO).
 ```
 
 ### Types de données primitifs
@@ -181,9 +204,9 @@ int
       ```
 
 float
-    **Nombres à virgules flottants**, représentant inexacts des nombres réels, décimaux ou rationnels, généralement sur 32 ou 64 bits, quasiment toujours inexacts (non associatifs, non distributif, erreurs d'arrondis, dépassement de capacité, etc), généralement selon la [norme IEEE 754](https://fr.wikipedia.org/wiki/IEEE_754).
+    **Nombres à virgules flottants**, représentant inexacts des nombres réels, décimaux ou rationnels, généralement sur 32 ou 64 bits, quasiment toujours inexacts (non associatifs, non distributif, erreurs d'arrondis, dépassement de capacité, etc), généralement selon la [norme IEEE 754](https://fr.wikipedia.org/wiki/IEEE_754) (cf ces vidéos [de NSI France](https://www.youtube.com/watch?v=Gi-LtqUTfFo) ou [Suisse](https://youtu.be/mtizhxkB-Zw), [ce tutoriel NSI](https://pixees.fr/informatiquelycee/n_site/nsi_prem_float.html) ou [un autre en anglais](https://fabiensanglard.net/floating_point_visually_explained/index.html)).
 
-    - Python : type `float`, à 64 bits :
+    - Python : type `float`, à 64 bits, et [la documentation Python donne des bonnes informations(https://docs.python.org/fr/3/tutorial/floatingpoint.html) :
       ```python
       a = 3.1415; b = 1.0/1993; c = 1e32
       ```
@@ -254,12 +277,12 @@ string
 Type abstrait
     Une spécification mathématique d'un ensemble de données et de l'ensemble des opérations qu'on peut effectuer sur elles. On qualifie d'abstrait ce type de données car il correspond à un cahier des charges qu'une {term}`structure de données` doit ensuite mettre en œuvre.
 
-    *Exemples en CPGE* : {term}`Liste`, {term}`Tableau`, {term}`Arbre`, {term}`Graphe`, {term}`File`, {term}`Pile`, {term}`File de priorité`, formules propositionnelles, etc. TODO:
+    *Exemples en CPGE* : {term}`Liste`, {term}`Tableau`, {term}`Arbre`, {term}`Graphe`, {term}`File`, {term}`Pile`, {term}`File de priorité`, formules propositionnelles, etc. TODO: liens cours
 
 Structure de données
     Une manière d'organiser les données pour les traiter plus facilement. Une structure de données est une mise en œuvre concrète d'un {term}`type abstrait`.
 
-    *Exemples en CPGE* : liste simplement chaîne (type = liste), graphe par listes d'adjacence ou matrice d'adjacence (type = graphe), tas binaire min (type = file de priorité min), etc. TODO:
+    *Exemples en CPGE* : liste simplement chaîne (type = liste), graphe par listes d'adjacence ou matrice d'adjacence (type = graphe), tas binaire min (type = file de priorité min), etc. TODO: liens cours
 
 Liste
     Structure de donnée linéaire, généralement implémentée par simplement chaîné (ou doublement chaînée), permettant d'accéder rapidement au premier élément et à la suite de la liste.
@@ -381,71 +404,104 @@ Arbre
 
 ### Vocabulaire spécifique à l'architecture des ordinateurs
 
-TODO: à terminer.
+> Pour rigoler un peu, il y a aussi des compléments de définitions humoristiques.
 
 ```{glossary}
 Mémoire
-    RAM/ROM/? TODO:
+    Dispositif physique quelconque permettant de stocker de l'information : du papier, votre cerveau, l'ADN, des traces dans la boue, etc.
+    - En informatique, on distingue mémoire vive et mémoire morte ({term}`RAM` et ROM), et mémoire en lecture seule (ex un DVD classique) ou mémoire modifiable (disque dur HDD ou SSD, clé USB, mémoire RAM etc). Au niveau du {term}`CPU`, les registres sont des mémoires très limitées mais très très rapides.
+    - En sciences cognitives, liée à l'étude du cerveau. J'ai lu plein de choses dessus, mais j'ai une mauvaise mémoire 🤣 ! (non non, ironique) ;
 
 RAM
-    TODO:
+    Acronyme de *Random Access Memory*, qui prête à confusion mais veut dire que l'on peut accéder librement (et pas qu'elle répond aléatoirement !).
+    Ordres de grandeur historiques de la quantité de RAM sur les ordinateurs les plus vendus : 1940-1960 de l'ordre du kilo-octets, 1960-1980 de l'ordre du méga-octets, 1980-2000 lentement vers le giga-octets, 2000-2020 de 1 à 16 giga-octets.
+
+    > Synonyme : pagaie. C'est triste.
 
 CPU
-    Computation Processing Unit TODO:
+    Acronyme de *Computation Processing Unit*, ou [**processeur**](https://fr.wikipedia.org/wiki/Processeur) en français.
+    TODO
 
 Transistor
-    TODO:
+    Le [transistor](https://fr.wikipedia.org/wiki/Transistor) est un composant électronique qui est utilisé dans la plupart des circuits électroniques aussi bien en basse qu'en haute tension. Un transistor est un dispositif semi-conducteur à trois électrodes actives, qui permet de contrôler un courant ou une tension sur l'électrode de sortie grâce à une électrode d'entrée.
+    Inventé par le [Bell Labs](https://fr.wikipedia.org/wiki/Laboratoires_Bell) en 1947, il a révolutionné l'informatique et a permis les progrès fulgurants en miniaturisant toujours plus les ordinateurs.
+    Un {term}`ordinateur` moderne compte plusieurs dizaines de milliards de transistor, de taille nano-métrique ($10^{-9}$ m), gravé sur du silicium (comprendre, du sable très pur) dans le {term}`CPU`.
+
+    > Mais c'est aussi un [superbe jeu vidéo](https://en.wikipedia.org/wiki/Transistor_(video_game)) du studio Supergiant Games, qui prend [une vingtaine d'heures](https://howlongtobeat.com/game?id=17617)
 
 Mémoire cache
-    TODO:
+    Une [mémoire cache](https://fr.wikipedia.org/wiki/M%C3%A9moire_cache) est une {term}`mémoire` qui enregistre temporairement des copies de données provenant d'une source, afin de diminuer le temps d'un accès ultérieur d'un {term}`matériel` informatique à ces données.
+
+    En CPGE, vous n'étudierez pas ces aspects matériel, mais en algorithmique vous verrez le concept de programmation dynamique, et de mémoïsation, qui utilise une mémoire cache (de plus haut niveau).
+
+    > Mais c'est aussi une {term}`mémoire` qui joue à [cache-cache](https://fr.wikipedia.org/wiki/Cache-cache).
+    > A ne pas confondre avec le *cache mémoire*, et ses cousins le [*cache sexe*](https://fr.wikipedia.org/wiki/Cache-sexe) et le [*Cachou*](https://fr.wikipedia.org/wiki/Cachou_Lajaunie).
 
 ALU
-    TODO:
+    L'[**unité arithmétique et logique**](https://fr.wikipedia.org/wiki/Unit%C3%A9_arithm%C3%A9tique_et_logique) (UAL, en anglais *arithmetic-logic unit*, ALU), est l'organe de l'ordinateur chargé d'effectuer les calculs. Le plus souvent, l'UAL est incluse dans l'unité centrale de traitement ou le microprocesseur ({term}`CPU`).
+
+    > Mais c'est aussi un métal léger et pas cher, que [la marmotte utilise pour enrobé les tablettes de chocolats !](https://fr.wiktionary.org/wiki/et_la_marmotte_elle_met_le_chocolat_dans_le_papier_d%E2%80%99alu)
 
 FLU
-    TODO:
+    Terme moins standard, c'est le cousin de l'{term}`ALU` qui gère [les calculs sur les nombres à virgules flottantes](https://en.wikipedia.org/wiki/FLOPS) (*floating point*).
 
 GPU
-    Graphical Processing Unit. Utilisés pour vos jeux vidéo, mais aussi pour le calcul numérique intensif hautement parallèle, avec des langages comme nVidia CUDA, ou des outils automatiques comme Google Tensorflow ou Numba pour Python. TODO:
+    Acronyme de *Graphical Processing Unit*, ou [**processeur graphique**](https://fr.wikipedia.org/wiki/Processeur_graphique). Utilisés pour vos jeux vidéo, mais aussi pour le calcul numérique intensif hautement parallèle, avec des langages comme [nVidia CUDA](https://en.wikipedia.org/wiki/CUDA) qui étend le {term}`C`, ou des outils automatiques comme [Google Tensorflow](https://www.tensorflow.org/install/gpu) ou [Numba pour Python](https://numba.pydata.org/). Pas étudié en CPGE, mais à évoquer en MPI TODO:.
 
 Cœur
-    Un des CPU mono-cœur dans un CPU multi-cœur.
+    Un des CPU mono-cœur dans un CPU multi-cœur. (définition récursive mais qui explique bien)
 ```
 
 ### Matériels informatique
+
+> Pour rigoler un peu, il y a aussi des compléments de définitions humoristiques.
 
 TODO: à terminer.
 
 ```{glossary}
 Écran
-    TODO:
+    Dispositif d'affichage, partagé entre la télévision, les ordinateurs et les téléphones, les consoles de jeux, et bien d'autres.
+    Désormais[^écrans] à très hautes résolution à la fois spatiales (résolution HD 1920x1080 typique sur un ordinateur) et colorimétriques (16 millions de couleurs).
+
+    [^écrans] Présent dans le grand public depuis les années 60, moi j'ai grandi avec une télé couleur cathodique, des écran en 8-couleurs avec la Game Boy, les écrans non rétroéclairés jusqu'à 2011 etc. Mais non je ne suis pas vieux !
+
+32 bits
+    Architecture 32 bits, pour ordinateurs mais aussi pour la [Game Boy Advance](https://fr.wikipedia.org/wiki/Game_Boy_Advance) qui a occupé le début de mon adolescence.
+    Successeur des architectures {term}`16 bits` (par exemple la [SNES](https://en.wikipedia.org/wiki/Super_Nintendo_Entertainment_System), GBC), {term}`8 bits` (ex la [NES](https://fr.wikipedia.org/wiki/Nintendo_Entertainment_System)).
+
+64 bits
+    Architecture 64 bits est le standard moderne, successeur des architectures {term}`32 bits`, pour ordinateurs mais aussi pour la [Game Boy Advance](https://fr.wikipedia.org/wiki/Game_Boy_Advance) qui a occupé le début de mon adolescence.
+    Il semblerait que les architectures plus "puissantes" ne soient pas très utilisées (à part la [GameCube](https://fr.wikipedia.org/wiki/GameCube) à 128 bits)
 
 Clavier
-    TODO:
+    Un [clavier d'ordinateur](https://fr.wikipedia.org/wiki/Clavier_d'ordinateur) est une interface homme-machine munie de touches permettant à l'utilisateur d'entrer dans l'ordinateur une séquence de données, notamment textuelle. Les touches sont généralement des boutons en plastique reliés chacun à un interrupteur électronique.
+
+    On peut facilement [apprendre à écrire plus vite au clavier](https://fr.wikihow.com/taper-plus-vite-au-clavier), et [utiliser des raccourcis clavier intelligent](https://www.toutimages.com/clavier.htm).
+    Christian Clavier[^christianclavier] n'a pas de bons conseils pour ça, mais c'est un acteur formidable !
+
+    [^christianclavier] [Un acteur légendaire](https://fr.wikipedia.org/wiki/Christian_Clavier)
 
 Souris
-    TODO:
+    Dispositif de pointage graphique, inventé plus tôt que ce qu'on croit !
+    Appelé souris[^souris] parce que la forme rappelle le mammifère éponyme.
+    Universel sur les ordinateurs, sauf les téléphones intelligents (*smartphones*).
+
+    [^souris] Et pas parce que le pointeur court partout sur l'écran. C'est Jerry dans Tom et Jerry.
 
 Écran tactile
-    TODO:
+    Écran avec lequel on peut utiliser son doigt ou un stylet pour simuler une souris.
+    Universel sur les téléphones intelligents (*smartphones*), sauf sur les ordinateurs.
 
-Ethernet
-    TODO:
-
-WiFi
-    TODO:
-
-Bluetooth
-    TODO:
-
-Webcam
-    TODO:
+    > Présent dans le grand public depuis ~2005 avec la Nintendo DS puis les smartphones, moi j'ai découvert ça en seconde !
 
 Casque audio
-    TODO:
+    Un casque qui permet[^casqueaudio] d'écouter de la musique depuis son téléphone ou son ordinateur (ou son walkman, ou [son gramophone ou la TSF](https://youtu.be/TpNYDEd5dx8?t=211)).
+
+    [^casqueaudio] Quand on est poli-e, on écoute pas de musique sans casio audio dans l'espace public !
 
 Microphone
-    TODO:
+    Le récepteur qui transforme le son (de votre voix mais pas que) en signal numérique. Permet d'appeler Mamie via Skype, les cousins via Facetime, vos potes en raid via Discord, et *surtout* de répondre aux questions des profs durant les cours en visio !
+    Pensez à l'activer et à avoir un microphone de qualité pour [éviter les angoisses](https://www.commitstrip.com/fr/2020/04/28/boiling-point/) !
 ```
 
 ### Vocabulaire spécifique à Internet
@@ -453,34 +509,52 @@ Microphone
 TODO: à terminer.
 
 ```{glossary}
+
+Internet
+    Je ne vais pas vous définir [Internet](https://fr.wikipedia.org/wiki/Internet), vous avez grandi avec. Bon allez, quand-même au cas où :
+
+    > Internet est le réseau informatique mondial accessible au public. Il s'agit d'un réseau de réseaux, à commutation de paquets, sans centre névralgique, composé de millions de réseaux aussi bien publics que privés, universitaires, commerciaux et gouvernementaux, eux-mêmes regroupés en réseaux autonomes ; il en existe plus de 91 000 en 20191. L'information est transmise via Internet grâce à un ensemble standardisé de protocoles de transfert de données, qui permet des applications variées comme le courrier électronique, le World Wide Web, la messagerie instantanée, le partage de fichiers en pair-à-pair, le streaming, le podcasting, la téléconférence.
+
+Ethernet
+    Terme désignant à la fois le protocole et un type de câble permettant d'accéder à Internet avec un câble et pas en mode sans fil.
+    A préférer si possible, c'est plus rapide, plus écologique, et probablement plus sûr pour la santé.
+
+WiFi
+    Terme désignant à la fois le protocole et un type de câble permettant d'accéder à Internet avec un câble et pas en mode sans fil.
+    A préférer si possible, c'est plus rapide, plus écologique, et probablement plus sûr pour la santé.
+
+Bluetooth
+    Autre technologie de communication sans fil, à très courte distance. Utilisé pour le transfert de fichiers entre téléphones, ou pour les [applications Anti COVID](https://www.gouvernement.fr/info-coronavirus/tousanticovid).
+
+Webcam
+    Une caméra digitale connectée à un ordinateur, intégrée ou non.
+
 Protocole
-    TODO:
+    Un [protocole informatique](https://fr.wikipedia.org/wiki/Protocole_informatique) est un ensemble de règles qui régissent les échanges de données ou le comportement collectif de processus ou d'ordinateurs en réseaux ou d'objets connectés. Un protocole a pour but de réaliser une ou plusieurs tâches concourant à un fonctionnement harmonieux d'une entité générale.
 
 TCP
-    TODO:
+    [*Transmission Control Protocol*](https://fr.wikipedia.org/wiki/Transmission_Control_Protocol) (littéralement, « protocole de contrôle de transmissions »), abrégé TCP, est un {term}`protocole` de transport fiable, en mode connecté. Dans le modèle Internet, aussi appelé modèle TCP/IP, TCP est situé au-dessus de IP.
 
 UDP
-    TODO:
+    Le [*User Datagram Protocol*](https://fr.wikipedia.org/wiki/User_Datagram_Protocol) (littéralement, « protocole de datagramme utilisateur ») est un des principaux {term}`protocole` de télécommunication utilisés par Internet. Il fait partie de la couche transport du modèle OSI, quatrième couche de ce modèle, comme TCP.
 
 IP
-    TODO:
+    [Internet Protocol](https://fr.wikipedia.org/wiki/Internet_Protocol), le {term}`protocole` de communication fondamental de la suite des protocoles internet. Il nécessite l'attribution d'adresses IP. .
 
 IPv6
-    TODO:
+    [Nouvelle version](https://fr.wikipedia.org/wiki/IPv6) de l'{term}`IP` v4, pour répondre [au problème d'épuisement d'adresses IPv4](https://fr.wikipedia.org/wiki/%C3%89puisement_des_adresses_IPv4).
 
 DNS
-    TODO:
+    Le [*Domain Name System*](https://fr.wikipedia.org/wiki/Domain_Name_System), généralement abrégé DNS, qu'on peut traduire en « système de noms de domaine », est le service informatique distribué utilisé pour traduire les noms de domaine Internet en adresse IP ou autres enregistrements. En fournissant dès les premières années d'Internet, autour de 1985, un service distribué de résolution de noms, le DNS a été un composant essentiel du développement du réseau.
 
-Adresse
-    TODO:
+Adresse IP
+    Une [adresse IP](https://fr.wikipedia.org/wiki/Adresse_IP) est un numéro d'identification qui est attribué de façon permanente ou provisoire à chaque périphérique relié à un réseau informatique qui utilise l'{term}`Internet Protocol<IP>`. L'adresse IP est à la base du système d'acheminement (le routage) des paquets de données sur {term}`Internet`.
 
 URL
-    TODO:
+    Une [URL](https://fr.wikipedia.org/wiki/Uniform_Resource_Locator) (acronyme : *Uniform Resource Locator*, littéralement « localisateur uniforme de ressource »), couramment appelée adresse web, est une chaîne de caractères uniforme qui permet d'identifier une ressource du World Wide Web par son emplacement et de préciser le protocole internet pour la récupérer (par exemple http ou https). Elle peut localiser divers formats de données : document HTML, image, son....
 ```
 
 ### Verbes spécifiques en informatique
-
-TODO: à terminer.
 
 ```{glossary}
 Coder
@@ -496,13 +570,13 @@ Programmer
     Synonyme de coder, implémenter, implanter.
 
 Compiler
-    Exécuter un compilateur. TODO:
+    [Exécuter un compilateur](https://fr.wiktionary.org/wiki/compiler), c'est-à-dire transformer le code source d'un programme en code binaire, à l'aide d'un compilateur.
 
 Déboguer
     Version française de *to debug* en anglais : chasser les bogues d'un programme informatique.
 
 Debug
-    On lui préférera la version française {term}`débogguer<Déboguer>`.
+    On lui préférera la version française {term}`déboguer<Déboguer>`.
 
 Retourner
     Un anglicisme dans la plupart des cas, qui est à éviter : une fonction {term}`renvoie<Renvoyer>` une valeur, elle ne la retourne pas... Sauf si la fonction demandée doit vraiment *retourner* une liste (`[x0,..,xN] -> [xN,..,x0]`) ou une chaîne (`"Canoë" -> "ëonaC`). Je serai impitoyable sur cet anglicisme !
