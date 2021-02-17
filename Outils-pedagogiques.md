@@ -195,13 +195,7 @@ Pour toutes ces idées, deux remarques :
   - [Etherpad](http://etherpad.org/) et [pad.crans.org](https://pad.crans.org/) si besoin ;
   - [OverLeaf](https://www.overleaf.com/) pour des notes en LaTeX (cf [ShareLaTeX.irisa.fr](https://sharelatex.irisa.fr/)) ;
 
-- **Recommandation de style de programmation** (*styleguide*) : faire une liste de style-guides pour chaque langage enseigné (et s'y tenir !) :
-  - **OCaml** : [*CIS 120 OCaml Style Guide*](https://www.seas.upenn.edu/~cis120/20fa/ocaml_style/) à l'[Université de Pennsylvanie](https://www.upenn.edu/) TODO: traduire ;
-  - **C** : TODO: en trouver un bon, TODO: traduire ;
-  - **Python** : TODO: en trouver un bon, TODO: traduire ;
-  - **Makefile** : TODO: en trouver un bon, TODO: traduire ;
-  - Si besoin, [cette liste maintenu par Google](https://google.github.io/styleguide/) est utile ;
-  - TODO: Aussi parler de linter/formateur automatiques ?
+- **Recommandation de style de programmation** (*styleguide*) : faire une liste de style-guides pour chaque langage enseigné (et s'y tenir !), cf {ref}`Guides de style` !
 
 #### Autres bonus pour les élèves
 

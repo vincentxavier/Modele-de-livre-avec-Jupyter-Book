@@ -82,6 +82,16 @@
   # TODO: add this file back?
   - file: Glossaire
 
+- part: Guide de styles
+  chapters:
+  - file: styleguide/Guides de style
+  - file: styleguide/Guide de style OCaml
+  - file: styleguide/Guide de style C
+  - file: styleguide/Guide de style Python
+  - file: styleguide/Guide de style Makefile
+  - file: styleguide/Guide de style Bash
+  # TODO: write my own short style guides for C, Makefile, Python, Bash ?
+
 # - part: Des pages de maths
 #   chapters:
 #   - file: maths/index
