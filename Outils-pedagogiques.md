@@ -159,9 +159,10 @@ Pour toutes ces idées, deux remarques :
 - **Logiciel anti plagiat** ?
   - *Compilatio* semble être très puissant, mais non libre, non gratuit, c'est mort. Il était disponible à l'Université Rennes 1 et pour mon cours [INF1](https://perso.crans.org/besson/teach/INF1_L1_Rennes1_2020-21/) à l'automne 2020 nous n'avons pas pu nous en servir car les soumissions de projet étaient des fichiers Java `.java` et pas des PDF ou docs Word : en prépas j'aurai le même problème ;
   - [MOSS](https://theory.stanford.edu/~aiken/moss/) semble un bon outil ! « spa un logiciel libre, spa utilisable localement, mais ce n'est pas non plus opéré par une entreprise commerciale. Sinon, ca colle vraiment bien à ta définition de besoin » Non ça me va pas, il faut un compte, il faut envoyer les fichiers en ligne, c'est vraiment à l'opposé de ce que je veux, tant pis si les autres alternatives sont moins bien !
+  - Ces petits articles justifient l'intérêt de vérifier le plagiat [à UCI.edu](https://www.ics.uci.edu/~kay/checker.html) et [edutwitt.com](https://edutwitt.com/2020/12/21/why-you-should-use-a-code-plagiarism-checker/) ;
   - J'ai trouvé [study-in-scarlet](https://github.com/a-nikolaev/study-in-scarlet), qui étend [sherlock](https://github.com/Naereen/sherlock) (que j'ai déjà forké), intéressant ! Ces solutions sont indépendantes du langage ;
   - Pour des codes Python, il y a [pycode_similar](https://github.com/fyrestone/pycode_similar). Je pourrai étendre study-in-scarlet pour utiliser [pygments](https://pygments.org/) (au lieu de [rouge](https://github.com/rouge-ruby/rouge)) pour supporter plus de langages ?
-  - TODO: encore regarder [des outils](https://en.wikipedia.org/wiki/Comparison_of_anti-plagiarism_software) [libres](https://duckduckgo.com/?t=canonical&q=open+source+anti+plagiarism+software&ia=web) [déjà existants](https://blog.usejournal.com/top-10-free-plagiarism-detection-tools-5bd4512c7aa8), ou [sur GitHub](https://github.com/topics/plagiarism-detection) ? C'est encore des [recherches très actives](https://arxiv.org/abs/2102.03995) ;
+  - J'ai pas mal regardé [d'autres outils](https://en.wikipedia.org/wiki/Comparison_of_anti-plagiarism_software) [libres](https://duckduckgo.com/?t=canonical&q=open+source+anti+plagiarism+software&ia=web) [déjà existants](https://blog.usejournal.com/top-10-free-plagiarism-detection-tools-5bd4512c7aa8), ou [sur GitHub](https://github.com/topics/plagiarism-detection)... rien trouvé C'est encore des [recherches très actives](https://arxiv.org/abs/2102.03995) ;
 
 - **Débogueur interactif** pour les langages enseignés :
   - faire une première démo à la main dans un terminal ([OCamlDebug](https://caml.inria.fr/pub/docs/manual-ocaml/debugger.html), [GCC debugger (GDB)](https://fr.wikipedia.org/wiki/GNU_Debugger), [pdb](https://docs.python.org/3/library/pdb.html) ou [ipdb](https://pypi.org/project/ipdb/) pour Python), et dans un notebook Jupyter pour Python (voir [ce notebook](https://nbviewer.jupyter.org/github/Naereen/notebooks/blob/master/Debugguer_du_code_Python_depuis_Notebook_Jupyter.ipynb)) ;
@@ -179,23 +180,26 @@ Pour toutes ces idées, deux remarques :
   - Python : [EduPython](https://edupython.tuxfamily.org/),
   - OCaml : [pour OCaml](https://info.prepa-carnot.fr/index.php/2020/01/26/installer-ocaml-sur-sa-machine/) et liens dans ces pages là, ou alors [OCaml-Top](https://github.com/OCamlPro/ocaml-top/releases) ;
   - C : TODO: ?
-  - SQL(ite) : TODO: ?
+  - SQL(ite) : sqlite est inclus dans Python, et si on installe Pandas et [Pandas-SQL](https://github.com/yhat/pandasql/) ça suffit à faire des exemples sympa ?
   - notamment les applis mobiles pour OCaml, Python et C ? Cf [apk.fr.html](https://perso.crans.org/besson/apk.fr.html) sur mon site ;
 
 - **Éditeur et interprète/compilateur en ligne** ? Pour pouvoir travailler depuis un simple navigateur web, sans rien avoir à installer :
-  - **OCaml** : [TryOcaml](https://try.ocamlpro.com/) ou [BetterOCaml](https://betterocaml.ml/) (et plus expérimentalement [Dominical](https://alpha.iodide.io/notebooks/1627/) et [OCaml](https://perso.crans.org/besson/ocaml.fr.html) sur mon site perso). Voir aussi [Learn-OCaml](https://ocaml-sf.org/learn-ocaml/) qui semble incroyable (cf [démo Learn-OCaml](https://ocaml-sf.org/learn-ocaml-public/index.html#activity%3Dexercises), [déployable statiquement](https://ocaml-sf.org/learn-ocaml/howto-deploy-learn-ocaml-statically.html), et avec [learn-ocaml-cpge](https://github.com/ocaml-sf/learnocaml-cpge-public) (très peu complet, TODO: à remplir ?)) ;
-  - **C** : [C Tutor](http://pythontutor.com/c.html#mode=display) est minimaliste mais très utile pour apprendre et visualiser, [onlineGDB.com](https://www.onlinegdb.com/) permet de déboguer des petits programmes en ligne ;
-  - **Python** : [PythonTutor.com](http://pythontutor.com/) est incroyable pour les visualisations qu'il propose, mais de façon plus légère il y a aussi un [terminal Python 2](https://perso.crans.org/besson/python.html) sur mon site perso ;
+  - **OCaml** : [TryOcaml](https://try.ocamlpro.com/) ou [BetterOCaml](https://betterocaml.ml/) (et plus expérimentalement [Dominical](https://alpha.iodide.io/notebooks/1627/) et [OCaml](https://perso.crans.org/besson/ocaml.fr.html) sur mon site perso). Un [débogueur visuel pour un tout petit ensemble du langage (fyp)](https://fyp.jackhughesweb.com/). Voir aussi [Learn-OCaml](https://ocaml-sf.org/learn-ocaml/) qui semble incroyable (cf [démo Learn-OCaml](https://ocaml-sf.org/learn-ocaml-public/index.html#activity%3Dexercises), [déployable statiquement](https://ocaml-sf.org/learn-ocaml/howto-deploy-learn-ocaml-statically.html), et avec [learn-ocaml-cpge](https://github.com/ocaml-sf/learnocaml-cpge-public) (très peu complet, TODO: à remplir ?)) ;
+  - **C** : [C Tutor](http://pythontutor.com/c.html#mode=display) est minimaliste mais très utile pour apprendre et visualiser des petits programmes, alors qu'un site comme [onlineGDB.com](https://www.onlinegdb.com/) permet de *déboguer* (avec `gdb`) des petits programmes en ligne (pas offline) ;
+  - **Python** : [PythonTutor.com](http://pythontutor.com/) est incroyable pour les visualisations qu'il propose, mais de façon plus légère il y a aussi un [terminal Python 2](https://perso.crans.org/besson/python.html) sur mon site perso ([miroir PythonTutor](https://pytutor.seamile.cn/visualize.html#mode=edit), et [en bidouillant](https://github.com/Naereen/bin/commit/190aebce869175e46654f62ee81108eff1725b5d) on peut avoir [PythonTutor offline](https://github.com/seamile/PyTutor/issues/4) ;
   - **C et Python** : [REPL.it](https://repl.it/) ([C](https://repl.it/languages/c),[Python](https://repl.it/languages/python)), ou [myCompiler.io](https://www.mycompiler.io/) ([C](https://www.mycompiler.io/new/c), [Python](https://www.mycompiler.io/new/python)) -- mais pas OCaml ;
-  - **Jupyter notebook** : [Google Colab](https://colab.research.google.com/) (sans connexion, cf [mes notebooks](https://colab.research.google.com/github/Naereen/notebooks/blob/master/)), [Binder](https://mybinder.org/) (sans connexion, cf [mes notebooks](https://mybinder.org/v2/gh/Naereen/notebooks/)) et [DeepNote](https://deepnote.com/) (demande un compte, cf [un de mes notebooks](https://deepnote.com/launch?template=python_3.6&url=https%3A%2F%2Fgithub.com%2FNaereen%2Fnotebooks%2Fblob%2Fmaster%2FPy_Pi_Day_2017.ipynb)), et [Basthon.fr](https://notebook.basthon.fr/) peut dépanner si besoin ;
+  - **~Tout langage** : [Tutorials Point](https://www.tutorialspoint.com/codingground.htm) est entièrement gratuit[^tutorialspoint], et propose un environnement pour [OCaml](https://www.tutorialspoint.com/compile_ocaml_online.php), [C](https://www.tutorialspoint.com/compile_c_online.php), [Python](https://www.tutorialspoint.com/execute_python3_online.php), et [SQL](https://www.tutorialspoint.com/execute_sql_online.php). De même pour [JDoodle](https://www.jdoodle.com/compile-ocaml-online/), qui propose un interpréteur OCaml et d'autres langages, gratuitement en ligne.
+    [^tutorialspoint] C'est un site géré et hébergé par une entreprise basée à Hyderabad en Inde, [où j'ai travaillé](https://perso.crans.org/besson/cs101/) en 2014/2015 !
+  - **Jupyter notebook** (pour Python) : [Google Colab](https://colab.research.google.com/) (sans connexion, cf [mes notebooks](https://colab.research.google.com/github/Naereen/notebooks/blob/master/)), [Binder](https://mybinder.org/) (sans connexion, cf [mes notebooks](https://mybinder.org/v2/gh/Naereen/notebooks/)) et [DeepNote](https://deepnote.com/) (demande un compte, cf [un de mes notebooks](https://deepnote.com/launch?template=python_3.6&url=https%3A%2F%2Fgithub.com%2FNaereen%2Fnotebooks%2Fblob%2Fmaster%2FPy_Pi_Day_2017.ipynb)), et [Basthon.fr](https://notebook.basthon.fr/) peut dépanner si besoin ;
   - **SQL** : [SQLite-Online](https://github.com/jacques56100/NSI-SqliteOnline) comme sur [ce site d'un cours de NSI terminale](http://nsi.colbert.bzh/sql/) : TODO: m'en servir pour des TP de SQL et les héberger [localement](https://perso.crans.org/besson/publis/NSI-SqliteOnline/) ? Il y a aussi [ce TP sur CNAM.fr](http://deptfod.cnam.fr/bd/tp/) mais j'aime moins ; [Il en plein existe d'autres](https://duckduckgo.com/?t=canonical&q=sqlite+online+editor&ia=web), mais pas en français je pense, et moins bien conçu pour l'enseignement ([«  SQL Murder Mystery  »](https://mystery.knightlab.com/) est amusant).
+  - **SQL depuis Jupyter** : on peut aussi tout faire depuis IPython/Jupyter, avec [ipython-sql](https://pypi.org/project/ipython-sql/), ou avec avec [pandas](https://pandas.pydata.org/) et [Pandas-SQL](https://github.com/yhat/pandasql/), pour avoir une interface vraiment élégante (et facilement [charger](http://people.duke.edu/~ccc14/sta-663-2017/08_SQL.html#sql-via-pandas-dataframes) des [bases de donnes](https://seaborn.pydata.org/generated/seaborn.load_dataset.html#seaborn.load_dataset) [exemples](https://github.com/mwaskom/seaborn-data) depuis [seaborn](https://seaborn.pydata.org/)) ! Cela me semble plus efficace que d'utiliser un kernel Jupyter spécifique, comme [xeus-sqlite](https://github.com/jupyter-xeus/xeus-sqlite) ou [xeus-sql](https://github.com/jupyter-xeus/xeus-sql).
 
 - **Prise de note collaborative en ligne** ?
   - [HackMD.io](https://hackmd.io/#) et [StackEdit.io](https://stackedit.io/) pour des notes en Markdown (voir aussi [Madoko](https://www.madoko.net/), ?) ;
   - [Etherpad](http://etherpad.org/) et [pad.crans.org](https://pad.crans.org/) si besoin ;
   - [OverLeaf](https://www.overleaf.com/) pour des notes en LaTeX (cf [ShareLaTeX.irisa.fr](https://sharelatex.irisa.fr/)) ;
 
-- **Recommandation de style de programmation** (*styleguide*) : faire une liste de style-guides pour chaque langage enseigné (et s'y tenir !), cf {ref}`Guides de style` !
+- **Recommandation de style de programmation** (*styleguide*) : TODO: faire une liste de style-guides pour chaque langage enseigné (et s'y tenir !), cf {ref}`Guides de style` !
 
 #### Autres bonus pour les élèves
 
@@ -314,7 +318,7 @@ TODO: cette liste est encore en chantier.
 
 ### Suggestions de collègues ?
 
-1. **Tout en LaTeX _intelligemment_** : avec des templates de nouveaux documents, un jeu de macro super costaux, et un script pour transformer des slides en `article` (comme faisait [Serge Haddad](http://www.lsv.fr/~haddad/) notamment pour son cours [ALGO2](http://www.lsv.fr/~haddad/coursalgorithmique.pdf) en 2012) ;
+1. **Tout en LaTeX _intelligemment_** : avec des templates de nouveaux documents, un jeu de macro super costaux, et le [paquet `beamerarticle`](https://nicolasf.wordpress.com/2020/04/17/generer-un-article-et-un-diaporama-a-partir-dun-meme-fichier-tex-partie-2-comment/) (i) pour transformer des slides en `article` (inclus dans beamer), comme faisait [Serge Haddad](http://www.lsv.fr/~haddad/) notamment pour son cours [ALGO2](http://www.lsv.fr/~haddad/coursalgorithmique.pdf) en 2012) ;
 
 2. Avec `org-mode` : je sais que c'est balèze, mais pas tellement mieux que d'autres trucs, si ? [Certains arguments en faveur de `ord-mode` sont solides](https://karl-voit.at/2017/09/23/orgmode-as-markup-only/), et par exemple des amis ou collègues comme [Luc Pélissier](http://lacl.fr/~lpellissier/) et [Martin Quinson](http://people.irisa.fr/Martin.Quinson/) rédigent avec `org-mode`. Mais je n'ai jamais utilisé, et ça fait trop de travail pour y passer ;
 
@@ -322,15 +326,22 @@ TODO: cette liste est encore en chantier.
 
 ### Autres pistes, considérées mais oubliées
 
-- [Madoko](http://madoko.org/) : un pré-processeur Markdown qui semble très puissant, indépendant de [pandoc](https://pandoc.org/) (mais écrit dans un langage rare), gère juste la sortie en `HTML` et `PDF` mais avec une apparence identique (notes / slides reveal.js ou Beamer / articles).
+- 🤔 [Madoko](http://madoko.org/) : un pré-processeur Markdown qui semble très puissant, indépendant de [pandoc](https://pandoc.org/) (mais écrit dans un langage rare), gère juste la sortie en `HTML` et `PDF` mais avec une apparence identique (notes / slides reveal.js ou Beamer / articles).
   - Propose [madoko.net](https://www.madoko.net/) un puissant éditeur en ligne, mais aussi installable/utilisable en ligne de commande.
   - Je trouve ça beau et chouette, TODO: à creuser un peu plus.
   - 👍 *Avantages* : original, éditeur très chouette (mais bon, pas VSCode...) ;
   - 👎 *Inconvénients* : très peu populaire, plus activement maintenu, risque de passer du temps sur un système pas stable sur le long terme ;
 
-- `AsciiDoc` et `AsciiDoctor` : format texte un peu comme `rST` et `Markdown`, produit des `HTML` et `PDF` à la `Sphinx` ou `pandoc` : je vois pas l'intérêt comparé à ces autres outils. Le code est en Ruby, donc je serai pas/moins capable de bidouiller.
+- 👎 `AsciiDoc` et `AsciiDoctor` : format texte un peu comme `rST` et `Markdown`, produit des `HTML` et `PDF` à la `Sphinx` ou `pandoc` : je vois pas l'intérêt comparé à ces autres outils. Le code est en Ruby, donc je serai pas/moins capable de bidouiller.
 
-- [fastdoc](https://github.com/fastai/fastdoc) utilise `AsciiDoc` et des notebooks Jupyter uniquement, et semble focalisé sur du code Python. Approprié si je développe une autre "grosse" bibliothèque Python, mais pas pour des cours.
+- 👎 [fastdoc](https://github.com/fastai/fastdoc) utilise `AsciiDoc` et des notebooks Jupyter uniquement, et semble focalisé sur du code Python. Approprié si je développe une autre "grosse" bibliothèque Python, mais pas pour des cours.
+
+- **Pour dessiner des courbes et graphiques et dessins vectoriels** :
+  - 👎 [Asymptote](https://asymptote.sourceforge.io/) ([en ligne](http://asymptote.ualberta.ca/)) est un logiciel de dessin très puissant, qui peut sortir du code LaTeX et autre. Aucun intérêt d'apprendre *yet another syntax* ;
+  - [GeoGebra](https://www.geogebra.org/) ([Wiki:Geogebra](https://fr.wikipedia.org/wiki/GeoGebra)) est aussi très puissant, mais à part pour faire de la géométrie 2D "du collège" ou des ellipses, je vois pas le besoin. 👍 avantage : on peut exporter la figure comme du TikZ !
+  - [GNU Plot](http://www.gnuplot.info/) ([Wiki:GNUPlot](https://en.wikipedia.org/wiki/Gnuplot)) est chouette mais basique. Peut être utilisé depuis la ligne de commande, [depuis](https://marketplace.visualstudio.com/items?itemName=mammothb.gnuplot) [VSCode](https://marketplace.visualstudio.com/items?itemName=fizzybreezy.gnuplot), [depuis Jupyter](https://github.com/has2k1/gnuplot_kernel), et peut exporter en TikZ... aucun intérêt d'apprendre *yet another syntax*, sauf si on veut vite fait tracer des courbes de maths ?
+  - [Matplotlib](https://matplotlib.org/stable/index.html) est génial (avec [xkcd mode](https://matplotlib.org/xkcd/gallery.html)), depuis Python, et peut créer des belles figures, mais plus côté numérique. On peut expoter en LaTeX ou [TikZ](https://github.com/nschloe/tikzplotlib) !
+  - 👎 [PSTricks](https://en.wikipedia.org/wiki/PSTricks) semble moins puissant que PGF/TikZ donc j'oublie !
 
 ----
 
@@ -338,17 +349,19 @@ TODO: cette liste est encore en chantier.
 
 ### Dessiner des graphes simples
 
-**Graphviz + Dot graph**
+*Graphviz + Dot graph* ?
 
 - dans Jupyter notebook : avec [graphviz](https://graphviz.readthedocs.io/en/stable/notebooks.html) mais que depuis Python... TODO: une extension avec une magic cell `%%graphviz` ?
 - dans Sphinx (rST) ou Jupyter book (rST / MyST / nb) : [`sphinx.ext.graphviz`](https://www.sphinx-doc.org/en/master/usage/extensions/graphviz.html) déjà utilisé dans [graph.fr.html](https://perso.crans.org/besson/graph.fr.html) sur mon site perso ;
 - dans LaTeX : je crois pas que ce soit simple, on peut faire `dot -Tsvg` ou `dot -Tpdf` pour exporter en SVG ou PDF et inclure ça dans le LaTeX, TODO: mais comment exporter en TikZ ou autre ? J'ai déjà bidouillé [`dot2tex`](https://dot2tex.readthedocs.io/en/latest/) en 2018, et ça supporte Python 3 maintenant, et [l'utilisation depuis LaTeX](https://dot2tex.readthedocs.io/en/latest/tipsandtricks.html#the-dot2texi-latex-package) ([CTAN:dot2texi](https://www.ctan.org/pkg/dot2texi)) !
 
+**Non mieux vaut toujours faire avec TikZ !**
+
 ### Dessiner des figures scientifiques quelconques
 
 **TikZ (PGF) avec LaTeX**
 
-- côté bureau : utiliser [QTikz](https://linuxx.info/qtikz/) (ou [kTikz](https://userbase.kde.org/KtikZ) ou [tikzzz](https://github.com/francoisschwarzentruber/tikzzz)) pour rapidement itérer sur une figure ;
+- côté bureau : utiliser [QTikz](https://linuxx.info/qtikz/) (ou [kTikz](https://userbase.kde.org/KtikZ) ou [tikzzz](https://github.com/francoisschwarzentruber/tikzzz)) pour rapidement itérer sur une figure, ou VSCode ;
 - depuis LaTeX : c'est conçu pour ! Toujours inclure la figure avec `\input{tikz-figures/graphe-compilation12.tex}`, pour les avoir réutilisables ailleurs (un dépôt git avec juste les figures ? peut-être pas nécessaire) ;
 - dans Jupyter notebook : avec [itikz](https://github.com/jbn/itikz), indépendant de Python FIXME: mais ne fonctionne pas dans d'autres kernels...
 - dans Sphinx (rST) ou Jupyter book (rST / MyST / nb) : [sphinxcontrib.tikz](https://sphinxcontrib-tikz.readthedocs.io/) ? mais peut-être plus simple d'utiliser juste `%%itikz` depuis Jupyter notebooks ?

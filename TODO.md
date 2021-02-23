@@ -59,6 +59,5 @@ These pages should render perfectly, otherwise something is broken in the jupyte
 - [x] See {doc}`demo-rST` ;
 - [x] DONE write demo for other kernels: Python 3, C, OCaml, Java, Shell/Bash, SQL:
   - [x] {doc}`notebooks/index` ;
-  - [x] are they all correctly included?
-  - [x] Fix example of C ;
-  - [ ] See SQL ;
+  - [x] are they all correctly included? yes!
+  - [ ] TODO: SQL, I can use [a database](https://seaborn.pydata.org/generated/seaborn.load_dataset.html#seaborn.load_dataset) [exemple](https://github.com/mwaskom/seaborn-data) from [seaborn](https://seaborn.pydata.org/), or [some interesting SQLite database from SCEI](https://github.com/mhaz/SCEI-statistics/issues/2) ?

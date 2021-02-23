@@ -18,7 +18,7 @@ Voir {ref}`programmes-CPGE/index`.
 - Le programme officiel d'informatique en MP2I et MPI : sur [le site du Ministère](https://cache.media.education.gouv.fr/file/SPE1-MEN-MESRI-4-2-2021/64/6/spe777_annexe_1373646.pdf) (février 2021).
 - Autres programmes :
   - [programme officiel d'option informatique en MPSI et MP](https://cache.media.education.gouv.fr/file/SPE1-MEN-MESRI-4-2-2021/63/1/spe775_annexe_1373631.pdf) (nouvelle version, février 2021) ;
-  - [programme officiel d'informatique "tronc commun" en MPSI et MP](TODO:) (nouvelle version, février 2021) ;
+  - [programme officiel d'informatique "tronc commun" en MPSI et MP](https://cache.media.enseignementsup-recherche.gouv.fr/file/SPE1-MEN-MESRI-4-2-2021/27/2/spe774_annexe_1373272.pdf) (nouvelle version, février 2021) ;
   - (bonus) [programmes de mathématiques, physique/chimie et SI](https://cache.media.education.gouv.fr/file/SPE1-MEN-MESRI-4-2-2021/64/8/spe779_annexe_1373648.pdf).
 
 TODO: rédiger pages programmes
