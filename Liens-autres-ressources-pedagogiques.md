@@ -142,6 +142,7 @@ TODO: rédiger pages programmes
 ## En vrac
 
 - Le [livre « Apprendre à programmer avec OCaml »](http://programmer-avec-ocaml.lri.fr/), dont le site web propose notamment [une centaine de programmes .ml](http://programmer-avec-ocaml.lri.fr/code.html) et solutions à leurs exercices ;
+- Ce poly de [programmation en C par Anne Canteaut](https://www.rocq.inria.fr/secret/Anne.Canteaut/COURS_C/), qui contient tout ce qui devra être enseigné, en MP2I et MPI, voir un poil plus, *sauf les threads*. Et pas du tout de structures de données ou d'algorithmiques, juste le langage C, sa syntaxe et sa sémantique ;
 - Un livre d'algorithmique en C : « Algorithmique & programmation en langage C » [supports de cours (vol #1)](https://cel.archives-ouvertes.fr/cel-01176119), [sujets TP (vol #2)](https://cel.archives-ouvertes.fr/cel-01176120v1) et [corrections TP (vol #3)](https://cel.archives-ouvertes.fr/cel-01176120v1) ;
 
 - Plein de ressources en [MPSI](https://www.alloschool.com/course/informatique-mpsi) et [MP](https://www.alloschool.com/course/informatique-mp-1) ;
@@ -197,6 +198,8 @@ TODO: rédiger pages programmes
   - tout en accès libre sur GitHub ;
   - des centaines de vidéos complètes et très bien faites ;
   - [un livre entier, en accès libre et disponible à la vente aussi](https://github.com/exo7math/python1-exo7/blob/master/livre-python1.pdf) ;
+
+- Des ressources libres [Cours de NSI au Lycée François Mauriac @ Bordeaux](https://github.com/glassus/nsi), et de [SNT](https://github.com/glassus/snt).
 
 - TODO:
 
