@@ -35,7 +35,7 @@ TODO: rédiger pages programmes
 ## Option Informatique MPSI
 
 - [MPSI et MP au Lycée Masséna à Nice](http://perso.numericable.fr/jules.svartz/prepa/index.html)
-  - [Note très complète de cours (PDF) avec Caml ](https://svartzjules.pagesperso-orange.fr/prepa/pdf/poly_caml.pdf) ;
+  - [Note très complète de cours (PDF) avec Caml](https://svartzjules.pagesperso-orange.fr/prepa/pdf/poly_caml.pdf) ;
   - Plein de TD et TP (PDF) et corrigés (PDF et .ml) ;
   - Un sujet de DS (PDF) ;
 

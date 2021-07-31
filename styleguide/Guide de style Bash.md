@@ -1,7 +1,7 @@
 
-# Guide de style Makefile
+# Guide de style Bash
 
-Vous trouverez ci-dessous les directives de style pour écrire des Makefiles.
+Vous trouverez ci-dessous les directives de style pour écrire des petits scripts Bash.
 
 ## TODO:
 

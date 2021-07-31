@@ -5,11 +5,12 @@
 
 #######################################################################################
 # Book settings
-title                       : "Modèle de livre avec Jupyter Book"  # The title of the book. Will be placed in the left navbar.
+# title                       : "Modèle de livre avec Jupyter Book"  # The title of the book. Will be placed in the left navbar.
+title                       : "Informatique en MP2I au lycée Kléber - 2021-2022"  # The title of the book. Will be placed in the left navbar.
 author                      : "Lilian Besson"  # The author of the book
 copyright                   : "2021-∞"  # Copyright year to be placed in the footer
 logo                        : logo.png  # A path to the book logo
-email                       : lilian.besson@crans.org  # Email of the contact
+email                       : mp2i.2021@besson.link  # Email of the contact
 description                 : "|:fr:| |:notebook:| |:snake:| Un modèle de livre avec Jupyter Book, et un livre exemple en français montrant les fonctionnalités géniales de Jupyter Book"
 exclude_patterns            : [venv3, .github, _build, LICENSE.txt, Thumbs.db, .DS_Store, "**.ipynb_checkpoints"]  # files/folders to be excluded
 

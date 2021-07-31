@@ -51,13 +51,13 @@ preview_pdfhtml:
 
 send:	send_zamok
 send_zamok:	clean-temp
-	CP --exclude=./.git/ ./{README,HEADER}.md ./{LICENSE.txt,Makefile} ${Szam}Info-Prepas-MP2I/Modele-de-livre-avec-Jupyter-Book/
+	CP --exclude=./.git/ ./README.md ./{LICENSE.txt,Makefile} ${Szam}Info-Prepas-MP2I/Modele-de-livre-avec-Jupyter-Book/
 	CP --exclude=./.git/ ./notebooks/*.* ${Szam}Info-Prepas-MP2I/Modele-de-livre-avec-Jupyter-Book/notebooks/
 	CP --exclude=./.git/ ./$(BUILDDIR)/html/ ${Szam}Info-Prepas-MP2I/Modele-de-livre-avec-Jupyter-Book/
 	CP --exclude=./.git/ ./$(BUILDDIR)/pdf/*.pdf ${Szam}Info-Prepas-MP2I/Modele-de-livre-avec-Jupyter-Book/
 	CP --exclude=./.git/ ./$(BUILDDIR)/latex/*.pdf ${Szam}Info-Prepas-MP2I/Modele-de-livre-avec-Jupyter-Book/
 send_local:	clean-temp
-	CP --exclude=./.git/ ./{README,HEADER}.md ./{LICENSE.txt,Makefile} ~/Public/Info-Prepas-MP2I/Modele-de-livre-avec-Jupyter-Book/
+	CP --exclude=./.git/ ./README.md ./{LICENSE.txt,Makefile} ~/Public/Info-Prepas-MP2I/Modele-de-livre-avec-Jupyter-Book/
 	CP --exclude=./.git/ ./notebooks/*.* ~/Public/Info-Prepas-MP2I//notebooks/
 	CP --exclude=./.git/ ./$(BUILDDIR)/html/ ~/Public/Info-Prepas-MP2I/Modele-de-livre-avec-Jupyter-Book/
 	CP --exclude=./.git/ ./$(BUILDDIR)/pdf/*.pdf ~/Public/Info-Prepas-MP2I/Modele-de-livre-avec-Jupyter-Book/

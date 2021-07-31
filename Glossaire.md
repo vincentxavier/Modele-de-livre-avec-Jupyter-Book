@@ -133,26 +133,26 @@ Paramètre
     Globalement synonyme d'{term}`argument<Argument>` dans le contexte d'appels de fonctions, mais plus général.
 
 Fonction
-    En informatique, une [fonction](https://fr.wikipedia.org/wiki/Routine_(informatique))
-    Attention, la notion est différente des mathématiques.
+    En informatique, une [fonction](https://fr.wikipedia.org/wiki/Routine_(informatique)) est un morceau de code réutilisable ailleurs, en lui donnant des paramètres et qui renvoient un résultat.
+    Attention, la notion est un peu différente des mathématiques.
 
 Signature
     Pour une {term}`fonction<Fonction>`, sa signature déclare les listes de ses arguments et des valeurs {term}`renvoyées<Renvoyer>` (avec ou sans leurs types, selon le langage). Par exemple, le produit `prod(x,y)` de deux entiers aura les signatures suivantes :
 
     - Python :
-      ```python
-    # étiquettes de type, conseillée à partir de Python 3.6
-      def prod(x : int, y : int) -> int:
-          return x * y
-      ```
+        ```python
+        # étiquettes de type, conseillée à partir de Python 3.6
+        def prod(x : int, y : int) -> int:
+            return x * y
+        ```
     - OCaml :
-      ```ocaml
-      let prod (x : int) (y : int) : int = x * y;;
-      ```
+        ```ocaml
+        let prod (x : int) (y : int) : int = x * y;;
+        ```
     - En C :
-      ```c
-      int prod(int x, int y) { return x * y; }
-      ```
+        ```c
+        int prod(int x, int y) { return x * y; }
+        ```
 
 Classe
     En [programmation orientée objet](https://fr.wikipedia.org/wiki/Programmation_orient%C3%A9e_objet), la déclaration d'une classe regroupe des membres, méthodes et propriétés (attributs) communs à un ensemble d'objets.
