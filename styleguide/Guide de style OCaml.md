@@ -47,9 +47,9 @@ let tomorrow (today : weekend_day) : weekend_day =
 Supprimez tout le code commenté de votre soumission finale. Le code commenté peut être une référence utile lorsque vous travaillez sur un projet, mais votre livrable final ne doit inclure que du code exécutable.
 
 
-## commentaires
+## Commentaires
 
-### Commentaire au-dessus le code référencé
+### Commentaire au-dessus du code référencé
 
 Écrivez vos commentaires au-dessus du code que vous souhaitez commenter.
 
