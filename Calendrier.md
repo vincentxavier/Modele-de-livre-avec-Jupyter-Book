@@ -56,7 +56,7 @@ L'ordre est celui que je vais suivre.
 ## Second semestre S2
 
 - **Structures de données**, *deuxième passage* :
-  - Structures de données séquentielles 2/2 (tableaux 2D et plus)
+  - Structures de données séquentielles 2/2 (tableaux 2D, sérialisation et plus)
   - Structures de données hiérarchiques (arbres, tableaux associatifs, tables de hachage)
   - Structures de données relationnelles (graphes et arbres)
   - Quand ? *Janvier : 2/3 CM + 3 TP + 3 TD*
