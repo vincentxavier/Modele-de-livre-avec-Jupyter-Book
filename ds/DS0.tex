@@ -1,0 +1,93 @@
+\documentclass[12pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[french]{babel}
+
+\usepackage[T1]{fontenc}
+
+\title{DS0 : Auto-test de vérification des acquis}
+% .\\\vspace*{5mm}{\large Informatique de tronc commun, première année}}
+% \author{Julien \textsc{Reichert}}
+\date{\vspace{-8ex}}
+
+\usepackage{parskip}
+\parskip=\baselineskip
+\parindent=0px
+
+\usepackage{geometry}
+\geometry{vmargin=2cm, hmargin=2cm}
+
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{graphicx}
+
+\newtheoremstyle{style}
+  {\baselineskip}% measure of space to leave above the theorem. E.g.: 3pt
+  {}% measure of space to leave below the theorem. E.g.: 3pt
+  {}% name of font to use in the body of the theorem
+  {0pt}% measure of space to indent
+  {}% name of head font
+  {\\}% punctuation between head and body
+  { }% space after theorem head; " " = normal interword space
+  {}% Manually specify head
+
+\theoremstyle{style}
+
+\newtheorem*{definition}{Définition}
+\newtheorem*{proposition}{Proposition}
+\newtheorem*{theoreme}{Théorème}
+
+\usepackage[svgnames]{xcolor}
+\definecolor{vert}{rgb}{0,0.6,0}
+% \newcommand{\exo}[1]{\textcolor{vert}{#1}}
+\newcommand{\exo}[1]{#1}
+
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\R}{\mathbb{R}}
+
+\usepackage{pgf,tikz}
+\usetikzlibrary{arrows,automata,decorations,shapes,snakes}
+
+\usepackage{multicol}
+
+\begin{document}
+\maketitle
+
+Cette épreuve non notée permettra une évaluation des compétences de base en algorithmique et programmation en sortie de lycée, qui sont des prérequis pour l'informatique de tronc commun en CPGE.
+
+Pour les exercices demandant d'écrire un programme, le langage Python est attendu mais il est possible d'utiliser du pseudo-code dans un premier temps. Lorsque les programmes calculent quelque chose, il faut être en mesure de savoir comment récupérer l'information calculée afin de pouvoir s'en servir par ailleurs.
+
+\exo{Exercice~1~: Si la liste \texttt{liste} a été créée pour valoir \texttt{[3, 5, 0, 4, 2]}, quels sont les indices valides dans la liste, et en particulier quel est l'indice de la valeur \texttt{2}~?}
+
+\exo{Exercice~2~: Déterminer laquelle des quatre propositions suivantes permet de créer une fonction \texttt{carre}
+permettant d'obtenir \texttt{1800} en écrivant dans la console \texttt{carre(42) + 36}}
+
+\begin{multicols}{4}
+\begin{verbatim}
+def carre(n):
+    return (n * n)
+
+def carre(n):
+    disp(n * n)
+
+def carre(n):
+    print(n * n)
+
+def carre(n):
+    echo(n * n)
+\end{verbatim}
+\end{multicols}
+
+\exo{Exercice~3~: Écrire un programme permettant de calculer le solde d'un compte où un euro a été déposé à l'ouverture avec des intérêts composés (c'est-à-dire sur le solde total) au taux permanent d'un pour cent par an, après deux mille ans.}
+
+\exo{Exercice~4~: Écrire un programme permettant de déterminer quel est le premier terme de la suite géométrique de terme général $u_n = \frac{3}{2^n}$ à être inférieur à un millième.}
+
+\exo{Exercice~5~: Écrire un programme permettant de construire une liste de six entiers aléatoires (uniforme) entre \texttt{1} et \texttt{6}.}
+
+Rappel ou information~: pour obtenir un nombre aléatoire entre un seuil bas \texttt{a} et un seuil haut \texttt{b} (exceptionnellement en Python, tous deux sont inclus), on utilise \texttt{random.randint(a, b)},
+l'utilisation de cette fonction nécessitant d'écrire auparavant (par principe en tout début) la ligne \texttt{import random}.
+
+\exo{Exercice~6~: Écrire une fonction calculant la somme des éléments d'une liste passée en paramètre.}
+
+\exo{Exercice~7~: Écrire une fonction construisant à partir d'une liste de nombres passée en paramètre une nouvelle liste dont les éléments sont des \texttt{1} (respectivement \texttt{-1}, \texttt{0}) si au même indice dans la liste en paramètre le nombre est strictement positif (respectivement strictement négatif, nul).}
+
+\end{document}
